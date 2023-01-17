@@ -149,6 +149,8 @@ module.directive( "fleetExport", function() {
 					text += " (Admiral)";
 				if( card.type == "ambassador" )
 					text += " (Ambassador)";
+				if( card.type == "starrship_construction")
+				  text += " (Construction)";
 				if( card.type == "fleet-captain" )
 					text += " Fleet Captain";
 				if( card.type == "flagship" )
@@ -191,6 +193,12 @@ module.directive( "fleetExport", function() {
 
 				if( card.ambassador ) {
 					var res = cardToText(card.ambassador, ship, fleet, indent+1);
+					text += res.text;
+					cost += res.cost;
+				}
+
+				if( card.construction ) {
+					var res = cardToText(card.construction, ship, fleet, indent+1);
 					text += res.text;
 					cost += res.cost;
 				}
@@ -249,6 +257,11 @@ module.directive( "fleetExport", function() {
 					text += res.text;
 				}
 
+				if( card.construction ) {
+					var res = cardToTextTTS(card.construction, ship, fleet);
+					text += res.text;
+				}
+
 				$.each( card.upgrades || [], function(i,slot) {
 					if( slot.occupant ) {
 						var res = cardToTextTTS(slot.occupant, ship, fleet);
@@ -296,6 +309,11 @@ module.directive( "fleetExport", function() {
 
 				if( card.ambassador ) {
 					var resB = cardToAltTextTTS(card.ambassador, ship, fleet);
+					text += resB.text;
+				}
+
+				if( card.construction ) {
+					var resB = cardToAltTextTTS(card.construction, ship, fleet);
 					text += resB.text;
 				}
 
@@ -397,6 +415,7 @@ module.directive( "fleetExport", function() {
 			};
 
 			function cardToFleetData(card, ship, fleet, card_stack) {
+
 				var data = {name:card.name,
 										type:typeConvert(card.type),
 										faction:factionConvert(card.factions),
@@ -404,6 +423,7 @@ module.directive( "fleetExport", function() {
 										priority:0
 									 };
 
+		    console.log(`${card} the data: ${data}`);
 				if (card.type == "ship" && !card.unique)
 					data.name = "Generic " + card.class;
 
@@ -416,6 +436,8 @@ module.directive( "fleetExport", function() {
 						data.priority = 2; break;
 					case "Ambassador":
 						data.priority = 3; break;
+					case "Starship Construction":
+					  data.priority = 4; break;
 					default:
 						data.priority = 4;
 				}
@@ -434,6 +456,11 @@ module.directive( "fleetExport", function() {
 				if( card.ambassador ){
 					card_stack.push(cardToFleetData(card.ambassador, ship, fleet, card_stack));
 				}
+
+				if( card.construction ){
+					card_stack.push(cardToFleetData(card.construction, ship, fleet, card_stack));
+				}
+
 				if(card.upgrades && card.upgrades.length > 0){
 					$.each( card.upgrades, function(i,slot) {
 						if( slot.occupant )
@@ -478,10 +505,11 @@ module.directive( "fleetExport", function() {
 			    "ship":"Ship",
 			    "captain":"Captain",
 			    "admiral":"A",
-					"ambassador":"M",
-			    "crew":"C",
+          "ambassador":"M",
+          "construction": "Starship Construction",
+  		    "crew":"C",
 			    "talent":"E",
-				"tech":"T",
+			    "tech":"T",
 			    "weapon":"W",
 			    "borg":"B",
 			    "squadron":"S"
