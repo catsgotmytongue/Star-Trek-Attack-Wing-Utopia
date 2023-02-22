@@ -1043,7 +1043,7 @@
     background-position: center;
     background-size: cover;
     background-clip: border-box;
-	display: inline-block;
+	  display: inline-block;
 }
 
 .card-ship-upgrade-bar {
