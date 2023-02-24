@@ -21,7 +21,9 @@
 
 	<div class="card-border-right pull-right"></div>
 
-	<div class="card-ship-silhouette pull-left"><i ng-if="ship.faq" class="card-faq-icon fs fs-faq pull-left"></i></div>
+	<div class="card-ship-silhouette pull-left">
+	  <i class="card-ship-silhouette-icon" style="background-image: url(img/ships/sil_{{ship.classId}}.png)"></i>
+	</div>
 
 	<div class="card-ship-class-container text-center">
 		<span class="card-ship-class" ng-class="{'card-ship-class-long': ship.class.length >= 25 }">{{ship.class | uppercase}}</span>

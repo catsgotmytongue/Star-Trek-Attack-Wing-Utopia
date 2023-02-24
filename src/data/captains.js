@@ -2,12 +2,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap019",
+		gameId: 1,
 		set: [
 			"75013"
 		],
 		name: "Alynna Nechayev",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> \n\n You may re-roll all [blank] . If the defending ship is either a Dominion ship or a Borg ship, roll +1 attack die.",
+		text: "<b>WHEN ATTACKING:</b> \n\n You may re-roll all [blank]. If the defending ship is either a <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> ship or a <img src='https://i.imgur.com/tZbY5gi.png' width='20' height='20'> ship, roll +1 attack die.",
 		factions: [
 			"federation"
 		],
@@ -18,6 +19,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap018",
+		gameId: 1,
 		set: [
 			"75013"
 		],
@@ -34,12 +36,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap017",
+		gameId: 1,
 		set: [
 			"75013"
 		],
 		name: "Strickler",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> If the defending ship has a Hull Value of 3 or less. \n\n Add 1 [hit]. If the defending ship is an Independent ship or has an Independent Captain equipped to it, add 1 [crit] instead.",
+		text: "<b>WHEN ATTACKING:</b> If the defending ship has a Hull Value of 3 or less. \n\n Add 1 [hit]. If the defending ship is an <img class='centered' src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> ship or has an <img class='centered' src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> Captain equipped to it, add 1 [crit] instead.",
 		factions: [
 			"federation"
 		],
@@ -50,12 +53,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap016",
+		gameId: 1,
 		set: [
 			"75013"
 		],
 		name: "George Sanders",
 		unique: true,
-		text: "<b>AFTER A FRIENDLY FEDERATION SHIP WITHIN RANGE IS HIT:</b> \n\n You may perform a 1 [bank-left], 1 [straight], or a 1 [bank-right] Maneuver. If this ship has the 'Federation Prototype' Starship Construction Upgrade equipped, you may perform a 1 [turn-left] or 1 [turn-right] Maneuver instead.",
+		text: "<b>AFTER A FRIENDLY <img src='../img/faction_fed.png' width='20' height='20'> SHIP WITHIN RANGE IS HIT:</b> \n\n You may perform a 1 [bank-left], 1 [straight], or a 1 [bank-right] Maneuver. If this ship has the 'Federation Prototype' [hook] equipped, you may perform a 1 [turn-left] or 1 [turn-right] Maneuver instead.",
 		factions: [
 			"federation"
 		],
@@ -67,12 +71,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap015",
+		gameId: 1,
 		set: [
 			"75012"
 		],
 		name: "Lovok",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> Place an [aux] Token beside this ship. \n\n Re-roll each of your [blank] . If equipped to a D'Deridex Class, you may also add 1 [hit].",
+		text: "<b>WHEN ATTACKING:</b> Place an [aux] Token beside this ship. \n\n Re-roll each of your [blank] . If equipped to a <img src='img/text/rom-dderidex.png' width='15' height='15'>, you may also add 1 [hit].",
 		factions: [
 			"romulan"
 		],
@@ -83,12 +88,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap014",
+		gameId: 1,
 		set: [
 			"75012"
 		],
 		name: "Rekar",
 		unique: true,
-		text: "You do not pay faction penalty when equipping this card or any Romulan [crew] Upgrades to this Federation ship. \n----------------------------------------\n <b>WHEN ATTACKING WITH A [weapon] UPGRADE:</b> \n You may re-roll up to 2 [blank] . If that Upgrade is a non-Romulan [weapon], roll +1 Attack die.",
+		text: "You do not pay faction penalty when equipping this card or any <img src='img/text/faction-romulan.png' width='20' height='20'> [crew_text] Upgrades to this <img src='img/text/faction-federation.png' width='20' height='20'> ship. \n----------------------------------------\n <b>WHEN ATTACKING WITH A [weapon_text] UPGRADE:</b> \n\n You may re-roll up to 2 [blank] . If that Upgrade is a non-<img src='img/text/faction-romulan.png' width='20' height='20'> [weapon_text], roll +1 Attack die.",
 		factions: [
 			"romulan"
 		],
@@ -99,12 +105,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap013",
+		gameId: 1,
 		set: [
 			"75012"
 		],
 		name: "Koval",
 		unique: true,
-		text: "<b>WHEN ATTACKING: DECLARE TARGET STEP:</b>\n If this ship is Cloaked. \n\n Place 2 [time] Tokens on a [crew] Upgrade equipped to the defending ship.",
+		text: "<b>WHEN ATTACKING: DECLARE TARGET STEP:</b>\n If this ship is Cloaked. \n\n Place 2 [time] Tokens on a [crew_text] Upgrade equipped to the defending ship.",
 		factions: [
 			"romulan"
 		],
@@ -115,12 +122,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap012",
+		gameId: 1,
 		set: [
 			"75012"
 		],
 		name: "Donatra",
 		unique: true,
-		text: "<b>WHEN A FRIENDLY SHIP WITHIN RANGE IS ATTACKING:</b>\n\n That friendly ship may roll +1 attack die. If that friendly ship is either a Valdore Class or a Sovereign Class it may also convert 1 [blank] into 1 [hit].",
+		text: "<font size='+.5'><b>WHEN A FRIENDLY SHIP WITHIN RANGE IS ATTACKING:</b>\n\n That friendly ship may roll +1 attack die. If that friendly ship is either a <img src='img/text/rom-valdore.png' width='15' height='15'> or a <img src='img/Text/fed-sovereign.png' width='15' height='15'> it may also convert 1 [blank] into 1 [hit].</font>",
 		factions: [
 			"romulan"
 		],
@@ -132,6 +140,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap011",
+		gameId: 1,
 		set: [
 			"75012"
 		],
@@ -148,6 +157,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap010",
+		gameId: 1,
 		set: [
 			"75011"
 		],
@@ -165,6 +175,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap009",
+		gameId: 1,
 		set: [
 			"75011"
 		],
@@ -182,12 +193,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap008",
+		gameId: 1,
 		set: [
 			"75011"
 		],
 		name: "Jadzia Dax",
 		unique: true,
-		text: "You do not pay a faction penalty when equipping Klingon [talent] Upgrade to this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> \n\nThis ship may perform a white 1 [bank-left] or white 1 [bank-right].",
+		text: "You do not pay a faction penalty when equipping <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [talent_text] Upgrade to this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> \n\nThis ship may perform a white 1 [bank-left] or white 1 [bank-right].",
 		factions: [
 			"federation"
 		],
@@ -198,12 +210,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap007",
+		gameId: 1,
 		set: [
 			"75011"
 		],
 		name: "Keogh",
 		unique: true,
-		text: "<b>MODIFY ATTACK DICE STEP:</b> When a friendly Federation ship in range is defending and the attacking ship is in this ship's Primary Arc and in range:\n\nConvert 1 [hit] into [blank].",
+		text: "<b>MODIFY ATTACK DICE STEP:</b> When a friendly <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship in range is defending and the attacking ship is in this ship's <img src='https://i.imgur.com/5JGmN4o.png' width='10' height='10'> and in range:\n\nConvert 1 [hit] into [blank].",
 		factions: [
 			"federation"
 		],
@@ -215,12 +228,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap006",
+		gameId: 1,
 		set: [
 			"75011"
 		],
 		name: "Benjamin Sisko",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the defending ship is a Dominion ship or has a Dominion Captain equipped to it:\nAdd 1 [crit]\n----------------------------------------\n<b>END PHASE:</b>\nRemove one [aux] Token beside this ship.",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the defending ship is a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> ship or has a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> Captain equipped to it:\nAdd 1 [crit]\n----------------------------------------\n<b>END PHASE:</b>\nRemove one [aux] Token beside this ship.",
 		factions: [
 			"federation"
 		],
@@ -231,12 +245,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap005",
+		gameId: 1,
 		set: [
 			"75010"
 		],
 		name: "The Albino",
 		unique: true,
-		text: "<b>WHEN ATTACKING A KLINGON SHIP OR A SHIP WITH A KLINGON CAPTAIN EQUIPPED TO IT:</b>\nRoll +1 attack die.\n----------------------------------------\n<b>WHEN ATTACKING:</b> Once per game, if this attack hits:\nDiscard 1 [crew] Upgrade equipped to the defending ship.\n----------------------------------------\n<b>ACTIVIATION PHASE:</b> Once per game:\nThis ship may activate last.",
+		text: "<b>WHEN ATTACKING A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> SHIP OR A SHIP WITH A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> CAPTAIN EQUIPPED TO IT:</b>\nRoll +1 attack die.\n----------------------------------------\n<b>WHEN ATTACKING:</b> Once per game, if this attack hits:\nDiscard 1 [crew_text] Upgrade equipped to the defending ship.\n----------------------------------------\n<b>ACTIVIATION PHASE:</b> Once per game:\nThis ship may activate last.",
 		factions: [
 			"klingon",
 			"independent"
@@ -248,12 +263,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap004",
+		gameId: 1,
 		set: [
 			"75010"
 		],
 		name: "Kor",
 		unique: true,
-		text: "You may equip the Dahar Master [talent] Upgrade to this card for 0 SP.\n----------------------------------------\n<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly Klingon ships.\n\nRemove all Red    [target-lock] Tokens beside the target ships and place them beside this ship.",
+		text: "You may equip the Dahar Master [talent_text] Upgrade to this card for 0 SP.\n----------------------------------------\n<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> ships.\n\nRemove all Red    [target-lock] Tokens beside the target ships and place them beside this ship.",
 		factions: [
 			"klingon"
 		],
@@ -265,6 +281,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap003",
+		gameId: 1,
 		set: [
 			"75010"
 		],
@@ -282,6 +299,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap002",
+		gameId: 1,
 		set: [
 			"75010"
 		],
@@ -298,6 +316,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap001",
+		gameId: 1,
 		set: [
 			"75010"
 		],
@@ -314,6 +333,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap128",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -331,6 +351,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap127",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -348,6 +369,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap126",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -365,6 +387,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap125",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -382,6 +405,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap124",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -399,6 +423,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap123",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -416,6 +441,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap122",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -433,6 +459,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap121",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -450,6 +477,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap120",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -467,6 +495,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap119",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -484,6 +513,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap118",
+		gameId: 1,
 		set: [
 			"80000"
 		],
@@ -501,6 +531,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap117",
+		gameId: 1,
 		set: [
 			"71281",
 			"72291",
@@ -519,6 +550,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap116",
+		gameId: 1,
 		set: [
 			"72003p",
 			"71225",
@@ -539,6 +571,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap115",
+		gameId: 1,
 		set: [
 			"71446",
 			"71508",
@@ -558,6 +591,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap114",
+		gameId: 1,
 		set: [
 			"OP1Prize",
 			"71646a",
@@ -577,6 +611,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap113",
+		gameId: 1,
 		set: [
 			"71282",
 			"71646c",
@@ -596,6 +631,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap112",
+		gameId: 1,
 		set: [
 			"OP6Prize",
 			"71445",
@@ -615,6 +651,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap111",
+		gameId: 1,
 		set: [
 			"71522",
 			"71223",
@@ -640,6 +677,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap110",
+		gameId: 1,
 		set: [
 			"71799"
 		],
@@ -657,6 +695,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap109",
+		gameId: 1,
 		set: [
 			"71510b",
 			"71646b",
@@ -680,6 +719,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap108",
+		gameId: 1,
 		set: [
 			"71510b"
 		],
@@ -697,6 +737,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap107",
+		gameId: 1,
 		set: [
 			"71283",
 			"71444",
@@ -722,6 +763,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap106",
+		gameId: 1,
 		set: [
 			"71128",
 			"OP5Prize",
@@ -747,12 +789,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap105",
+		gameId: 1,
 		set: [
 			"71536"
 		],
 		name: "Gareb",
 		unique: true,
-		text: "At the start of the game, after set up, place a Captain Card under this card so that the Skill Number is visible. This is the Captain Skill of this Card. The cost of this card is the cost of the Captain Card at -3 SP (Min 0). Gareb can field 1 [talent] Upgrade for each [talent] icon on the Captain Card. This card cannot be affected by anything that affects Captain Cards and may only be purchased for a Romulan Drone Ship.",
+		text: "At the start of the game, after set up, place a Captain Card under this card so that the Skill Number is visible. This is the Captain Skill of this Card. The cost of this card is the cost of the Captain Card at -3 SP (Min 0). Gareb can field 1 [talent_text] Upgrade for each [talent_text] icon on the Captain Card. This card cannot be affected by anything that affects Captain Cards and may only be purchased for a Romulan Drone Ship.",
 		factions: [
 			"romulan"
 		],
@@ -763,6 +806,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap104",
+		gameId: 1,
 		set: [
 			"71536",
 			"72014wp"
@@ -780,6 +824,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap103",
+		gameId: 1,
 		set: [
 			"71120",
 			"71123",
@@ -813,6 +858,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap102",
+		gameId: 1,
 		set: [
 			"71120",
 			"71125",
@@ -846,6 +892,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap101",
+		gameId: 1,
 		set: [
 			"72300p",
 			"71120",
@@ -893,6 +940,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap223",
+		gameId: 1,
 		set: [
 			"75003"
 		],
@@ -900,7 +948,7 @@ module.exports = [
 		cost: 3,
 		skill: 2,
 		talents: 0,
-		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent] Upgrades to this Captain.\n<b>SETUP:</b> Place 2 GPLT on this card.\n----------------------------------------\n<b>WHEN YOU WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defence dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
+		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Captain.\n<b>SETUP:</b> Place 2 GPLT on this card.\n----------------------------------------\n<b>WHEN YOU WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defence dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -909,6 +957,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap222",
+		gameId: 1,
 		set: [
 			"72012wp"
 		],
@@ -925,6 +974,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap221",
+		gameId: 1,
 		set: [
 			"72281"
 		],
@@ -941,6 +991,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap220",
+		gameId: 1,
 		set: [
 			"72263"
 		],
@@ -957,6 +1008,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap219",
+		gameId: 1,
 		set: [
 			"71211"
 		],
@@ -964,7 +1016,7 @@ module.exports = [
 		cost: 1,
 		skill: 2,
 		talents: 0,
-		text: "Akorem Laan can field up to 2 Bajoran [talent] Upgrades.",
+		text: "Akorem Laan can field up to 2 Bajoran [talent_text] Upgrades.",
 		unique: true,
 		factions: [
 			"bajoran"
@@ -973,6 +1025,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap218",
+		gameId: 1,
 		set: [
 			"71222"
 		],
@@ -989,6 +1042,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap217",
+		gameId: 1,
 		set: [
 			"71121"
 		],
@@ -1005,6 +1059,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap216",
+		gameId: 1,
 		set: [
 			"71128"
 		],
@@ -1021,6 +1076,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap215",
+		gameId: 1,
 		set: [
 			"71276"
 		],
@@ -1037,6 +1093,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap214",
+		gameId: 1,
 		set: [
 			"71282"
 		],
@@ -1053,6 +1110,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap213",
+		gameId: 1,
 		set: [
 			"71525"
 		],
@@ -1069,6 +1127,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap212",
+		gameId: 1,
 		set: [
 			"71646d"
 		],
@@ -1085,13 +1144,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap211",
+		gameId: 1,
 		set: [
 			"71533",
 			"72252"
 		],
 		name: "Hiren",
 		unique: true,
-		text: "<b>ACTION:</b> Disable 1 of your [crew] Upgrades to gain +1 attack die this round.",
+		text: "<b>ACTION:</b> Disable 1 of your [crew_text] Upgrades to gain +1 attack die this round.",
 		factions: [
 			"romulan"
 		],
@@ -1102,6 +1162,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap210",
+		gameId: 1,
 		set: [
 			"71795"
 		],
@@ -1118,6 +1179,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap209",
+		gameId: 1,
 		set: [
 			"71794"
 		],
@@ -1134,6 +1196,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap208",
+		gameId: 1,
 		set: [
 			"71801"
 		],
@@ -1150,12 +1213,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap207",
+		gameId: 1,
 		set: [
 			"71803"
 		],
 		name: "Jaro Essa",
 		unique: true,
-		text: "<b>ACTION:</b> Discard 1 of your Bajoran [crew] Upgrades to perform this Action. Each time you defend this round, during the Roll Defense Dice step, roll 2 additional dice. \n\nThis card may only be purchased for a Bajoran ship.",
+		text: "<b>ACTION:</b> Discard 1 of your Bajoran [crew_text] Upgrades to perform this Action. Each time you defend this round, during the Roll Defense Dice step, roll 2 additional dice. \n\nThis card may only be purchased for a Bajoran ship.",
 		factions: [
 			"bajoran"
 		],
@@ -1166,6 +1230,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap206",
+		gameId: 1,
 		set: [
 			"71802"
 		],
@@ -1182,6 +1247,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap205",
+		gameId: 1,
 		set: [
 			"blind_bioship"
 		],
@@ -1198,6 +1264,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap204",
+		gameId: 1,
 		set: [
 			"72002p"
 		],
@@ -1214,6 +1281,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap203",
+		gameId: 1,
 		set: [
 			"72011"
 		],
@@ -1230,6 +1298,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap202",
+		gameId: 1,
 		set: [
 			"72000b"
 		],
@@ -1251,6 +1320,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap201",
+		gameId: 1,
 		set: [
 			"72013"
 		],
@@ -1267,6 +1337,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap339",
+		gameId: 1,
 		set: [
 			"73042"
 		],
@@ -1274,7 +1345,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 1,
-		text: "Idrin counts as a Hirogen Captain.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card.\n\nRemove 1 Disable Token or up to 2 [time] Tokens from a [tech] or [weapon]  Upgrade equipped to this ship.",
+		text: "Idrin counts as a Hirogen Captain.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card.\n\nRemove 1 Disable Token or up to 2 [time] Tokens from a [tech_text] or [weapon_text]  Upgrade equipped to this ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -1283,6 +1354,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap338",
+		gameId: 1,
 		set: [
 			"75001"
 		],
@@ -1299,6 +1371,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap337",
+		gameId: 1,
 		set: [
 			"75001"
 		],
@@ -1315,6 +1388,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap336",
+		gameId: 1,
 		set: [
 			"72014wp"
 		],
@@ -1323,7 +1397,7 @@ module.exports = [
 		skill: 3,
 		talents: 0,
 		range: "1 - 2",
-		text: "This card cannot be affected by anything that affects a Captain, and this card counts as a Romulan Drone Pilot.\n<b>ACTION:</b> Target an opposing ship in this ship's Primary Firing Arc.\nThe target ship rolls -2 attack dice against this ship.\n(<i>Romulan Drone Ship Only</i>)",
+		text: "This card cannot be affected by anything that affects a Captain, and this card counts as a Romulan Drone Pilot.\n\n<b>ACTION:</b> Target an opposing ship in this ship's Primary Firing Arc.\nThe target ship rolls -2 attack dice against this ship.\n(<i>Romulan Drone Ship Only</i>)",
 		unique: true,
 		shipLimit: true,
 		factions: [
@@ -1334,6 +1408,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap335",
+		gameId: 1,
 		set: [
 			"72011wp"
 		],
@@ -1341,7 +1416,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 0,
-		text: "The Captain's Discretion [talent] Upgrade may be equipped to this Captain. \n\n<b>WHEN THIS SHIP WOULD BE DESTROYED:</b>\nMove up to 2 [crew] Upgrades equipped to this ship to another friendly ship even if it exceeds that ship's restrictions. ",
+		text: "The Captain's Discretion [talent_text] Upgrade may be equipped to this Captain. \n\n<b>WHEN THIS SHIP WOULD BE DESTROYED:</b>\nMove up to 2 [crew_text] Upgrades equipped to this ship to another friendly ship even if it exceeds that ship's restrictions. ",
 		unique: true,
 		factions: [
 			"federation"
@@ -1350,6 +1425,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap334",
+		gameId: 1,
 		set: [
 			"72242"
 		],
@@ -1366,6 +1442,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap333",
+		gameId: 1,
 		set: [
 			"72270p"
 		],
@@ -1373,7 +1450,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 1,
-		text: "Your Captain Skill Increases by +2 for each damage card assigned to your ship (max +4). If the damage to your ship is repaired, your Skill Number decreases accordingly.\n\nYou may field the \"Kuvah'Magh\" [talent] Upgrade at a cost of -2.",
+		text: "Your Captain Skill Increases by +2 for each damage card assigned to your ship (max +4). If the damage to your ship is repaired, your Skill Number decreases accordingly.\n\nYou may field the \"Kuvah'Magh\" [talent_text] Upgrade at a cost of -2.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -1382,6 +1459,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap332",
+		gameId: 1,
 		set: [
 			"72234p"
 		],
@@ -1398,6 +1476,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap331",
+		gameId: 1,
 		set: [
 			"72233"
 		],
@@ -1414,6 +1493,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap330",
+		gameId: 1,
 		set: [
 			"72232"
 		],
@@ -1430,6 +1510,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap329",
+		gameId: 1,
 		set: [
 			"72221p"
 		],
@@ -1437,7 +1518,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 0,
-		text: "During the Gather Forces step, if there is at least one other Romulan Ship in your starting fleet, Tebok may field 1 Romulan [talent] at a cost of -1 SP.",
+		text: "During the Gather Forces step, if there is at least one other Romulan Ship in your starting fleet, Tebok may field 1 Romulan [talent_text] at a cost of -1 SP.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -1446,6 +1527,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap328",
+		gameId: 1,
 		set: [
 			"71123"
 		],
@@ -1462,6 +1544,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap327",
+		gameId: 1,
 		set: [
 			"71127"
 		],
@@ -1478,13 +1561,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap326",
+		gameId: 1,
 		set: [
 			"71268",
 			"72282"
 		],
 		name: "Kira Nerys",
 		unique: true,
-		text: "If a [crew] Upgrade on an enemy ship would cause your ship to discard or disable any of your Upgrades, roll 2 defense dice. If you roll at least 1 [evade] result, ignore the effects of the enemy Upgrade. \nYou do not pay a Faction penalty when assigning Kira Nerys to a Federation ship.",
+		text: "If a [crew_text] Upgrade on an enemy ship would cause your ship to discard or disable any of your Upgrades, roll 2 defense dice. If you roll at least 1 [evade] result, ignore the effects of the enemy Upgrade. \nYou do not pay a Faction penalty when assigning Kira Nerys to a Federation ship.",
 		factions: [
 			"bajoran"
 		],
@@ -1495,6 +1579,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap325",
+		gameId: 1,
 		set: [
 			"71271"
 		],
@@ -1511,6 +1596,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap324",
+		gameId: 1,
 		set: [
 			"71273"
 		],
@@ -1527,13 +1613,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap323",
+		gameId: 1,
 		set: [
 			"71272",
 			"72292"
 		],
 		name: "Styles",
 		unique: true,
-		text: "Add 1 additional [tech] icon to your ship's Upgrade Bar.",
+		text: "Add 1 additional [tech_text] icon to your ship's Upgrade Bar.",
 		factions: [
 			"federation"
 		],
@@ -1544,12 +1631,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap322",
+		gameId: 1,
 		set: [
 			"71446"
 		],
 		name: "Tavek",
 		unique: true,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.",
 		factions: [
 			"vulcan"
 		],
@@ -1560,6 +1648,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap321",
+		gameId: 1,
 		set: [
 			"71445"
 		],
@@ -1576,6 +1665,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap320",
+		gameId: 1,
 		set: [
 			"71523"
 		],
@@ -1592,6 +1682,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap319",
+		gameId: 1,
 		set: [
 			"71509"
 		],
@@ -1608,6 +1699,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap318",
+		gameId: 1,
 		set: [
 			"71526"
 		],
@@ -1624,6 +1716,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap317",
+		gameId: 1,
 		set: [
 			"71525"
 		],
@@ -1640,12 +1733,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap316",
+		gameId: 1,
 		set: [
 			"71646b"
 		],
 		name: "Elim Garak",
 		unique: true,
-		text: "During the Roll Attack Dice step of the Combat Phase, you may discard 1 of your [crew] Upgrades to roll +1 attack die.",
+		text: "During the Roll Attack Dice step of the Combat Phase, you may discard 1 of your [crew_text] Upgrades to roll +1 attack die.",
 		factions: [
 			"mirror-universe"
 		],
@@ -1656,12 +1750,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap315",
+		gameId: 1,
 		set: [
 			"71646c"
 		],
 		name: "Haron",
 		unique: true,
-		text: "Add 1 [weapon] Upgrade slot to your Upgrade Bar. \n\nAll of your Kazon [weapon] Upgrades cost -1 SP.",
+		text: "Add 1 [weapon_text] Upgrade slot to your Upgrade Bar. \n\nAll of your Kazon [weapon_text] Upgrades cost -1 SP.",
 		factions: [
 			"kazon"
 		],
@@ -1672,6 +1767,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap314",
+		gameId: 1,
 		set: [
 			"71532"
 		],
@@ -1688,6 +1784,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap313",
+		gameId: 1,
 		set: [
 			"71535"
 		],
@@ -1704,12 +1801,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap312",
+		gameId: 1,
 		set: [
 			"71797"
 		],
 		name: "Slar",
 		unique: true,
-		text: "You may field the \"Salvage\" [talent] Upgrade.",
+		text: "You may field the \"Salvage\" [talent_text] Upgrade.",
 		factions: [
 			"independent"
 		],
@@ -1720,6 +1818,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap311",
+		gameId: 1,
 		set: [
 			"71798"
 		],
@@ -1736,6 +1835,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap310",
+		gameId: 1,
 		set: [
 			"71997p"
 		],
@@ -1752,6 +1852,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap309",
+		gameId: 1,
 		set: [
 			"71800"
 		],
@@ -1768,12 +1869,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap308",
+		gameId: 1,
 		set: [
 			"71801"
 		],
 		name: "Erik Pressman",
 		unique: true,
-		text: "<b>ACTION:</b> Disable 1 of your [tech] Upgrade to gain +1 attack die with your Primary Weapon this round.\n\nOR\n\n<b>ACTION:</b> Discard 1 of your [tech] Upgrades to gain +2 attack dice with your Primary Weapon this round.",
+		text: "<b>ACTION:</b> Disable 1 of your [tech_text] Upgrade to gain +1 attack die with your Primary Weapon this round.\n\nOR\n\n<b>ACTION:</b> Discard 1 of your [tech_text] Upgrades to gain +2 attack dice with your Primary Weapon this round.",
 		factions: [
 			"federation"
 		],
@@ -1784,6 +1886,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap307",
+		gameId: 1,
 		set: [
 			"blind_belak"
 		],
@@ -1791,7 +1894,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 0,
-		text: "During the Modify Attack Dice step, you may re-roll all of your blank results. If you do so, place an Auxiliary Power Token beside your ship.\n\nLovok may field the \"Tal Shiar\" [talent] Upgrade.",
+		text: "During the Modify Attack Dice step, you may re-roll all of your blank results. If you do so, place an Auxiliary Power Token beside your ship.\n\nLovok may field the \"Tal Shiar\" [talent_text] Upgrade.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -1800,6 +1903,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap306",
+		gameId: 1,
 		set: [
 			"71805"
 		],
@@ -1807,7 +1911,7 @@ module.exports = [
 		cost: 5,
 		skill: 3,
 		talents: 1,
-		text: "Arturis' Captain Skill is +5 if he is assigned to a Dauntless class ship.\n\n<b>ACTION:</b> Target a ship at Range 2-3.  Disable either the Captain Card or up to 2 [crew] Upgrades on the target ship (your choice). Place an Auxiliary Power Token beside your ship.",
+		text: "Arturis' Captain Skill is +5 if he is assigned to a Dauntless class ship.\n\n<b>ACTION:</b> Target a ship at Range 2-3.  Disable either the Captain Card or up to 2 [crew_text] Upgrades on the target ship (your choice). Place an Auxiliary Power Token beside your ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -1820,6 +1924,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap305",
+		gameId: 1,
 		set: [
 			"71806"
 		],
@@ -1840,6 +1945,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap304",
+		gameId: 1,
 		set: [
 			"72013"
 		],
@@ -1856,6 +1962,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap303",
+		gameId: 1,
 		set: [
 			"72016"
 		],
@@ -1863,7 +1970,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 0,
-		text: "Each time you defend, if you have at least 1 [scan] Token beside your ship, roll +1 defense die.\n\nYou may field the \"Secret Research\" [talent] Upgrade.",
+		text: "Each time you defend, if you have at least 1 [scan] Token beside your ship, roll +1 defense die.\n\nYou may field the \"Secret Research\" [talent_text] Upgrade.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -1872,6 +1979,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap302",
+		gameId: 1,
 		set: [
 			"blind_tohkaht"
 		],
@@ -1879,7 +1987,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 1,
-		text: "When attacking, during the Modify Attack Dice step, you may re-roll a number of your attack dice equal to the number of [tech] and [weapon] Upgrades deployed to the defending ship.",
+		text: "When attacking, during the Modify Attack Dice step, you may re-roll a number of your attack dice equal to the number of [tech_text] and [weapon_text] Upgrades deployed to the defending ship.",
 		unique: true,
 		factions: [
 			"mirror-universe"
@@ -1888,6 +1996,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap301",
+		gameId: 1,
 		set: [
 			"72009"
 		],
@@ -1908,6 +2017,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap448",
+		gameId: 1,
 		set: [
 			"75004"
 		],
@@ -1915,7 +2025,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 1,
-		text: "<b>PLANNING PHASE:</b> Target an opposing ship.\n\nDisable 1 [crew] Upgrade equipped to the target ship.",
+		text: "<b>PLANNING PHASE:</b> Target an opposing ship.\n\nDisable 1 [crew_text] Upgrade equipped to the target ship.",
 		unique: false,
 		range: 1,
 		factions: [
@@ -1925,6 +2035,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap447",
+		gameId: 1,
 		set: [
 			"73031"
 		],
@@ -1942,6 +2053,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap446",
+		gameId: 1,
 		set: [
 			"75003"
 		],
@@ -1949,7 +2061,7 @@ module.exports = [
 		cost: 2,
 		skill: 4,
 		talents: 1,
-		text: "<b>SETUP:</b> Place 2 GPLT on this card and place 2 [crew] Upgrades each with a printed cost of 3 SP or less face down beneath this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 GPLT.\nFlip a [crew] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Remove the other face down [crew] Upgrade beneath this card from the game.",
+		text: "<b>SETUP:</b> Place 2 GPLT on this card and place 2 [crew_text] Upgrades each with a printed cost of 3 SP or less face down beneath this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 GPLT.\nFlip a [crew_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Remove the other face down [crew_text] Upgrade beneath this card from the game.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -1958,6 +2070,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap445",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -1974,6 +2087,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap444",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -1990,6 +2104,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap443",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -2007,6 +2122,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap442",
+		gameId: 1,
 		set: [
 			"75002"
 		],
@@ -2014,7 +2130,7 @@ module.exports = [
 		cost: 2,
 		skill: 4,
 		talents: 1,
-		text: "\n<b>WHEN A [tech] UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b> \n\nYou may place 2 [time] Tokens on it instead.",
+		text: "\n<b>WHEN A [tech_text] UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b> \n\nYou may place 2 [time] Tokens on it instead.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -2023,6 +2139,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap441",
+		gameId: 1,
 		set: [
 			"72293"
 		],
@@ -2030,7 +2147,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 0,
-		text: "When attacking with a Secondary [weapon] Upgrade, gain +1 attack die (+2 attack dice if the attack is made with a Xindi [weapon] Upgrade).",
+		text: "When attacking with a Secondary [weapon_text] Upgrade, gain +1 attack die (+2 attack dice if the attack is made with a Xindi [weapon_text] Upgrade).",
 		unique: true,
 		factions: [
 			"xindi"
@@ -2039,6 +2156,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap440",
+		gameId: 1,
 		set: [
 			"72281"
 		],
@@ -2055,6 +2173,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap439",
+		gameId: 1,
 		set: [
 			"72282p"
 		],
@@ -2062,7 +2181,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 1,
-		text: "A friendly ship within Range 1-2 of your ship may use the Action or ability of your [talent] Upgrade as if it were assigned to that ship.\n\nIf Lursa is the Captain of your ship, you may fill one of your [crew] Upgrade slots with this card and gain +4 to your Captain Skill.",
+		text: "A friendly ship within Range 1-2 of your ship may use the Action or ability of your [talent_text] Upgrade as if it were assigned to that ship.\n\nIf Lursa is the Captain of your ship, you may fill one of your [crew_text] Upgrade slots with this card and gain +4 to your Captain Skill.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -2071,6 +2190,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap438",
+		gameId: 1,
 		set: [
 			"72282p"
 		],
@@ -2078,7 +2198,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 1,
-		text: "You may perform a [cloak] or a [sensor-echo] Action as a free Action (if your ship has the appropriate Action on its Action Bar).\n\nIf B'Etor is the Captain of your ship, you may fill one of your [crew] Upgrade slots with this card and gain +4 to your Captain Skill.",
+		text: "You may perform a [cloak] or a [sensor-echo] Action as a free Action (if your ship has the appropriate Action on its Action Bar).\n\nIf B'Etor is the Captain of your ship, you may fill one of your [crew_text] Upgrade slots with this card and gain +4 to your Captain Skill.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -2087,6 +2207,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap437",
+		gameId: 1,
 		set: [
 			"72262p"
 		],
@@ -2103,6 +2224,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap436",
+		gameId: 1,
 		set: [
 			"72253"
 		],
@@ -2119,6 +2241,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap435",
+		gameId: 1,
 		set: [
 			"72255"
 		],
@@ -2135,6 +2258,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap434",
+		gameId: 1,
 		set: [
 			"71221"
 		],
@@ -2142,7 +2266,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 1,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Remove all Disabled Upgrade Tokens from all of your [crew] Upgrades.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Remove all Disabled Upgrade Tokens from all of your [crew_text] Upgrades.",
 		unique: true,
 		factions: [
 			"federation"
@@ -2151,6 +2275,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap433",
+		gameId: 1,
 		set: [
 			"71124"
 		],
@@ -2167,6 +2292,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap432",
+		gameId: 1,
 		set: [
 			"71125",
 			"72272"
@@ -2184,6 +2310,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap431",
+		gameId: 1,
 		set: [
 			"71275",
 			"72262"
@@ -2201,12 +2328,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap430",
+		gameId: 1,
 		set: [
 			"OP4Prize"
 		],
 		name: "Data",
 		unique: true,
-		text: "<b>ACTION:</b> Disable 1 of your [crew] upgrades and 1 of your [weapon] upgrades to target all Cloaked ship at range 1-3 of your ship. Target ships immediately flip their [cloak] tokens to their red sides. ",
+		text: "<b>ACTION:</b> Disable 1 of your [crew_text] upgrades and 1 of your [weapon_text] upgrades to target all Cloaked ship at range 1-3 of your ship. Target ships immediately flip their [cloak] tokens to their red sides. ",
 		factions: [
 			"federation"
 		],
@@ -2217,6 +2345,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap429",
+		gameId: 1,
 		set: [
 			"71276"
 		],
@@ -2233,6 +2362,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap428",
+		gameId: 1,
 		set: [
 			"71283",
 			"72283"
@@ -2250,12 +2380,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap427",
+		gameId: 1,
 		set: [
 			"71282"
 		],
 		name: "Culluh",
 		unique: true,
-		text: "After you move, you may discard 1 of your [crew] Upgrades to perform one of the Actions listed on your Action Bar as a free Action this round.",
+		text: "After you move, you may discard 1 of your [crew_text] Upgrades to perform one of the Actions listed on your Action Bar as a free Action this round.",
 		factions: [
 			"kazon"
 		],
@@ -2266,6 +2397,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap426",
+		gameId: 1,
 		set: [
 			"OPWebPrize",
 			"71795"
@@ -2283,6 +2415,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap425",
+		gameId: 1,
 		set: [
 			"OPArenaPrize"
 		],
@@ -2299,12 +2432,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap424",
+		gameId: 1,
 		set: [
 			"71522"
 		],
 		name: "Hugh",
 		unique: true,
-		text: "All of your [crew] Upgrades cost -1 SP.\n\nYou do not pay a Faction penalty when assigning any Borg Upgrades to your ship.",
+		text: "All of your [crew_text] Upgrades cost -1 SP.\n\nYou do not pay a Faction penalty when assigning any Borg Upgrades to your ship.",
 		factions: [
 			"independent"
 		],
@@ -2315,6 +2449,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap423",
+		gameId: 1,
 		set: [
 			"71524"
 		],
@@ -2331,6 +2466,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap422",
+		gameId: 1,
 		set: [
 			"71526"
 		],
@@ -2347,6 +2483,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap421",
+		gameId: 1,
 		set: [
 			"71527"
 		],
@@ -2363,6 +2500,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap420",
+		gameId: 1,
 		set: [
 			"71531",
 			"72271"
@@ -2380,12 +2518,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap419",
+		gameId: 1,
 		set: [
 			"71529"
 		],
 		name: "Benjamin Sisko",
 		unique: true,
-		text: "During the Roll Attack Dice step of the Combat Phase, you may discard up to 2 of your Upgrades ([crew], [tech] or [weapon]). If you do so, gain +1 attack die to that attack for each Upgrade you discarded with this card.",
+		text: "During the Roll Attack Dice step of the Combat Phase, you may discard up to 2 of your Upgrades ([crew_text], [tech_text] or [weapon_text]). If you do so, gain +1 attack die to that attack for each Upgrade you discarded with this card.",
 		factions: [
 			"mirror-universe"
 		],
@@ -2396,6 +2535,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap418",
+		gameId: 1,
 		set: [
 			"71532"
 		],
@@ -2412,12 +2552,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap417",
+		gameId: 1,
 		set: [
 			"71535"
 		],
 		name: "Kira Nerys",
 		unique: true,
-		text: "When a [crew] Upgrade on an enemy ship within Range 1-2 of your ship performs an Action that would affect your ship, you may disable this card to prevent that Action from taking effect. If you do this, the enemy ship cannot take another Action that round. If the enemy [crew] Upgrade was disabled to perform the Action, it remains disabled. If the enemy [crew] Upgrade was discarded to perform the Action, disable it instead.",
+		text: "When a [crew_text] Upgrade on an enemy ship within Range 1-2 of your ship performs an Action that would affect your ship, you may disable this card to prevent that Action from taking effect. If you do this, the enemy ship cannot take another Action that round. If the enemy [crew_text] Upgrade was disabled to perform the Action, it remains disabled. If the enemy [crew_text] Upgrade was discarded to perform the Action, disable it instead.",
 		factions: [
 			"mirror-universe"
 		],
@@ -2428,6 +2569,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap416",
+		gameId: 1,
 		set: [
 			"71798"
 		],
@@ -2444,6 +2586,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap415",
+		gameId: 1,
 		set: [
 			"71800"
 		],
@@ -2460,6 +2603,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap414",
+		gameId: 1,
 		set: [
 			"71800"
 		],
@@ -2476,12 +2620,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap413",
+		gameId: 1,
 		set: [
 			"71799"
 		],
 		name: "Obrist",
 		unique: true,
-		text: "At the start of the game, place 1 Mission Token on this card.\n\n<b>ACTION:</b> If you performed a Green Maneuver this round, discard the Mission Token from this card and 1 of your [weapon] Upgrade to target a ship at Range 1-3. You cannot attack or be attacked by that ship this round. You cannot perform any free Actions this round.",
+		text: "At the start of the game, place 1 Mission Token on this card.\n\n<b>ACTION:</b> If you performed a Green Maneuver this round, discard the Mission Token from this card and 1 of your [weapon_text] Upgrade to target a ship at Range 1-3. You cannot attack or be attacked by that ship this round. You cannot perform any free Actions this round.",
 		factions: [
 			"independent",
 			"mirror-universe"
@@ -2493,12 +2638,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap412",
+		gameId: 1,
 		set: [
 			"71998p"
 		],
 		name: "Robert DeSoto",
 		unique: true,
-		text: "Each time you defend, you may re-roll a number of your defense dice equal to the number of [crew] Upgrades assigned to your ship (max 3 dice).",
+		text: "Each time you defend, you may re-roll a number of your defense dice equal to the number of [crew_text] Upgrades assigned to your ship (max 3 dice).",
 		factions: [
 			"federation"
 		],
@@ -2509,6 +2655,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap411",
+		gameId: 1,
 		set: [
 			"71803"
 		],
@@ -2525,12 +2672,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap410",
+		gameId: 1,
 		set: [
 			"71999p"
 		],
 		name: "Kurn",
 		unique: true,
-		text: "You do not pay a faction penalty when assigning Kurn to any ship. \n\nKurn may field the \"Mauk-to'Vor\" [talent] Upgrade at a cost of 3 SP.",
+		text: "You do not pay a faction penalty when assigning Kurn to any ship. \n\nKurn may field the \"Mauk-to'Vor\" [talent_text] Upgrade at a cost of 3 SP.",
 		factions: [
 			"klingon"
 		],
@@ -2541,6 +2689,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap409",
+		gameId: 1,
 		set: [
 			"71804"
 		],
@@ -2557,6 +2706,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap408",
+		gameId: 1,
 		set: [
 			"72300p"
 		],
@@ -2573,6 +2723,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap407",
+		gameId: 1,
 		set: [
 			"72014"
 		],
@@ -2589,6 +2740,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap406",
+		gameId: 1,
 		set: [
 			"71806"
 		],
@@ -2609,6 +2761,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap405",
+		gameId: 1,
 		set: [
 			"blind_lakota"
 		],
@@ -2616,7 +2769,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 1,
-		text: "<b>ACTION:</b> Disable this card and all of your [weapon] Upgrades to target a ship at Range 1-3. Your ship cannot attack the target ship and that ship cannot attack your ship this round. You must disable at least 1 [weapon] Upgrade to use this Action.",
+		text: "<b>ACTION:</b> Disable this card and all of your [weapon_text] Upgrades to target a ship at Range 1-3. Your ship cannot attack the target ship and that ship cannot attack your ship this round. You must disable at least 1 [weapon_text] Upgrade to use this Action.",
 		unique: true,
 		factions: [
 			"federation"
@@ -2625,6 +2778,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap404",
+		gameId: 1,
 		set: [
 			"72013"
 		],
@@ -2632,7 +2786,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 0,
-		text: "<b>ACTION:</b> When defending this round, during the Modify Attack Dice step, you may force 1 opposing ship to re-roll 1 of its attack dice (your choice).\n\nYou may field the Grand Nagus [talent] Upgrade. If you use the Action listed on it, you must discard this card as well.",
+		text: "<b>ACTION:</b> When defending this round, during the Modify Attack Dice step, you may force 1 opposing ship to re-roll 1 of its attack dice (your choice).\n\nYou may field the Grand Nagus [talent_text] Upgrade. If you use the Action listed on it, you must discard this card as well.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -2641,6 +2795,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap403",
+		gameId: 1,
 		set: [
 			"blind_seleya"
 		],
@@ -2657,6 +2812,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap402",
+		gameId: 1,
 		set: [
 			"72000p"
 		],
@@ -2677,6 +2833,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap401",
+		gameId: 1,
 		set: [
 			"72008"
 		],
@@ -2693,6 +2850,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap545",
+		gameId: 1,
 		set: [
 			"73042"
 		],
@@ -2709,6 +2867,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap544",
+		gameId: 1,
 		set: [
 			"73032"
 		],
@@ -2725,6 +2884,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap543",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -2741,6 +2901,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap542",
+		gameId: 1,
 		set: [
 			"72282gp"
 		],
@@ -2748,7 +2909,7 @@ module.exports = [
 		cost: 3,
 		skill: 5,
 		talents: 0,
-		text: "During the Gather Forces step, you may switch one of your [crew], [tech], or [weapon] Upgrade slots on your ship for a [crew], [tech], [weapon], or [talent] Upgrade slot.",
+		text: "During the Gather Forces step, you may switch one of your [crew_text], [tech_text], or [weapon_text] Upgrade slots on your ship for a [crew_text], [tech_text], [weapon_text], or [talent_text] Upgrade slot.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -2757,6 +2918,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap541",
+		gameId: 1,
 		set: [
 			"72280p"
 		],
@@ -2773,6 +2935,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap540",
+		gameId: 1,
 		set: [
 			"72242"
 		],
@@ -2789,12 +2952,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap539",
+		gameId: 1,
 		set: [
 			"72241"
 		],
 		name: "Kurn",
 		unique: true,
-		text: "During the Combat Phase, each time you defend, you may re-roll 1 of your [battlestations] results. If this card is assigned to a Klingon ship, you may re-roll up to 2 of your [battlestations] results.\n\nKurn may field 1 Klingon [talent] Upgrade.",
+		text: "During the Combat Phase, each time you defend, you may re-roll 1 of your [battlestations] results. If this card is assigned to a Klingon ship, you may re-roll up to 2 of your [battlestations] results.\n\nKurn may field 1 Klingon [talent_text] Upgrade.",
 		factions: [
 			"klingon"
 		],
@@ -2805,6 +2969,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap538",
+		gameId: 1,
 		set: [
 			"72241"
 		],
@@ -2821,6 +2986,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap537",
+		gameId: 1,
 		set: [
 			"72224p"
 		],
@@ -2837,6 +3003,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap536",
+		gameId: 1,
 		set: [
 			"72231"
 		],
@@ -2853,6 +3020,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap535",
+		gameId: 1,
 		set: [
 			"71192"
 		],
@@ -2860,7 +3028,7 @@ module.exports = [
 		cost: 3,
 		skill: 5,
 		talents: 0,
-		text: "<b>ACTION:</b> Place a [scan] Token beside your ship. If you do not have a [tech] Upgrade deployed to your ship, place the Auxiliary Power Token beside your ship as well",
+		text: "<b>ACTION:</b> Place a [scan] Token beside your ship. If you do not have a [tech_text] Upgrade deployed to your ship, place the Auxiliary Power Token beside your ship as well",
 		unique: true,
 		factions: [
 			"kazon"
@@ -2869,6 +3037,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap534",
+		gameId: 1,
 		set: [
 			"71120"
 		],
@@ -2885,6 +3054,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap533",
+		gameId: 1,
 		set: [
 			"71127"
 		],
@@ -2901,6 +3071,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap532",
+		gameId: 1,
 		set: [
 			"73001"
 		],
@@ -2918,12 +3089,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap531",
+		gameId: 1,
 		set: [
 			"OP1Prize"
 		],
 		name: "Daimon Tog",
 		unique: true,
-		text: "<b>ACTION:</b> If your ship is not Cloaked, disable all of your remaining Shields and target a ship at Range 1-2 that is not Cloaked and has no Active Shields. Disable 1 of your non-disabled [crew] Upgrades and then disable 1 [crew] Upgrade of your choice on the target ship.",
+		text: "<b>ACTION:</b> If your ship is not Cloaked, disable all of your remaining Shields and target a ship at Range 1-2 that is not Cloaked and has no Active Shields. Disable 1 of your non-disabled [crew_text] Upgrades and then disable 1 [crew_text] Upgrade of your choice on the target ship.",
 		factions: [
 			"ferengi"
 		],
@@ -2934,6 +3106,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap530",
+		gameId: 1,
 		set: [
 			"71269"
 		],
@@ -2950,6 +3123,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap529",
+		gameId: 1,
 		set: [
 			"71270"
 		],
@@ -2966,6 +3140,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap528",
+		gameId: 1,
 		set: [
 			"71273"
 		],
@@ -2982,6 +3157,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap527",
+		gameId: 1,
 		set: [
 			"71448"
 		],
@@ -2998,6 +3174,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap526",
+		gameId: 1,
 		set: [
 			"71279"
 		],
@@ -3014,6 +3191,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap525",
+		gameId: 1,
 		set: [
 			"OP6Prize"
 		],
@@ -3030,12 +3208,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap524",
+		gameId: 1,
 		set: [
 			"OP6Prize"
 		],
 		name: "Tahna Los",
 		unique: true,
-		text: "Add 1 additional [tech] icon to your ship's Upgrade Bar. One of the [tech] upgrades you purchase for Tahna Los's ship costs exactly 3 Squadron Points and is placed face down beside his card; this Upgrade cannot refer to a specific ship or class of ship. This Upgrade remains face down until you decide to use it, and then it is turned face up for the rest of the game.",
+		text: "Add 1 additional [tech_text] icon to your ship's Upgrade Bar. One of the [tech_text] upgrades you purchase for Tahna Los's ship costs exactly 3 Squadron Points and is placed face down beside his card; this Upgrade cannot refer to a specific ship or class of ship. This Upgrade remains face down until you decide to use it, and then it is turned face up for the rest of the game.",
 		factions: [
 			"bajoran"
 		],
@@ -3046,6 +3225,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap523",
+		gameId: 1,
 		set: [
 			"71280",
 			"72261"
@@ -3063,12 +3243,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap522",
+		gameId: 1,
 		set: [
 			"71508"
 		],
 		name: "Vanik",
 		unique: true,
-		text: "All of your Vulcan and Federation [tech] Upgrades cost -2 SP.",
+		text: "All of your Vulcan and Federation [tech_text] Upgrades cost -2 SP.",
 		factions: [
 			"vulcan"
 		],
@@ -3079,12 +3260,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap521",
+		gameId: 1,
 		set: [
 			"71526"
 		],
 		name: "Jonathan Archer",
 		unique: true,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Disable up to 2 of your [crew] Upgrades. For each [crew] Upgrade you disabled with this Action, gain +1 attack die when attacking with your Primary Weapon AND increase your Skill Number by +1 until the End Phase.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Disable up to 2 of your [crew_text] Upgrades. For each [crew_text] Upgrade you disabled with this Action, gain +1 attack die when attacking with your Primary Weapon AND increase your Skill Number by +1 until the End Phase.",
 		factions: [
 			"federation"
 		],
@@ -3095,12 +3277,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap520",
+		gameId: 1,
 		set: [
 			"71527"
 		],
 		name: "V'Las",
 		unique: true,
-		text: "<b>ACTION:</b> Target a ship at Range 1-2. Disable 1 [crew] Upgrade of your choice on the target ship.",
+		text: "<b>ACTION:</b> Target a ship at Range 1-2. Disable 1 [crew_text] Upgrade of your choice on the target ship.",
 		factions: [
 			"vulcan"
 		],
@@ -3111,6 +3294,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap519",
+		gameId: 1,
 		set: [
 			"71511"
 		],
@@ -3127,12 +3311,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap518",
+		gameId: 1,
 		set: [
 			"71528"
 		],
 		name: "Calvin Hudson",
 		unique: true,
-		text: "Add 1 [tech], [weapon] or [crew] Upgrade to your Upgrade Bar (your choice). \n\nIf this card is assigned to an Independent ship, all of your Upgrades cost -1 SP.",
+		text: "Add 1 [tech_text], [weapon_text] or [crew_text] Upgrade to your Upgrade Bar (your choice). \n\nIf this card is assigned to an Independent ship, all of your Upgrades cost -1 SP.",
 		factions: [
 			"independent"
 		],
@@ -3143,6 +3328,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap517",
+		gameId: 1,
 		set: [
 			"71530"
 		],
@@ -3159,12 +3345,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap516",
+		gameId: 1,
 		set: [
 			"71529"
 		],
 		name: "Miles O'Brien",
 		unique: true,
-		text: "Add 1 [tech] Upgrade to your Upgrade Bar.\n\n<b>ACTION:</b> Repair 1 Damage to your Hull or Shields.",
+		text: "Add 1 [tech_text] Upgrade to your Upgrade Bar.\n\n<b>ACTION:</b> Repair 1 Damage to your Hull or Shields.",
 		factions: [
 			"mirror-universe"
 		],
@@ -3175,6 +3362,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap515",
+		gameId: 1,
 		set: [
 			"71533",
 			"72252"
@@ -3192,6 +3380,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap514",
+		gameId: 1,
 		set: [
 			"71513b"
 		],
@@ -3208,6 +3397,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap513",
+		gameId: 1,
 		set: [
 			"71793"
 		],
@@ -3224,12 +3414,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap512",
+		gameId: 1,
 		set: [
 			"71794"
 		],
 		name: "Taris",
 		unique: true,
-		text: "When attacking with your Primary Weapon, during the Declare Target step, you may discard one of your [crew] Upgrades to target a ship that is not in your forward firing arc.",
+		text: "When attacking with your Primary Weapon, during the Declare Target step, you may discard one of your [crew_text] Upgrades to target a ship that is not in your forward firing arc.",
 		factions: [
 			"romulan"
 		],
@@ -3240,6 +3431,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap511",
+		gameId: 1,
 		set: [
 			"71797"
 		],
@@ -3256,12 +3448,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap510",
+		gameId: 1,
 		set: [
 			"71802"
 		],
 		name: "Rekar",
 		unique: true,
-		text: "When attacking with a Secondary Weapon, you may add +1 attack die to the attack. If you do so, discard that [weapon] Upgrade after the attack is completed.",
+		text: "When attacking with a Secondary Weapon, you may add +1 attack die to the attack. If you do so, discard that [weapon_text] Upgrade after the attack is completed.",
 		factions: [
 			"romulan"
 		],
@@ -3272,6 +3465,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap509",
+		gameId: 1,
 		set: [
 			"blind_aldara"
 		],
@@ -3288,6 +3482,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap508",
+		gameId: 1,
 		set: [
 			"72004p"
 		],
@@ -3304,6 +3499,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap507",
+		gameId: 1,
 		set: [
 			"72014"
 		],
@@ -3311,7 +3507,7 @@ module.exports = [
 		cost: 3,
 		skill: 5,
 		talents: 0,
-		text: "Add 1 [tech] Upgrade slot to your Upgrade Bar. That Upgrade costs -1 SP.",
+		text: "Add 1 [tech_text] Upgrade slot to your Upgrade Bar. That Upgrade costs -1 SP.",
 		unique: true,
 		factions: [
 			"federation"
@@ -3320,6 +3516,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap506",
+		gameId: 1,
 		set: [
 			"71807"
 		],
@@ -3340,6 +3537,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap505",
+		gameId: 1,
 		set: [
 			"72008"
 		],
@@ -3356,6 +3554,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap504",
+		gameId: 1,
 		set: [
 			"72009"
 		],
@@ -3363,7 +3562,7 @@ module.exports = [
 		cost: 3,
 		skill: 5,
 		talents: 1,
-		text: "All of your Klingon Upgrades cost -1 SP. The faction penalty is doubled for any non-Klingon Upgrades assigned to your ship.\n\nK'Temoc may only field Klingon [talent] Upgrades.",
+		text: "All of your Klingon Upgrades cost -1 SP. The faction penalty is doubled for any non-Klingon Upgrades assigned to your ship.\n\nK'Temoc may only field Klingon [talent_text] Upgrades.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -3376,6 +3575,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap503",
+		gameId: 1,
 		set: [
 			"72010"
 		],
@@ -3392,6 +3592,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap502",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -3410,6 +3611,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap501",
+		gameId: 1,
 		set: [
 			"75004"
 		],
@@ -3427,6 +3629,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap662",
+		gameId: 1,
 		set: [
 			"75008"
 		],
@@ -3443,6 +3646,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap661",
+		gameId: 1,
 		set: [
 			"75007"
 		],
@@ -3459,12 +3663,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap660",
+		gameId: 1,
 		set: [
 			"73002"
 		],
 		name: "'First'",
 		unique: true,
-		text: "<b>SETUP:</b>\n\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 Drone Token.\n\nRemove 2 [time] Tokens or 1 Disabled Token from an Upgrade equipped to this ship.",
+		text: "<b>SETUP:</b>\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 Drone Token.\n\nRemove 2 [time] Tokens or 1 Disabled Token from an Upgrade equipped to this ship.",
 		factions: [
 			"borg"
 		],
@@ -3474,12 +3679,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap659",
+		gameId: 1,
 		set: [
 			"73002"
 		],
 		name: "Tactical Drone",
 		unique: false,
-		text: "<b>Setup:</b>\n\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>COMBAT PHASE:</b> If an opposing ship is within range, spend 1 Drone Token.\n\nPlace a [battlestations] Token beside this ship.",
+		text: "<b>Setup:</b>\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>COMBAT PHASE:</b> If an opposing ship is within range, spend 1 Drone Token.\n\nPlace a [battlestations] Token beside this ship.",
 		factions: [
 			"borg"
 		],
@@ -3490,12 +3696,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap658",
+		gameId: 1,
 		set: [
 			"75004"
 		],
 		name: "Thomas Riker",
 		unique: true,
-		text: "You do not pay a faction penalty when equipping this card to a Federation ship.\n----------------------------------------\n<b>END PHASE:\n\n</b> This ship may perform a maneuver on its dial with a speed of 2 or less.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship.\n----------------------------------------\n<b>END PHASE:\n\n</b> This ship may perform a maneuver on its dial with a speed of 2 or less.",
 		factions: [
 			"independent"
 		],
@@ -3506,6 +3713,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap657",
+		gameId: 1,
 		set: [
 			"75003"
 		],
@@ -3523,12 +3731,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap656",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
 		name: "Duras",
 		unique: true,
-		text: "Romulan [talent] and Klingon [talent] Upgrades equipped to this Captain cost 3 SP.\n----------------------------------------\n[talent] Upgrades equipped to this Captain start the game face down. Flip a face down [talent] Upgrade equipped to this Captain face up the first time it is used.",
+		text: "Romulan [talent_text] and Klingon [talent_text] Upgrades equipped to this Captain cost 3 SP.\n----------------------------------------\n[talent_text] Upgrades equipped to this Captain start the game face down. Flip a face down [talent_text] Upgrade equipped to this Captain face up the first time it is used.",
 		factions: [
 			"klingon"
 		],
@@ -3539,12 +3748,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap655",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
 		name: "William T. Riker",
 		unique: true,
-		text: "<b>ACTION:</b> Target this ship or a friendly ship.\n\n[crew] Upgrades equipped to the target ship cannot be affected by opposing effects this game round.",
+		text: "<b>ACTION:</b> Target this ship or a friendly ship.\n\n[crew_text] Upgrades equipped to the target ship cannot be affected by opposing effects this game round.",
 		factions: [
 			"federation"
 		],
@@ -3556,6 +3766,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap654",
+		gameId: 1,
 		set: [
 			"75002"
 		],
@@ -3573,6 +3784,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap653",
+		gameId: 1,
 		set: [
 			"75001"
 		],
@@ -3590,12 +3802,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap652",
+		gameId: 1,
 		set: [
 			"75002"
 		],
 		name: "Deyos",
 		unique: true,
-		text: "<b>ACTION:</b> Target a friendly ship.\n\nEquip a [crew] Upgrade that was discarded from the target ship to the target ship. The target ship cannot attack this game round.",
+		text: "<b>ACTION:</b> Target a friendly ship.\n\nEquip a [crew_text] Upgrade that was discarded from the target ship to the target ship. The target ship cannot attack this game round.",
 		factions: [
 			"dominion"
 		],
@@ -3607,6 +3820,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap651",
+		gameId: 1,
 		set: [
 			"72281p"
 		],
@@ -3623,6 +3837,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap650",
+		gameId: 1,
 		set: [
 			"72012wp"
 		],
@@ -3640,6 +3855,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap649",
+		gameId: 1,
 		set: [
 			"72261p"
 		],
@@ -3647,7 +3863,7 @@ module.exports = [
 		cost: 4,
 		skill: 6,
 		talents: 1,
-		text: "At any time you may disable 1 of your [tech] or [weapon] Upgrades to place 1 [evade], [scan], or [battlestations] Token beside your ship. You may only use this ability once per round.",
+		text: "At any time you may disable 1 of your [tech_text] or [weapon_text] Upgrades to place 1 [evade], [scan], or [battlestations] Token beside your ship. You may only use this ability once per round.",
 		unique: true,
 		factions: [
 			"federation"
@@ -3656,6 +3872,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap648",
+		gameId: 1,
 		set: [
 			"72255"
 		],
@@ -3663,7 +3880,7 @@ module.exports = [
 		cost: 4,
 		skill: "*",
 		talents: 1,
-		text: "At the start of the game place 6 Drone Tokens on this card.\n\n<b>ACTION:</b> Target a ship at Range 1 and spend 2 of your Drone Tokens. Disable 1 [crew] Upgrade on the target ship (your choice) and steal it even if it exceeds your ship's restrictions.",
+		text: "At the start of the game place 6 Drone Tokens on this card.\n\n<b>ACTION:</b> Target a ship at Range 1 and spend 2 of your Drone Tokens. Disable 1 [crew_text] Upgrade on the target ship (your choice) and steal it even if it exceeds your ship's restrictions.",
 		unique: true,
 		factions: [
 			"borg"
@@ -3672,6 +3889,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap647",
+		gameId: 1,
 		set: [
 			"71223"
 		],
@@ -3688,6 +3906,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap646",
+		gameId: 1,
 		set: [
 			"71120"
 		],
@@ -3704,12 +3923,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap645",
+		gameId: 1,
 		set: [
 			"GenCon2013Promo"
 		],
 		name: "Khan Singh",
 		unique: true,
-		text: "(Gen-Con Promo) You do not pay a Faction penalty when assigning Khan or any [talent] Upgrade to your ship. If any Captain in play has a higher Skill Number than Khan, Khan's Skill Number equals that Captain's Skill Number.",
+		text: "(Gen-Con Promo) You do not pay a Faction penalty when assigning Khan or any [talent_text] Upgrade to your ship. If any Captain in play has a higher Skill Number than Khan, Khan's Skill Number equals that Captain's Skill Number.",
 		factions: [
 			"independent"
 		],
@@ -3720,13 +3940,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap644",
+		gameId: 1,
 		set: [
 			"71122",
 			"72240"
 		],
 		name: "Christopher Pike",
 		unique: true,
-		text: "All of your [crew] Upgrades cost -1 Squadron Point. ",
+		text: "All of your [crew_text] Upgrades cost -1 Squadron Point. ",
 		factions: [
 			"federation"
 		],
@@ -3737,6 +3958,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap643",
+		gameId: 1,
 		set: [
 			"71123"
 		],
@@ -3753,6 +3975,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap642",
+		gameId: 1,
 		set: [
 			"71126",
 			"72251"
@@ -3770,12 +3993,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap641",
+		gameId: 1,
 		set: [
 			"71128"
 		],
 		name: "Thot Gor",
 		unique: true,
-		text: "All of your [weapon] Upgrades cost -1 Squadron Point. ",
+		text: "All of your [weapon_text] Upgrades cost -1 Squadron Point. ",
 		factions: [
 			"dominion"
 		],
@@ -3786,6 +4010,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap640",
+		gameId: 1,
 		set: [
 			"OP3Prize"
 		],
@@ -3802,6 +4027,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap639",
+		gameId: 1,
 		set: [
 			"71268",
 			"72282"
@@ -3819,6 +4045,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap638",
+		gameId: 1,
 		set: [
 			"71269"
 		],
@@ -3835,12 +4062,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap637",
+		gameId: 1,
 		set: [
 			"71271"
 		],
 		name: "Weyoun",
 		unique: true,
-		text: "Disable Weyoun to prevent 1 of your [crew] Upgrades from being disabled or discarded this round.",
+		text: "Disable Weyoun to prevent 1 of your [crew_text] Upgrades from being disabled or discarded this round.",
 		factions: [
 			"dominion"
 		],
@@ -3851,13 +4079,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap636",
+		gameId: 1,
 		set: [
 			"71272",
 			"72292"
 		],
 		name: "Hikaru Sulu",
 		unique: true,
-		text: "<b>ACTION:</b> Disable one of your [crew] Upgrades to remove an opponent's  [target-lock] Token from your ship. Remove the corresponding token from the opponent's ship as well.",
+		text: "<b>ACTION:</b> Disable one of your [crew_text] Upgrades to remove an opponent's  [target-lock] Token from your ship. Remove the corresponding token from the opponent's ship as well.",
 		factions: [
 			"federation"
 		],
@@ -3868,6 +4097,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap635",
+		gameId: 1,
 		set: [
 			"71444"
 		],
@@ -3884,12 +4114,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap634",
+		gameId: 1,
 		set: [
 			"i_r_w_vorta_vor"
 		],
 		name: "Liviana Charvanek",
 		unique: true,
-		text: "Whenever one of your [crew] Upgrades is supposed to be disabled, roll 1 defense die. If you roll a [battlestations] result, that Upgrade is not disabled. If you are disabling the [crew] Upgrade to perform its Action or ability, that Action or ability is still performed even if the Upgrade does not disable.",
+		text: "Whenever one of your [crew_text] Upgrades is supposed to be disabled, roll 1 defense die. If you roll a [battlestations] result, that Upgrade is not disabled. If you are disabling the [crew_text] Upgrade to perform its Action or ability, that Action or ability is still performed even if the Upgrade does not disable.",
 		factions: [
 			"romulan"
 		],
@@ -3900,6 +4131,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap633",
+		gameId: 1,
 		set: [
 			"gavroche"
 		],
@@ -3916,6 +4148,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap632",
+		gameId: 1,
 		set: [
 			"3rd_wing_attack_ship"
 		],
@@ -3932,6 +4165,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap631",
+		gameId: 1,
 		set: [
 			"71523"
 		],
@@ -3948,12 +4182,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap630",
+		gameId: 1,
 		set: [
 			"71527"
 		],
 		name: "Sopek",
 		unique: true,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Choose 1 of your [crew] Upgrades that was discarded from your ship on a previous round. Re-deploy that [crew] Upgrade to your ship and place an Auxiliary Power Token beside your ship.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.\n\n<b>ACTION:</b> Choose 1 of your [crew_text] Upgrades that was discarded from your ship on a previous round. Re-deploy that [crew_text] Upgrade to your ship and place an Auxiliary Power Token beside your ship.",
 		factions: [
 			"vulcan"
 		],
@@ -3964,12 +4199,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap629",
+		gameId: 1,
 		set: [
 			"71510"
 		],
 		name: "Jean-Luc Picard",
 		unique: true,
-		text: "Add 1 [crew] slot to your Upgrade Bar. \n\n<b>ACTION:</b> Disable all of your remaining Shields and immediately perform an additional green or white maneuver.",
+		text: "Add 1 [crew_text] slot to your Upgrade Bar. \n\n<b>ACTION:</b> Disable all of your remaining Shields and immediately perform an additional green or white maneuver.",
 		factions: [
 			"federation"
 		],
@@ -3980,6 +4216,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap628",
+		gameId: 1,
 		set: [
 			"71646a"
 		],
@@ -3996,6 +4233,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap627",
+		gameId: 1,
 		set: [
 			"71646e"
 		],
@@ -4012,12 +4250,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap626",
+		gameId: 1,
 		set: [
 			"71528"
 		],
 		name: "Chakotay",
 		unique: true,
-		text: "Add 1 [weapon] or [crew] Upgrade to your Upgrade bar (your choice).\n\n<b>ACTION:</b> Perform a 2nd Maneuver on your Maneuver Dial with a number of 3 or less. Place an Auxiliary Power Token beside your ship. If the extra Maneuver is a Red Maneuver, place a 2nd Auxiliary Power Token beside your ship.",
+		text: "Add 1 [weapon_text] or [crew_text] Upgrade to your Upgrade bar (your choice).\n\n<b>ACTION:</b> Perform a 2nd Maneuver on your Maneuver Dial with a number of 3 or less. Place an Auxiliary Power Token beside your ship. If the extra Maneuver is a Red Maneuver, place a 2nd Auxiliary Power Token beside your ship.",
 		factions: [
 			"independent"
 		],
@@ -4028,6 +4267,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap625",
+		gameId: 1,
 		set: [
 			"71512"
 		],
@@ -4044,6 +4284,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap624",
+		gameId: 1,
 		set: [
 			"71512"
 		],
@@ -4060,6 +4301,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap623",
+		gameId: 1,
 		set: [
 			"71513b"
 		],
@@ -4076,6 +4318,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap622",
+		gameId: 1,
 		set: [
 			"71808"
 		],
@@ -4092,12 +4335,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap621",
+		gameId: 1,
 		set: [
 			"71536"
 		],
 		name: "Valdore",
 		unique: true,
-		text: "Add 1 [tech] Upgrade slot to your Upgrade Bar. \n\nWhen attacking, you may discard 1 of your [tech] Upgrades to gain +1 attack die.",
+		text: "Add 1 [tech_text] Upgrade slot to your Upgrade Bar. \n\nWhen attacking, you may discard 1 of your [tech_text] Upgrades to gain +1 attack die.",
 		factions: [
 			"romulan"
 		],
@@ -4108,6 +4352,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap620",
+		gameId: 1,
 		set: [
 			"71996"
 		],
@@ -4124,12 +4369,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap619",
+		gameId: 1,
 		set: [
 			"71793"
 		],
 		name: "Razik",
 		unique: true,
-		text: "Disable 1 of your [crew] Upgrades to re-roll one of your attack or defense dice. \n\nOR \n\nDiscard 1 of your [crew] Upgrades to re-roll any number of your attack or defense dice.",
+		text: "Disable 1 of your [crew_text] Upgrades to re-roll one of your attack or defense dice. \n\nOR \n\nDiscard 1 of your [crew_text] Upgrades to re-roll any number of your attack or defense dice.",
 		factions: [
 			"kazon"
 		],
@@ -4140,6 +4386,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap618",
+		gameId: 1,
 		set: [
 			"71794"
 		],
@@ -4156,6 +4403,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap617",
+		gameId: 1,
 		set: [
 			"71796"
 		],
@@ -4172,12 +4420,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap616",
+		gameId: 1,
 		set: [
 			"71803"
 		],
 		name: "Krim",
 		unique: true,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar. \n\nWhen defending, during the Modify Defense Dice step, you may re-roll 1 of your defense dice for every damage card assigned to your ship (max 3 dice).",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar. \n\nWhen defending, during the Modify Defense Dice step, you may re-roll 1 of your defense dice for every damage card assigned to your ship (max 3 dice).",
 		factions: [
 			"bajoran"
 		],
@@ -4188,6 +4437,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap615",
+		gameId: 1,
 		set: [
 			"71804"
 		],
@@ -4205,6 +4455,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap614",
+		gameId: 1,
 		set: [
 			"72001p"
 		],
@@ -4221,6 +4472,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap613",
+		gameId: 1,
 		set: [
 			"blind_buruk"
 		],
@@ -4237,6 +4489,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap612",
+		gameId: 1,
 		set: [
 			"72003p"
 		],
@@ -4253,6 +4506,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap611",
+		gameId: 1,
 		set: [
 			"blind_interceptor8"
 		],
@@ -4269,6 +4523,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap610",
+		gameId: 1,
 		set: [
 			"blind_nistrim_culluh"
 		],
@@ -4276,7 +4531,7 @@ module.exports = [
 		cost: 4,
 		skill: 6,
 		talents: 1,
-		text: "When defending, roll +1 defense die for every [tech] Upgrade deployed to your ship (max +2).",
+		text: "When defending, roll +1 defense die for every [tech_text] Upgrade deployed to your ship (max +2).",
 		unique: true,
 		factions: [
 			"kazon"
@@ -4285,6 +4540,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap609",
+		gameId: 1,
 		set: [
 			"75004"
 		],
@@ -4302,6 +4558,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap608",
+		gameId: 1,
 		set: [
 			"blind_nunks_marauder"
 		],
@@ -4318,6 +4575,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap607",
+		gameId: 1,
 		set: [
 			"72290p"
 		],
@@ -4338,6 +4596,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap606",
+		gameId: 1,
 		set: [
 			"71807"
 		],
@@ -4358,6 +4617,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap605",
+		gameId: 1,
 		set: [
 			"72011"
 		],
@@ -4374,6 +4634,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap604",
+		gameId: 1,
 		set: [
 			"72016"
 		],
@@ -4390,6 +4651,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap603",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -4397,7 +4659,7 @@ module.exports = [
 		cost: 4,
 		skill: 6,
 		talents: 1,
-		text: "<b>PLANNING PHASE:</b> If an opposing Federation ship is in this ship's Primary Firing Arc:\n\nIncrease the Captain Skill of this Captain by 2 this game round.",
+		text: "<b>PLANNING PHASE:</b> If an opposing <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship is in this ship's Primary Firing Arc:\n\nIncrease the Captain Skill of this Captain by 2 this game round.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -4407,6 +4669,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap602",
+		gameId: 1,
 		set: [
 			"72010"
 		],
@@ -4423,6 +4686,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap601",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -4441,6 +4705,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap736",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -4448,7 +4713,7 @@ module.exports = [
 		cost: 4,
 		skill: 7,
 		talents: 1,
-		text: "<b>WHEN ATTACKING:</b> Place 2 [time] Tokens on this card.\n\nThe defending player must disable a Captain or [crew] Upgrade equipped to the defending ship. If they can't place an [aux] Token beside the defending ship.",
+		text: "<b>WHEN ATTACKING:</b> Place 2 [time] Tokens on this card.\n\nThe defending player must disable a Captain or [crew_text] Upgrade equipped to the defending ship. If they can't place an [aux] Token beside the defending ship.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -4457,6 +4722,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap735",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -4473,6 +4739,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap734",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -4490,6 +4757,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap733",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -4497,7 +4765,7 @@ module.exports = [
 		cost: 4,
 		skill: 7,
 		talents: 1,
-		text: "<b>ACTIVATION PHASE:</b> Disable this card.\n\nRemove 1 [time] Token from all [crew] Upgrade equipped to this ship.",
+		text: "<b>ACTIVATION PHASE:</b> Disable this card.\n\nRemove 1 [time] Token from all [crew_text] Upgrade equipped to this ship.",
 		unique: true,
 		specialization: true,
 		factions: [
@@ -4508,6 +4776,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap732",
+		gameId: 1,
 		set: [
 			"73031"
 		],
@@ -4524,6 +4793,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap731",
+		gameId: 1,
 		set: [
 			"73032"
 		],
@@ -4541,6 +4811,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap730",
+		gameId: 1,
 		set: [
 			"73001"
 		],
@@ -4548,7 +4819,7 @@ module.exports = [
 		cost: 5,
 		skill: 7,
 		talents: 1,
-		text: "You do not pay a Faction Penalty when you equip this card or Ferengi Upgrades to this ship.\n-----------------------------\nFerengi Upgrades equipped to this ship cost -1SP.\n-----------------------------\n<b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.",
+		text: "You do not pay a Faction Penalty when you equip this card or <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Upgrades to this ship.\n-----------------------------\n<img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Upgrades equipped to this ship cost -1SP.\n-----------------------------\n<b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -4557,6 +4828,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap729",
+		gameId: 1,
 		set: [
 			"72282gp"
 		],
@@ -4573,6 +4845,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap728",
+		gameId: 1,
 		set: [
 			"72273"
 		],
@@ -4589,6 +4862,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap727",
+		gameId: 1,
 		set: [
 			"72236p"
 		],
@@ -4596,7 +4870,7 @@ module.exports = [
 		cost: 4,
 		skill: 7,
 		talents: 1,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.\n\nWhen attacking with your Primary Weapon, during the Deal Damage step, you may discard one of your [crew] Upgrades to inflict 1 additional damage to the defending ship.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.\n\nWhen attacking with your Primary Weapon, during the Deal Damage step, you may discard one of your [crew_text] Upgrades to inflict 1 additional damage to the defending ship.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -4605,12 +4879,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap726",
+		gameId: 1,
 		set: [
 			"72224gp"
 		],
 		name: "Vosk",
 		unique: true,
-		text: "Vosk does not pay a faction penalty when fielding an [talent] Upgrade.\n\nOnce per game, when an opposing Upgrade causes one of your Upgrades to be discarded, you may place 3 Time Tokens on that card instead.",
+		text: "Vosk does not pay a faction penalty when fielding an [talent_text] Upgrade.\n\nOnce per game, when an opposing Upgrade causes one of your Upgrades to be discarded, you may place 3 Time Tokens on that card instead.",
 		factions: [
 			"mirror-universe"
 		],
@@ -4621,6 +4896,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap725",
+		gameId: 1,
 		set: [
 			"72235p"
 		],
@@ -4637,6 +4913,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap724",
+		gameId: 1,
 		set: [
 			"71201"
 		],
@@ -4653,6 +4930,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap723",
+		gameId: 1,
 		set: [
 			"71120"
 		],
@@ -4669,6 +4947,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap722",
+		gameId: 1,
 		set: [
 			"71125",
 			"72272"
@@ -4686,6 +4965,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap721",
+		gameId: 1,
 		set: [
 			"71275",
 			"72262"
@@ -4703,12 +4983,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap720",
+		gameId: 1,
 		set: [
 			"71274"
 		],
 		name: "Alidar Jarok",
 		unique: true,
-		text: "<b>ACTION:</b> Discard your [talent] upgrade to target 1 ship at Range 1-2. Neither of your ships may attack each other this round.",
+		text: "<b>ACTION:</b> Discard your [talent_text] upgrade to target 1 ship at Range 1-2. Neither of your ships may attack each other this round.",
 		factions: [
 			"romulan"
 		],
@@ -4719,6 +5000,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap719",
+		gameId: 1,
 		set: [
 			"OP5Prize"
 		],
@@ -4735,6 +5017,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap718",
+		gameId: 1,
 		set: [
 			"71278"
 		],
@@ -4751,12 +5034,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap717",
+		gameId: 1,
 		set: [
 			"71279"
 		],
 		name: "Weyoun",
 		unique: true,
-		text: "Add up to 2 additional [crew] Upgrade slots to you ship's Upgrade Bar. The cost of these Upgrades is -1 SP each if they are Dominion [crew] Upgrades.",
+		text: "Add up to 2 additional [crew_text] Upgrade slots to you ship's Upgrade Bar. The cost of these Upgrades is -1 SP each if they are Dominion [crew_text] Upgrades.",
 		factions: [
 			"dominion"
 		],
@@ -4767,6 +5051,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap716",
+		gameId: 1,
 		set: [
 			"71281",
 			"72291"
@@ -4784,6 +5069,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap715",
+		gameId: 1,
 		set: [
 			"71446"
 		],
@@ -4800,6 +5086,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap714",
+		gameId: 1,
 		set: [
 			"71445"
 		],
@@ -4816,12 +5103,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap713",
+		gameId: 1,
 		set: [
 			"i_k_s_b_moth"
 		],
 		name: "K'Nera",
 		unique: true,
-		text: "<b>ACTION:</b> Target a ship at Range 1-2. The target ship may choose to disable one of its [crew] Upgrades (of its choice). If the target ship chooses not to disable 1 of its [crew] Upgrades or if it has no [crew] Upgrades that are not already disabled, you gain +1 attack die to all of your attacks against that ship this round.",
+		text: "<b>ACTION:</b> Target a ship at Range 1-2. The target ship may choose to disable one of its [crew_text] Upgrades (of its choice). If the target ship chooses not to disable 1 of its [crew_text] Upgrades or if it has no [crew_text] Upgrades that are not already disabled, you gain +1 attack die to all of your attacks against that ship this round.",
 		factions: [
 			"klingon"
 		],
@@ -4832,6 +5120,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap712",
+		gameId: 1,
 		set: [
 			"u_s_s_yaeger"
 		],
@@ -4848,12 +5137,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap711",
+		gameId: 1,
 		set: [
 			"71522"
 		],
 		name: "Lore",
 		unique: true,
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar.\nDuring the Roll Attack Dice step of the Combat Phase, you may discard 1 of your [crew] Upgrades to gain +1 attack die for that attack.\nYou may assign any [talent] Upgrade to your ship, regardless of Faction restriction, and you do not pay a Faction penalty when assigning any [talent] Upgrade to your ship.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar.\nDuring the Roll Attack Dice step of the Combat Phase, you may discard 1 of your [crew_text] Upgrades to gain +1 attack die for that attack.\nYou may assign any [talent_text] Upgrade to your ship, regardless of Faction restriction, and you do not pay a Faction penalty when assigning any [talent_text] Upgrade to your ship.",
 		factions: [
 			"independent"
 		],
@@ -4864,6 +5154,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap710",
+		gameId: 1,
 		set: [
 			"71786",
 			"71810"
@@ -4881,6 +5172,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap709",
+		gameId: 1,
 		set: [
 			"71510b"
 		],
@@ -4897,6 +5189,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap708",
+		gameId: 1,
 		set: [
 			"71530"
 		],
@@ -4913,6 +5206,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap707",
+		gameId: 1,
 		set: [
 			"71532"
 		],
@@ -4929,12 +5223,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap706",
+		gameId: 1,
 		set: [
 			"71534"
 		],
 		name: "Vidiian Commander",
 		unique: true,
-		text: "You may add +1 attack die when you initiate an attack with the Grappler or Hypothetic Charge [weapon] Upgrades or when performing the Action listed on the Vidiian Boarding Party [crew] Upgrade.",
+		text: "You may add +1 attack die when you initiate an attack with the Grappler or Hypothetic Charge [weapon_text] Upgrades or when performing the Action listed on the Vidiian Boarding Party [crew_text] Upgrade.",
 		factions: [
 			"independent"
 		],
@@ -4945,6 +5240,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap705",
+		gameId: 1,
 		set: [
 			"71798"
 		],
@@ -4961,6 +5257,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap704",
+		gameId: 1,
 		set: [
 			"71796"
 		],
@@ -4977,6 +5274,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap703",
+		gameId: 1,
 		set: [
 			"71804"
 		],
@@ -4993,6 +5291,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap702",
+		gameId: 1,
 		set: [
 			"71807"
 		],
@@ -5013,6 +5312,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap701",
+		gameId: 1,
 		set: [
 			"72015"
 		],
@@ -5029,6 +5329,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap824",
+		gameId: 1,
 		set: [
 			"75007"
 		],
@@ -5047,6 +5348,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap830",
+		gameId: 1,
 		set: [
 			"75008"
 		],
@@ -5054,7 +5356,7 @@ module.exports = [
 		cost: 3,
 		skill: 7,
 		talents: 1,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship:\n\nConvert 1 [blank] into 1 [hit].  If the defending ship has an independent Captain equipped to it, convert 1 [blank] into 1 [crit] instead.",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship:\n\nConvert 1 [blank] into 1 [hit].  If the defending ship has an <img src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> Captain equipped to it, convert 1 [blank] into 1 [crit] instead.",
 		unique: true,
 		factions: [
 			"vulcan"
@@ -5063,6 +5365,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap832",
+		gameId: 1,
 		set: [
 			"75008"
 		],
@@ -5079,6 +5382,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap831",
+		gameId: 1,
 		set: [
 			"75008"
 		],
@@ -5097,6 +5401,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap828",
+		gameId: 1,
 		set: [
 			"75009"
 		],
@@ -5113,6 +5418,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap829",
+		gameId: 1,
 		set: [
 			"75009"
 		],
@@ -5130,6 +5436,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap827",
+		gameId: 1,
 		set: [
 			"75009"
 		],
@@ -5137,7 +5444,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "You do not pay a faction penalty when equipping this card to a Romulan ship.\n<b>FREE ACTION:</b> Discard 1 Dominion [crew] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/BpbvTHt.png' width='20' height='20'> ship.\n<b>FREE ACTION:</b> Discard 1 <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -5146,6 +5453,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap826",
+		gameId: 1,
 		set: [
 			"75009"
 		],
@@ -5163,6 +5471,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap825",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -5170,7 +5479,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "If this card is equipped ot a Constitution Class ship, add 1 to this Captain's Captain Skill.\n----------------------------------------\n<b>ACTION:</b> Target a [crew] Upgrade equipped to this ship.\nMove all [time] Tokens from this target [crew] Upgrade to this card.  If that [crew] Upgrade has an Action, you may perform that Action as a Free Action.",
+		text: "If this card is equipped ot a Constitution Class ship, add 1 to this Captain's Captain Skill.\n----------------------------------------\n<b>ACTION:</b> Target a [crew_text] Upgrade equipped to this ship.\nMove all [time] Tokens from this target [crew_text] Upgrade to this card.  If that [crew_text] Upgrade has an Action, you may perform that Action as a Free Action.",
 		unique: true,
 		factions: [
 			"federation"
@@ -5179,6 +5488,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap823",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -5186,7 +5496,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this attack, and this ship's [cloak] Token dose not flip this attack. If this card is equipped to a Klingon ship, also add 1 [hit].",
+		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this attack, and this ship's [cloak] Token dose not flip this attack. If this card is equipped to a <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> ship, also add 1 [hit].",
 		unique: true,
 		factions: [
 			"klingon"
@@ -5195,6 +5505,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap822",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -5202,7 +5513,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "<b>ACTION:</b>\n\nPlace a [scan] or a [battlestations] Token beside this ship, and perform the Action of a [crew] Upgrade equipped to this ship as a Free Action.",
+		text: "<b>ACTION:</b>\n\nPlace a [scan] or a [battlestations] Token beside this ship, and perform the Action of a [crew_text] Upgrade equipped to this ship as a Free Action.",
 		unique: true,
 		factions: [
 			"federation"
@@ -5211,6 +5522,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap821",
+		gameId: 1,
 		set: [
 			"72260p"
 		],
@@ -5218,7 +5530,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "All of your Federation [crew] Upgrades cost -1 SP.\n\n Whenever one of your [crew] is supposed to be disabled you may place 3 Time Tokens on that Upgrade instead.",
+		text: "All of your Federation [crew_text] Upgrades cost -1 SP.\n\n Whenever one of your [crew_text] is supposed to be disabled you may place 3 Time Tokens on that Upgrade instead.",
 		unique: true,
 		factions: [
 			"federation"
@@ -5227,6 +5539,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap820",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -5234,7 +5547,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "Add 1 [crew] to this ships Upgrade Bar.\n----------------------------------------\n<b>ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
+		text: "Add 1 [crew_text] to this ships Upgrade Bar.\n----------------------------------------\n<b>ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -5244,6 +5557,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap819",
+		gameId: 1,
 		set: [
 			"75003"
 		],
@@ -5261,6 +5575,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap818",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -5278,6 +5593,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap817",
+		gameId: 1,
 		set: [
 			"75001"
 		],
@@ -5285,7 +5601,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "Add 1 [tech] to this ship's Upgrade Bar.\n\n<b>WHEN ATTACKING:</b>\nThis may re-roll 1 attack die for each [tech] Upgrade equipped to it.",
+		text: "Add 1 [tech_text] to this ship's Upgrade Bar.\n\n<b>WHEN ATTACKING:</b>\nThis may re-roll 1 attack die for each [tech_text] Upgrade equipped to it.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -5294,6 +5610,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap816",
+		gameId: 1,
 		set: [
 			"71225"
 		],
@@ -5301,7 +5618,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "<b>ACTION:</b> if your ship is not Cloaked, disable all of your remaining Shields and target a ship at Range 1-2 that is not Cloaked and has no Active Shields. Discard 1 [crew] Upgrade on the target ship. You ship has a Captain Skill of 1 until the End Phase of this round.",
+		text: "<b>ACTION:</b> if your ship is not Cloaked, disable all of your remaining Shields and target a ship at Range 1-2 that is not Cloaked and has no Active Shields. Discard 1 [crew_text] Upgrade on the target ship. You ship has a Captain Skill of 1 until the End Phase of this round.",
 		unique: true,
 		factions: [
 			"xindi"
@@ -5310,6 +5627,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap815",
+		gameId: 1,
 		set: [
 			"71213"
 		],
@@ -5326,6 +5644,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap814",
+		gameId: 1,
 		set: [
 			"71121"
 		],
@@ -5342,6 +5661,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap813",
+		gameId: 1,
 		set: [
 			"71126",
 			"72251"
@@ -5359,6 +5679,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap812",
+		gameId: 1,
 		set: [
 			"71280",
 			"72261"
@@ -5376,6 +5697,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap811",
+		gameId: 1,
 		set: [
 			"71444"
 		],
@@ -5392,6 +5714,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap810",
+		gameId: 1,
 		set: [
 			"71524"
 		],
@@ -5408,6 +5731,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap809",
+		gameId: 1,
 		set: [
 			"71523"
 		],
@@ -5424,6 +5748,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap808",
+		gameId: 1,
 		set: [
 			"71524"
 		],
@@ -5440,13 +5765,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap807",
+		gameId: 1,
 		set: [
 			"71531",
 			"72271"
 		],
 		name: "Jean-Luc Picard",
 		unique: true,
-		text: "Add 1 [crew], [tech], [weapon] or [talent] Upgrade to your Upgrade Bar (your choice). At the start of the game, after Setup, choose 1 Faction. Whenever you attack a ship of that Faction, you may roll 1 less attack die to add 1 [crit] result to your roll. Each time you defend against a ship of that Faction, roll +1 defense die.",
+		text: "Add 1 [crew_text], [tech_text], [weapon_text] or [talent_text] Upgrade to your Upgrade Bar (your choice). At the start of the game, after Setup, choose 1 Faction. Whenever you attack a ship of that Faction, you may roll 1 less attack die to add 1 [crit] result to your roll. Each time you defend against a ship of that Faction, roll +1 defense die.",
 		factions: [
 			"federation"
 		],
@@ -5457,6 +5783,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap806",
+		gameId: 1,
 		set: [
 			"71808"
 		],
@@ -5473,12 +5800,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap805",
+		gameId: 1,
 		set: [
 			"71799"
 		],
 		name: "Annorax",
 		unique: true,
-		text: "Add 1 [tech] Upgrade slot to your Upgrade Bar. \n\nIf Annorax is assigned to a Krenim weapon ship, any time you roll dice, for any reason, you may disable 1 of your Upgrades to choose one of those dice and re-roll it.",
+		text: "Add 1 [tech_text] Upgrade slot to your Upgrade Bar. \n\nIf Annorax is assigned to a Krenim weapon ship, any time you roll dice, for any reason, you may disable 1 of your Upgrades to choose one of those dice and re-roll it.",
 		factions: [
 			"independent",
 			"mirror-universe"
@@ -5490,12 +5818,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap804",
+		gameId: 1,
 		set: [
 			"71804"
 		],
 		name: "Kor",
 		unique: true,
-		text: "Add 1 [crew] Upgrade Slot to your Upgrade Bar. \nEach time you attack, during the Modify Attack Dice step, you may select any number of attack dice (up to the number of non-disabled [crew] Upgrades assigned to your ship) and re-roll those dice once.",
+		text: "Add 1 [crew_text] Upgrade Slot to your Upgrade Bar. \nEach time you attack, during the Modify Attack Dice step, you may select any number of attack dice (up to the number of non-disabled [crew_text] Upgrades assigned to your ship) and re-roll those dice once.",
 		factions: [
 			"klingon"
 		],
@@ -5506,6 +5835,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap803",
+		gameId: 1,
 		set: [
 			"72284p"
 		],
@@ -5522,6 +5852,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap802",
+		gameId: 1,
 		set: [
 			"72012"
 		],
@@ -5529,7 +5860,7 @@ module.exports = [
 		cost: 6,
 		skill: 8,
 		talents: 1,
-		text: "When attacking, during the Modify Attack Dice step, you may re-roll 1 of your blank results.\n\nIf your ship was just destroyed and another friendly ship is within Range 1-2 of your ship, you may replace that ship's Captain Card with this card. If this Captain Card fielded an [talent] Upgrade, you may assign that Upgrade to the new ship as well, if possible.",
+		text: "When attacking, during the Modify Attack Dice step, you may re-roll 1 of your blank results.\n\nIf your ship was just destroyed and another friendly ship is within Range 1-2 of your ship, you may replace that ship's Captain Card with this card. If this Captain Card fielded an [talent_text] Upgrade, you may assign that Upgrade to the new ship as well, if possible.",
 		unique: true,
 		factions: [
 			"species-8472"
@@ -5538,11 +5869,12 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap801",
+		gameId: 1,
 		set: [
 			"72293"
 		],
 		name: "Dolim",
-		text: "During the Gather Forces step, you may treat any of the [crew] or [tech] Upgrade slots on your Upgrade Bar as [weapon] Upgrade slots\n\nAll of your [weapon] Upgrades cost -1SP, -5 Max",
+		text: "During the Gather Forces step, you may treat any of the [crew_text] or [tech_text] Upgrade slots on your Upgrade Bar as [weapon_text] Upgrade slots\n\nAll of your [weapon_text] Upgrades cost -1SP, -5 Max",
 		cost: 5,
 		skill: 8,
 		talents: 1,
@@ -5554,6 +5886,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap10",
+		gameId: 1,
 		set: [
 			"72000b"
 		],
@@ -5575,6 +5908,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap911",
+		gameId: 1,
 		set: [
 			"75007"
 		],
@@ -5592,6 +5926,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap910",
+		gameId: 1,
 		set: [
 			"75007"
 		],
@@ -5599,7 +5934,7 @@ module.exports = [
 		cost: 4,
 		skill: 9,
 		talents: 1,
-		text: "Cannot be equipped to a ship in the same fleet as that has Jean-Luc Picard equipped to a ship.\n----------------------------------------\n<b>SETUP:</b> Place 9 Drone Tokens on this card.\n----------------------------------------\nAdd two [crew] to this ship's Upgrade Bar.\n----------------------------------------\nYou do not pay a faction penalty when equipping a [crew] Upgrades to this ship.",
+		text: "Cannot be equipped to a ship in the same fleet as that has Jean-Luc Picard equipped to a ship.\n----------------------------------------\n<b>SETUP:</b> Place 9 Drone Tokens on this card.\n----------------------------------------\nAdd two [crew_text] to this ship's Upgrade Bar.\n----------------------------------------\nYou do not pay a faction penalty when equipping a [crew_text] Upgrades to this ship.",
 		unique: true,
 		shipBorg: true,
 		factions: [
@@ -5609,6 +5944,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap908",
+		gameId: 1,
 		set: [
 			"75002"
 		],
@@ -5616,7 +5952,7 @@ module.exports = [
 		cost: 6,
 		skill: 9,
 		talents: 1,
-		text: "<b>ACTION:</b> Decrease the Captain Skill of this Captain by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a Dominion [crew] equipped to this ship as Free Actions.",
+		text: "<b>ACTION:</b> Decrease the Captain Skill of this Captain by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> [crew_text] equipped to this ship as Free Actions.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -5625,6 +5961,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap907",
+		gameId: 1,
 		set: [
 			"72260gp"
 		],
@@ -5641,6 +5978,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap906",
+		gameId: 1,
 		set: [
 			"71120"
 		],
@@ -5657,13 +5995,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap905",
+		gameId: 1,
 		set: [
 			"71122",
 			"72240"
 		],
 		name: "James T. Kirk",
 		unique: true,
-		text: "Any Federation [talent] Upgrades you purchase for Kirk cost exactly 3 Squadron Points and are placed face down beside his card. Each Upgrade remains face down until you decide to use it, and then it is turned face up for the rest of the game. ",
+		text: "Any Federation [talent_text] Upgrades you purchase for Kirk cost exactly 3 Squadron Points and are placed face down beside his card. Each Upgrade remains face down until you decide to use it, and then it is turned face up for the rest of the game. ",
 		factions: [
 			"federation"
 		],
@@ -5674,6 +6013,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap904",
+		gameId: 1,
 		set: [
 			"OP2Prize"
 		],
@@ -5690,13 +6030,14 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap903",
+		gameId: 1,
 		set: [
 			"71533",
 			"72252"
 		],
 		name: "Shinzon",
 		unique: true,
-		text: "During the Gather Forces step of Setup, instead of purchasing an [talent] Upgrade as normal for Shinzon, you may spend 4 SP to place up to 4 Romulan [talent] Upgrades face down beside this card. These cards remain face down until you decide to use one of them. When you do so, select the one you want to use and turn it face up for the rest of the game. Then discard the other 3.",
+		text: "During the Gather Forces step of Setup, instead of purchasing an [talent_text] Upgrade as normal for Shinzon, you may spend 4 SP to place up to 4 Romulan [talent_text] Upgrades face down beside this card. These cards remain face down until you decide to use one of them. When you do so, select the one you want to use and turn it face up for the rest of the game. Then discard the other 3.",
 		factions: [
 			"romulan"
 		],
@@ -5707,12 +6048,13 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap902",
+		gameId: 1,
 		set: [
 			"71513a"
 		],
 		name: "Borg Queen",
 		unique: true,
-		text: "At the start of the game, place 9 Drone Tokens on this card. \nAdd 1 [borg] Upgrade slot to your Upgrade Bar. \n\n<b>ACTION:</b> Target a ship at Range 1 and spend 6 Drone Tokens. Disable 2 Upgrades of your choice on the target ship.",
+		text: "At the start of the game, place 9 Drone Tokens on this card. \nAdd 1 [borg_text] Upgrade slot to your Upgrade Bar. \n\n<b>ACTION:</b> Target a ship at Range 1 and spend 6 Drone Tokens. Disable 2 Upgrades of your choice on the target ship.",
 		factions: [
 			"borg"
 		],
@@ -5723,6 +6065,7 @@ module.exports = [
 	{
 		type: "captain",
 		id: "Cap901",
+		gameId: 1,
 		set: [
 			"71792"
 		],

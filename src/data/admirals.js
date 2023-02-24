@@ -2,6 +2,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A041",
+		gameId: 1,
 		set: [
 			"75013"
 		],
@@ -19,12 +20,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A040",
+		gameId: 1,
 		set: [
 			"75013"
 		],
 		name: "Theoderich Patterson",
 		unique: true,
-		text: "<font size ='-.5'><b>FLEET ACTION:</b> Target this ship or a friendly ship within Range. \n\n Place a [scan] Token beside the target ship. If the target ship is within Range 1 of a Non-Planet Obstacle, you may also repair 1 Hull on the target ship. If the target ship has a (hook) equipped, you may also remove an [aux] Token from beside that ship.</font>",
+		text: "<font size ='-.5'><b>FLEET ACTION:</b> Target this ship or a friendly ship within Range. \n\n Place a [scan] Token beside the target ship. If the target ship is within Range 1 of a Non-Planet Obstacle, you may also repair 1 Hull on the target ship. If the target ship has a [hook] equipped, you may also remove an [aux] Token from beside that ship.</font>",
 		range: "1 - 2",
 		factions: [
 			"federation"
@@ -36,12 +38,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A039",
+		gameId: 1,
 		set: [
 			"75013"
 		],
 		name: "Strickler",
 		unique: true,
-		text: "<b>FLEET ACTION:</b> Target this ship or a friendly ship within Range. \n\n Target ship performs either a 1 [bank-left] or 1 [bank-right] Maneuver. If the target ship has the 'Federation Prototype' Starship Construction Upgrade, you may remove an [aux] Token from beside that ship.",
+		text: "<b>FLEET ACTION:</b> Target this ship or a friendly ship within Range. \n\n Target ship performs either a 1 [bank-left] or 1 [bank-right] Maneuver. If the target ship has the 'Federation Prototype' [hook], you may remove an [aux] Token from beside that ship.",
 		range: "1 - 2",
 		factions: [
 			"federation"
@@ -53,12 +56,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A038",
+		gameId: 1,
 		set: [
 			"75012"
 		],
 		name: "Shinzon",
 		unique: true,
-		text: "Add the [battlestations] Action to this ship's Action Bar. \n----------------------------------------\n <b>FLEET ACTION:</b>\n Remove all [time] Tokens and/or Disable Tokens from a [weapon] Upgrade equipped to this ship, then you may perform an Action on your Action Bar as a Free Action.",
+		text: "Add the [battlestations] Action to this ship's Action Bar. \n----------------------------------------\n <b>FLEET ACTION:</b>\n Remove all [time] Tokens and/or Disable Tokens from a [weapon_text] Upgrade equipped to this ship, then you may perform an Action on your Action Bar as a Free Action.",
 		factions: [
 			"romulan"
 		],
@@ -69,6 +73,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A037",
+		gameId: 1,
 		set: [
 			"75011"
 		],
@@ -86,6 +91,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A035",
+		gameId: 1,
 		set: [
 			"75006"
 		],
@@ -93,7 +99,7 @@ module.exports = [
 		cost: 4,
 		skill: 2,
 		talents: 1,
-		text: "<b>FLEET ACTION:</b> Target a [crew] Upgrade equipped to this ship.\n\nMove all [time] Tokens from this target [crew] Upgrade to this card.  If that [crew] Upgrade has an Action you may perform that Action as a Free Action.",
+		text: "<b>FLEET ACTION:</b> Target a [crew_text] Upgrade equipped to this ship.\n\nMove all [time] Tokens from this target [crew_text] Upgrade to this card.  If that [crew_text] Upgrade has an Action you may perform that Action as a Free Action.",
 		unique: true,
 		factions: [
 			"federation"
@@ -102,6 +108,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A036",
+		gameId: 1,
 		set: [
 			"75009"
 		],
@@ -109,7 +116,7 @@ module.exports = [
 		cost: 5,
 		skill: 2,
 		talents: 1,
-		text: "You do not pay a faction penalty when equipping this card to a Romulan ship.\n<b>FREE FLEET ACTION:</b> Discard 1 Dominion [crew] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/BpbvTHt.png' width='20' height='20'> ship.\n<b>FREE FLEET ACTION:</b> Discard 1 <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -118,6 +125,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A034",
+		gameId: 1,
 		set: [
 			"75005"
 		],
@@ -125,7 +133,7 @@ module.exports = [
 		cost: 5,
 		skill: 2,
 		talents: 1,
-		text: "Add 1 [crew] to this ship's Upgrade Bar.\n----------------------------------------\n<b>FLEET ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
+		text: "Add 1 [crew_text] to this ship's Upgrade Bar.\n----------------------------------------\n<b>FLEET ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -135,6 +143,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A033",
+		gameId: 1,
 		set: [
 			"75003"
 		],
@@ -142,7 +151,7 @@ module.exports = [
 		cost: 3,
 		skill: 0,
 		talents: 0,
-		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent] Upgrades to this Admiral.\n<b>SETUP:</b> Place 2 GPLT on the Captain equipped to this ship.\n----------------------------------------\n<b>WHEN A FRIENDLY CAPTAIN WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defense dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
+		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Admiral.\n<b>SETUP:</b> Place 2 GPLT on the Captain equipped to this ship.\n----------------------------------------\n<b>WHEN A FRIENDLY CAPTAIN WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defense dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -151,6 +160,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A032",
+		gameId: 1,
 		set: [
 			"75002"
 		],
@@ -158,7 +168,7 @@ module.exports = [
 		cost: 6,
 		skill: 2,
 		talents: 1,
-		text: "<b>FLEET ACTION:</b> Decrease the Captain Skill of the Captain equipped to this ship by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a Dominion [crew] equipped to this ship as Free Actions.",
+		text: "<b>FLEET ACTION:</b> Decrease the Captain Skill of the Captain equipped to this ship by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> [crew_text] equipped to this ship as Free Actions.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -167,6 +177,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A031",
+		gameId: 1,
 		set: [
 			"2017core"
 		],
@@ -183,6 +194,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A030",
+		gameId: 1,
 		set: [
 			"72282gp"
 		],
@@ -199,6 +211,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A029",
+		gameId: 1,
 		set: [
 			"72281"
 		],
@@ -215,6 +228,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A028",
+		gameId: 1,
 		set: [
 			"72242"
 		],
@@ -231,6 +245,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A027",
+		gameId: 1,
 		set: [
 			"72241"
 		],
@@ -247,6 +262,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A026",
+		gameId: 1,
 		set: [
 			"71523"
 		],
@@ -263,6 +279,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A025",
+		gameId: 1,
 		set: [
 			"71524"
 		],
@@ -279,6 +296,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A024",
+		gameId: 1,
 		set: [
 			"71526"
 		],
@@ -295,12 +313,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A023",
+		gameId: 1,
 		set: [
 			"71527"
 		],
 		name: "V'Las",
 		unique: true,
-		text: "<b>FLEET ACTION:</b> Target a ship at Range 1-2. Disable 1 [crew] Upgrade of your choice on the target ship. ",
+		text: "<b>FLEET ACTION:</b> Target a ship at Range 1-2. Disable 1 [crew_text] Upgrade of your choice on the target ship. ",
 		factions: [
 			"vulcan"
 		],
@@ -311,6 +330,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A022",
+		gameId: 1,
 		set: [
 			"71530"
 		],
@@ -327,6 +347,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A021",
+		gameId: 1,
 		set: [
 			"71531",
 			"72271"
@@ -344,6 +365,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A020",
+		gameId: 1,
 		set: [
 			"71532"
 		],
@@ -360,13 +382,14 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A019",
+		gameId: 1,
 		set: [
 			"71533",
 			"72252"
 		],
 		name: "Hiren",
 		unique: true,
-		text: "<b>FLEET ACTION:</b> Disable 1 of your [crew] Upgrades to gain +1 attack die this round.",
+		text: "<b>FLEET ACTION:</b> Disable 1 of your [crew_text] Upgrades to gain +1 attack die this round.",
 		factions: [
 			"romulan"
 		],
@@ -377,6 +400,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A018",
+		gameId: 1,
 		set: [
 			"71535"
 		],
@@ -393,6 +417,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A017",
+		gameId: 1,
 		set: [
 			"71794"
 		],
@@ -409,6 +434,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A016",
+		gameId: 1,
 		set: [
 			"71798"
 		],
@@ -425,6 +451,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A015",
+		gameId: 1,
 		set: [
 			"71800"
 		],
@@ -441,6 +468,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A014",
+		gameId: 1,
 		set: [
 			"71800"
 		],
@@ -457,12 +485,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A013",
+		gameId: 1,
 		set: [
 			"71801"
 		],
 		name: "Erik Pressman",
 		unique: true,
-		text: "<b>FLEET ACTION:</b> Disable 1 of your [tech] Upgrade to gain +1 attack die with your Primary Weapon this round.\n\nOR\n\n<b>FLEET ACTION:</b> Discard 1 of your [tech] Upgrades to gain +2 attack dice with your Primary Weapon this round.",
+		text: "<b>FLEET ACTION:</b> Disable 1 of your [tech_text] Upgrade to gain +1 attack die with your Primary Weapon this round.\n\nOR\n\n<b>FLEET ACTION:</b> Discard 1 of your [tech_text] Upgrades to gain +2 attack dice with your Primary Weapon this round.",
 		factions: [
 			"federation"
 		],
@@ -473,12 +502,13 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A012",
+		gameId: 1,
 		set: [
 			"71803"
 		],
 		name: "Jaro Essa",
 		unique: true,
-		text: "<b>FLEET ACTION:</b> Discard 1 of your Bajoran [crew] Upgrades to perform this Action. Each time you defend this round, during the Roll Defense Dice step, roll 2 additional dice. This card may only be purchased for a Bajoran ship.",
+		text: "<b>FLEET ACTION:</b> Discard 1 of your Bajoran [crew_text] Upgrades to perform this Action. Each time you defend this round, during the Roll Defense Dice step, roll 2 additional dice. This card may only be purchased for a Bajoran ship.",
 		factions: [
 			"bajoran"
 		],
@@ -489,6 +519,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A011",
+		gameId: 1,
 		set: [
 			"71804"
 		],
@@ -505,6 +536,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A010",
+		gameId: 1,
 		set: [
 			"72001p"
 		],
@@ -521,6 +553,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A009",
+		gameId: 1,
 		set: [
 			"72002p"
 		],
@@ -537,6 +570,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A008",
+		gameId: 1,
 		set: [
 			"71807"
 		],
@@ -557,6 +591,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A007",
+		gameId: 1,
 		set: [
 			"72011"
 		],
@@ -573,6 +608,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A006",
+		gameId: 1,
 		set: [
 			"72000b"
 		],
@@ -594,6 +630,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A005",
+		gameId: 1,
 		set: [
 			"72013"
 		],
@@ -610,6 +647,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A004",
+		gameId: 1,
 		set: [
 			"72016"
 		],
@@ -626,6 +664,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A003",
+		gameId: 1,
 		set: [
 			"72008"
 		],
@@ -642,6 +681,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A002",
+		gameId: 1,
 		set: [
 			"72008"
 		],
@@ -658,6 +698,7 @@ module.exports = [
 	{
 		type: "admiral",
 		id: "A001",
+		gameId: 1,
 		set: [
 			"72010"
 		],

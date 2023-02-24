@@ -2,26 +2,29 @@ module.exports = [
 	{
 		type: "token",
 		id: "rule_starshipconstruction",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"75013"
 		],
 		name: "Starship Construction",
-		text: "Starship Construction Cards are cards featuring the (hook) symbol. \n\n (hook) Card's do not count as Upgrades. \n\n A ship may only have one (hook) card equipped. \n\n You do not pay a Faction Penalty when equipping a (hook) card to a ship. \n\n (hook) Cards represent various versions of ships such as Prototypes, Refits, Retrofits, and Mission Specific alterations."
+		text: "Starship Construction Cards are cards featuring the [hook] symbol. \n\n [hook] Card's do not count as Upgrades. \n\n A ship may only have one [hook] card equipped. \n\n You do not pay a Faction Penalty when equipping a [hook] card to a ship. \n\n [hook] Cards represent various versions of ships such as Prototypes, Refits, Retrofits, and Mission Specific alterations."
 	},
 	{
 		type: "token",
 		id: "rule_love_crysatal",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"75006"
 		],
 		name: "Love Crystal Token",
-		text: "When a [crew] Upgrade with a Love Crystal Token becomes disabled the player who placed that Love Crystal Token on that [crew] Upgrade chooses and disables another [crew] Upgrade with a Love Crystal Token equipped to the same ship.\n\nWhen a [crew] Upgrade with a Love Crystal Token is discarded the player who placed that Love Crystal Token on that [crew] Upgrade chooses and discards another [crew] Upgrade with a Love Crystal Token equipped to the same ship.\n\nWhen a [crew] Upgrade with a Love Crystal Token has one or more [time] Tokens placed on it, the player who placed that Love Crystal Token on that [crew] Upgrade choses another [crew] Upgrade with a Love Crystal Token equipped to the same ship and places the same amount of [time] Tokens on it."
+		text: "When a [crew_text] Upgrade with a Love Crystal Token becomes disabled the player who placed that Love Crystal Token on that [crew_text] Upgrade chooses and disables another [crew_text] Upgrade with a Love Crystal Token equipped to the same ship.\n\nWhen a [crew_text] Upgrade with a Love Crystal Token is discarded the player who placed that Love Crystal Token on that [crew_text] Upgrade chooses and discards another [crew_text] Upgrade with a Love Crystal Token equipped to the same ship.\n\nWhen a [crew_text] Upgrade with a Love Crystal Token has one or more [time] Tokens placed on it, the player who placed that Love Crystal Token on that [crew_text] Upgrade choses another [crew_text] Upgrade with a Love Crystal Token equipped to the same ship and places the same amount of [time] Tokens on it."
 	},
 	{
 		type: "token",
 		id: "rule_specialzation",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"71283",
@@ -35,37 +38,41 @@ module.exports = [
 	{
 		type: "token",
 		id: "rule_specialzation",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"75005"
 		],
 		name: "Specialization Cards (SCS)",
-		text: "Specialization Cards(SCs) are two-sided cards featuring the [specialization] symbol. This card contains additional rules that pertain to SCs.\n1. During Setup choose which side each of your SCs will start on.\n2. If a SC is flipped while it is disabled, it remains disabled.\n3. If a SC is flipped while it has [time] Tokens, the [time] Tokens remain on it.\n4 If a SC that has an [talent] Upgrade equipped to it is flipped the [talent] remains equipped to it.\n5 Players only earn Fleet Points for the SP cost that was paid during Fleet Construction.\n6. When flipping an SC that SC remains equipped to the ship, even if it exceeds taht ship's restrictions.\n7. You may not flip a SC to its Captain or Admiral side if it would cause you to have more then one Captain on a ship or more then one Admiral in your Fleet."
+		text: "Specialization Cards(SCs) are two-sided cards featuring the [specialization] symbol. This card contains additional rules that pertain to SCs.\n1. During Setup choose which side each of your SCs will start on.\n2. If a SC is flipped while it is disabled, it remains disabled.\n3. If a SC is flipped while it has [time] Tokens, the [time] Tokens remain on it.\n4 If a SC that has an [talent_text] Upgrade equipped to it is flipped the [talent_text] remains equipped to it.\n5 Players only earn Fleet Points for the SP cost that was paid during Fleet Construction.\n6. When flipping an SC that SC remains equipped to the ship, even if it exceeds taht ship's restrictions.\n7. You may not flip a SC to its Captain or Admiral side if it would cause you to have more then one Captain on a ship or more then one Admiral in your Fleet."
 	},
 	{
 		type: "token",
 		id: "rule_BMGT",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"75003"
 		],
 		name: "Bio-Mimetic Gel Rules",
-		text: "While an Upgrade has a Bio-Mimetic Gel Token (BMGT) on it, it gains the following text based on its upgrade type:\n\n[crew]: The ship that placed the BMGT on this [crew] Upgrade may spend the BMGT to use the ability of this [crew] Upgrade.\n\n[weapon]: When this [weapon] Upgrade deals damage to an opposing ship’s Hull, the ship that placed the BMGT on this [weapon] Upgrade may spend the BMGT to discard 1 [crew] Upgrade of their choice equipped to the defending ship.\n\n[tech]: When the ability of this [tech] Upgrade is used, the ship that placed the BMGT on this [tech] Upgrade may spend the BMGT to place 2 [time] Tokens on each [crew] Upgrade equipped to this ship.\n-----------------------------------\nWhen a BMGT is spent, roll 1 attack die. If a [battlestations] result is rolled, discard both the “Bio-mimetic Gel” Upgrade Card and the target Upgrade the BMGT was on."
+		text: "While an Upgrade has a Bio-Mimetic Gel Token (BMGT) on it, it gains the following text based on its upgrade type:\n\n[crew_text]: The ship that placed the BMGT on this [crew_text] Upgrade may spend the BMGT to use the ability of this [crew_text] Upgrade.\n\n[weapon_text]: When this [weapon_text] Upgrade deals damage to an opposing ship’s Hull, the ship that placed the BMGT on this [weapon_text] Upgrade may spend the BMGT to discard 1 [crew_text] Upgrade of their choice equipped to the defending ship.\n\n[tech_text]: When the ability of this [tech_text] Upgrade is used, the ship that placed the BMGT on this [tech_text] Upgrade may spend the BMGT to place 2 [time] Tokens on each [crew_text] Upgrade equipped to this ship.\n-----------------------------------\nWhen a BMGT is spent, roll 1 attack die. If a [battlestations] result is rolled, discard both the “Bio-mimetic Gel” Upgrade Card and the target Upgrade the BMGT was on."
 	},
 	{
 		type: "token",
 		id: "rule_GPLT",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"73001",
 			"75003"
 		],
 		name: "Gold-Pressed Latinum Token",
-		text: "Once per game round per ship, a Captain may spend their Gold-Pressed Latinum Token(s) (GPLT) to activate one of the following abilities:\n-----------------------------------\n<b>PLANING PHASE:</b> Spend 1 GPLT\nRemove an [aux] Token beside this ship.\n-----------------------------------\n<b>ACTIVATION PHASE:</b>Once per game, spend any of GPLT.\n\nEquip a [crew], [tech], or [weapon] Upgrade with a cost equal to the amount of GPLT spent that was discarded from this ship.\n-----------------------------------\n<b>COMBAT PHASE:</b> Spend 1 GPLT.\nPlace a [battlestations], [evade] or [scan] Token beside this ship."
+		text: "Once per game round per ship, a Captain may spend their Gold-Pressed Latinum Token(s) (GPLT) to activate one of the following abilities:\n-----------------------------------\n<b>PLANING PHASE:</b> Spend 1 GPLT\nRemove an [aux] Token beside this ship.\n-----------------------------------\n<b>ACTIVATION PHASE:</b>Once per game, spend any of GPLT.\n\nEquip a [crew_text], [tech_text], or [weapon_text] Upgrade with a cost equal to the amount of GPLT spent that was discarded from this ship.\n-----------------------------------\n<b>COMBAT PHASE:</b> Spend 1 GPLT.\nPlace a [battlestations], [evade] or [scan] Token beside this ship."
 	},
 	{
 		type: "token",
 		id: "rule_EWT",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"71795",
@@ -77,6 +84,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "rule_ambassador",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"75008",
@@ -84,11 +92,12 @@ module.exports = [
 			"75011"
 		],
 		name: "Ambassador Cards",
-		text: "Amabassador cards do not count as Captains, Admirals or Upgrades.\n\nA fleet may only have one Ambassador Card.\n\nYou do not pay a Faction Penalty when equipping an Ambassador to a ship.\n\nAt the start of the game, a player may activate their Ambassador's Negotiation Effect by choosing an opposing ship.  The target of the effect may choose to accept negotiations or deny negotiations.  If negotiations are accepted, players will both be affected in some way.  If negotiations are denied, the opposing player will be affected detrimentally.\n\nIf negotiations have been accepted and the ship the Amabassador Card is equipped to is destroyed by the ship that accepted negotiations, immediately trigger the Negotiations Denied section of the Amabassador Card targeting the ship that accepted the negotiations before removing the ship from the play area.  If both players have Ambassadors, the player with the Initiative Token first enacts their Ambassador card, including any Start of Game effects."
+		text: "[amabassador_text] cards do not count as Captains, Admirals or Upgrades.\n\nA fleet may only have one [ambassador_text] Card.\n\nYou do not pay a Faction Penalty when equipping an Ambassador to a ship.\n\nAt the start of the game, a player may activate their Ambassador's Negotiation Effect by choosing an opposing ship.  The target of the effect may choose to accept negotiations or deny negotiations.  If negotiations are accepted, players will both be affected in some way.  If negotiations are denied, the opposing player will be affected detrimentally.\n\nIf negotiations have been accepted and the ship the [ambassador_text] Card is equipped to is destroyed by the ship that accepted negotiations, immediately trigger the Negotiations Denied section of the [ambassador_text] Card targeting the ship that accepted the negotiations before removing the ship from the play area.  If both players have Ambassadors, the player with the Initiative Token first enacts their Ambassador card, including any Start of Game effects."
 	},
 	{
 		type: "token",
 		id: "rule_muon_token",
+		gameId: 1,
 		set: [
 			"AdditionalRules"
 		],
@@ -98,6 +107,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "rule_regenerate",
+		gameId: 1,
 		set: [
 			"AdditionalRules"
 		],
@@ -107,6 +117,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "grapple_tokens",
+		gameId: 1,
 		set: [
 			"71534",
 			"AdditionalRules"
@@ -117,6 +128,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "tribble_tokens",
+		gameId: 1,
 		set: [
 			"71125",
 			"72272",
@@ -128,6 +140,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "Multi-Vactor_Assault_Mode_tokens",
+		gameId: 1,
 		set: [
 			"71802",
 			"AdditionalRules"
@@ -138,27 +151,30 @@ module.exports = [
 	{
 		type: "token",
 		id: "adaptation_tokens",
+		gameId: 1,
 		set: [
 			"71280",
 			"72261",
 			"AdditionalRules"
 		],
 		name: "Adaptation Tokens",
-		text: "1) While an Adaptation Token is on a [tech] Upgrade, Seven of Nine's ship is now considered to also possess that [tech] Upgrade (even if Seven is disabled).  The original Upgrade Card is unaffected and can be used freely by its owner.  If the original Upgrade is disabled or discarded, Seven's ship is still considered to possess that [tech] Upgrade and can freely use it.\n\n2)If using the [tech] Upgrade would normally require the Upgrade to be disabled or discarded, then when Seven's ship uses the Upgrade, remove the Adaptation Token.  The original Upgrade is unaffected.\n\n3) Only 1 Adapatation Token may be in play at the same time.  If Seven of Nine uses her ability on another [tech] Upgrade, remove the Adaptation Token from the previous Upgrade.\n\n4)If Seven of Nine is discarded, discard the Adaptation Token."
+		text: "1) While an Adaptation Token is on a [tech_text] Upgrade, Seven of Nine's ship is now considered to also possess that [tech_text] Upgrade (even if Seven is disabled).  The original Upgrade Card is unaffected and can be used freely by its owner.  If the original Upgrade is disabled or discarded, Seven's ship is still considered to possess that [tech_text] Upgrade and can freely use it.\n\n2)If using the [tech_text] Upgrade would normally require the Upgrade to be disabled or discarded, then when Seven's ship uses the Upgrade, remove the Adaptation Token.  The original Upgrade is unaffected.\n\n3) Only 1 Adapatation Token may be in play at the same time.  If Seven of Nine uses her ability on another [tech_text] Upgrade, remove the Adaptation Token from the previous Upgrade.\n\n4)If Seven of Nine is discarded, discard the Adaptation Token."
 	},
 	{
 		type: "token",
 		id: "Escape_Pod_Token",
+		gameId: 1,
 		set: [
 			"71801",
 			"AdditionalRules"
 		],
 		name: "Escape Pod Token (EPT)",
-		text: "This card explains the rules for an Escape Pod Token and serves as a reference to remind players of its effect. While an Escape Pod Token is in the play area:\n\n1) During the Activation Phase, after all ships have moved, the Escape Pod must move 1 [straight] in the direction of the arrow on the Token.  If it overlaps a friendly ship's base after this move, it is considered to be picked up by that ship (see below).  If it overlaps an enemy ship's base after this move, it is destroyed.\n\n2) During the Combat Phase, it cannot attack, but it may b attacked.  It has a 0 Agility, a Hull Value of 1, and 0 Shields.\n\n3) The cards beneath the \"Escape Pod\" Upgrade card cannot be use their text abilities and cannot be affected by enemy Upgrades.\n\nIf a friendly ship is within Range 1 of an EPT at the end of the Activation Phase (or it is placed directly on a friendly ship's base), the EPT is considered to be picked up.  Remove the EPT from the game and discard the \"Escape Pod\" Upgrade Card.  Place all of the cards beneath it beside that ship's cards. These cards are now considered to be deployed to that ship.\n\nNOTE: The [crew] Upgrade cards may exceed the ship's restrictions, but there may only be 1 Captain Card assigned to the ship.  You may keep either your original Captain card or the one from the Escape Pod and remove the other one from the game."
+		text: "This card explains the rules for an Escape Pod Token and serves as a reference to remind players of its effect. While an Escape Pod Token is in the play area:\n\n1) During the Activation Phase, after all ships have moved, the Escape Pod must move 1 [straight] in the direction of the arrow on the Token.  If it overlaps a friendly ship's base after this move, it is considered to be picked up by that ship (see below).  If it overlaps an enemy ship's base after this move, it is destroyed.\n\n2) During the Combat Phase, it cannot attack, but it may b attacked.  It has a 0 Agility, a Hull Value of 1, and 0 Shields.\n\n3) The cards beneath the \"Escape Pod\" Upgrade card cannot be use their text abilities and cannot be affected by enemy Upgrades.\n\nIf a friendly ship is within Range 1 of an EPT at the end of the Activation Phase (or it is placed directly on a friendly ship's base), the EPT is considered to be picked up.  Remove the EPT from the game and discard the \"Escape Pod\" Upgrade Card.  Place all of the cards beneath it beside that ship's cards. These cards are now considered to be deployed to that ship.\n\nNOTE: The [crew_text] Upgrade cards may exceed the ship's restrictions, but there may only be 1 Captain Card assigned to the ship.  You may keep either your original Captain card or the one from the Escape Pod and remove the other one from the game."
 	},
 	{
 		type: "token",
 		id: "Ablative_Generator_Token",
+		gameId: 1,
 		set: [
 			"71280",
 			"72261",
@@ -170,6 +186,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "engery_dampening_tokens",
+		gameId: 1,
 		set: [
 			"AdditionalRules",
 			"71128",
@@ -181,6 +198,7 @@ module.exports = [
 	{
 		type: "token",
 		id: "rule_drone_tokens",
+		gameId: 1,
 		set: [
 			"AdditionalRules"
 		],
@@ -190,6 +208,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010a",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -218,6 +237,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010b",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -225,7 +245,7 @@ module.exports = [
 		factions: [
 			"dominion"
 		],
-		text: "After you move, you may target 1 friendly Dominion ship within Range 1-2 (or your own ship). The target ship immediately performs an Action on one of its non-disabled [tech] Upgrades as a free Action.",
+		text: "After you move, you may target 1 friendly Dominion ship within Range 1-2 (or your own ship). The target ship immediately performs an Action on one of its non-disabled [tech_text] Upgrades as a free Action.",
 		cost: 5,
 		skill: 2,
 		upgradeSlots: [],
@@ -246,6 +266,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010c",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -274,6 +295,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010d",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -281,7 +303,7 @@ module.exports = [
 		factions: [
 			"klingon"
 		],
-		text: "After you move, you may target 1 friendly Klingon ship within Range 1-2 (or your own ship). The target ship immediately performs an action on one of its non-disabled [crew] Upgrades as a free Action.",
+		text: "After you move, you may target 1 friendly Klingon ship within Range 1-2 (or your own ship). The target ship immediately performs an action on one of its non-disabled [crew_text] Upgrades as a free Action.",
 		cost: 5,
 		skill: 2,
 		upgradeSlots: [],
@@ -302,6 +324,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010e",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -309,7 +332,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "All of your [crew] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
+		text: "All of your [crew_text] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
 		cost: 5,
 		skill: 1,
 		upgradeSlots: [],
@@ -330,6 +353,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010f",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -358,6 +382,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010g",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -365,7 +390,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "All your [weapon] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
+		text: "All your [weapon_text] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
 		cost: 5,
 		skill: 1,
 		upgradeSlots: [],
@@ -386,6 +411,7 @@ module.exports = [
 	{
 		type: "fleet-captain",
 		id: "R010h",
+		gameId: 1,
 		set: [
 			"CollectiveOP2"
 		],
@@ -393,7 +419,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "All of your [tech] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
+		text: "All of your [tech_text] Upgrades cost -1 SP for all ships in your fleet (including your own ship).",
 		cost: 5,
 		skill: 1,
 		upgradeSlots: [],
@@ -414,6 +440,7 @@ module.exports = [
 	{
 		type: "officer",
 		id: "R011a",
+		gameId: 1,
 		set: [
 			"CollectiveOP3"
 		],
@@ -444,6 +471,7 @@ module.exports = [
 	{
 		type: "officer",
 		id: "R011b",
+		gameId: 1,
 		set: [
 			"CollectiveOP3"
 		],
@@ -451,7 +479,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "Add 1 [weapon] Upgrade slot to your Upgrade Bar. \nDuring the Roll Attack Dice step of the Combat Phase, you may spend a [battlestations] Token to roll +1 attack die. \nDuring the Roll Defense Dice step of the Combat Phase, you may spend a [battlestations] Token to roll +1 defense die.",
+		text: "Add 1 [weapon_text] Upgrade slot to your Upgrade Bar. \nDuring the Roll Attack Dice step of the Combat Phase, you may spend a [battlestations] Token to roll +1 attack die. \nDuring the Roll Defense Dice step of the Combat Phase, you may spend a [battlestations] Token to roll +1 defense die.",
 		cost: 3,
 		upgradeSlots: [
 			{
@@ -474,6 +502,7 @@ module.exports = [
 	{
 		type: "officer",
 		id: "R011c",
+		gameId: 1,
 		set: [
 			"CollectiveOP3"
 		],
@@ -481,7 +510,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "Add 1 [crew] Upgrade slot to your Upgrade Bar. \nDuring the Modify Attack Dice step of the Combat Phase, you may choose one of your attack dice and re-roll that die twice. \nDuring the Modify Defense Dice step of the Combat Phase, you may choose one of your defense dice and re-roll that die twice.",
+		text: "Add 1 [crew_text] Upgrade slot to your Upgrade Bar. \nDuring the Modify Attack Dice step of the Combat Phase, you may choose one of your attack dice and re-roll that die twice. \nDuring the Modify Defense Dice step of the Combat Phase, you may choose one of your defense dice and re-roll that die twice.",
 		cost: 3,
 		upgradeSlots: [
 			{
@@ -504,6 +533,7 @@ module.exports = [
 	{
 		type: "officer",
 		id: "R011d",
+		gameId: 1,
 		set: [
 			"CollectiveOP3"
 		],
@@ -511,7 +541,7 @@ module.exports = [
 		factions: [
 			"independent"
 		],
-		text: "Add 1 [tech] Upgrade slot to your Upgrade Bar. \nEach time you attack, if there is a [scan] Token beside your ship, the defender rolls -2 defense dice instead of -1. \nDuring the Modify Defense Dice step of the Combat Phase, you may spend a [scan] Token to add 1 [evade] result to your roll.",
+		text: "Add 1 [tech_text] Upgrade slot to your Upgrade Bar. \nEach time you attack, if there is a [scan] Token beside your ship, the defender rolls -2 defense dice instead of -1. \nDuring the Modify Defense Dice step of the Combat Phase, you may spend a [scan] Token to add 1 [evade] result to your roll.",
 		cost: 3,
 		upgradeSlots: [
 			{
@@ -534,6 +564,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004a",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -593,6 +624,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004f",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -652,6 +684,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004b",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -711,6 +744,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004g",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -770,6 +804,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004c",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -829,6 +864,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004h",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -888,6 +924,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004e",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -947,6 +984,7 @@ module.exports = [
 	{
 		type: "flagship",
 		id: "R004i",
+		gameId: 1,
 		set: [
 			"OP4Participation"
 		],
@@ -1006,6 +1044,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_federation",
+		gameId: 1,
 		showType: true,
 		name: "Federation",
 		factions: [
@@ -1024,6 +1063,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_klingon",
+		gameId: 1,
 		showType: true,
 		name: "Klingon",
 		factions: [
@@ -1042,6 +1082,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_romulan",
+		gameId: 1,
 		showType: true,
 		name: "Romulan",
 		factions: [
@@ -1060,6 +1101,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_dominion",
+		gameId: 1,
 		showType: true,
 		name: "Dominion",
 		factions: [
@@ -1078,6 +1120,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_borg",
+		gameId: 1,
 		showType: true,
 		name: "Borg",
 		factions: [
@@ -1096,6 +1139,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_species_8472",
+		gameId: 1,
 		showType: true,
 		name: "Species 8472",
 		factions: [
@@ -1114,6 +1158,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_kazon",
+		gameId: 1,
 		showType: true,
 		name: "Kazon",
 		factions: [
@@ -1132,6 +1177,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_xindi",
+		gameId: 1,
 		showType: true,
 		name: "Xindi",
 		factions: [
@@ -1150,6 +1196,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_bajoran",
+		gameId: 1,
 		showType: true,
 		name: "Bajoran",
 		factions: [
@@ -1168,6 +1215,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_ferengi",
+		gameId: 1,
 		showType: true,
 		name: "Ferengi",
 		factions: [
@@ -1186,6 +1234,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_vulcan",
+		gameId: 1,
 		showType: true,
 		name: "Vulcan",
 		factions: [
@@ -1204,6 +1253,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_independent",
+		gameId: 1,
 		showType: true,
 		name: "Independent",
 		factions: [
@@ -1222,6 +1272,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_mirror_universe",
+		gameId: 1,
 		showType: true,
 		name: "Mirror Universe",
 		factions: [
@@ -1240,6 +1291,7 @@ module.exports = [
 	{
 		type: "faction",
 		id: "faction_q_continuum",
+		gameId: 1,
 		showType: true,
 		name: "Q Continuum",
 		factions: [
@@ -1258,6 +1310,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "Rs01",
+		gameId: 1,
 		set: [
 			"72282gp"
 		],
@@ -1269,7 +1322,7 @@ module.exports = [
 			"dominion",
 			"independent"
 		],
-		text: "This card functions with captain Movar, from the Seleas Warbird Grand Prize. Swap a [tech], [weapon] or [crew] slot with a [talent], [tech], [weapon] or [crew] slot",
+		text: "This card functions with captain Movar, from the Seleas Warbird Grand Prize. Swap a [tech_text], [weapon_text] or [crew_text] slot with a [talent_text], [tech_text], [weapon_text] or [crew_text] slot",
 		cost: 0,
 		showType: true,
 		canEquip: true,
@@ -1284,6 +1337,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "R036a",
+		gameId: 1,
 		set: [
 			"72284r"
 		],
@@ -1295,7 +1349,7 @@ module.exports = [
 			"dominion",
 			"independent"
 		],
-		text: "This card adds an extra [crew] and [talent] slot which applies the special rules from the Senior Staff OP Resource.\n\nThis [crew] may equip a [talent] at the cost of +1SP.",
+		text: "This card adds an extra [crew_text] and [talent_text] slot which applies the special rules from the Senior Staff OP Resource.\n\nThis [crew_text] may equip a [talent_text] at the cost of +1SP.",
 		cost: 0,
 		showType: true,
 		canEquip: true,
@@ -1310,6 +1364,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "R033b",
+		gameId: 1,
 		set: [
 			"72280r"
 		],
@@ -1337,6 +1392,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "R033a",
+		gameId: 1,
 		set: [
 			"72280r"
 		],
@@ -1364,6 +1420,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "R039a",
+		gameId: 1,
 		set: [
 			"72301r"
 		],
@@ -1391,6 +1448,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "Rs40",
+		gameId: 1,
 		set: [
 			"72302r"
 		],
@@ -1402,7 +1460,7 @@ module.exports = [
 			"dominion",
 			"independent"
 		],
-		text: "Ship must have a hull of Hull 3 or less\n\nAdds 1 Weapon slot and +1 to Shield and Captain Skill values",
+		text: "Ship must have a hull of Hull 3 or less\n\nAdds 1 [weapon_text] slot and +1 to Shield and Captain Skill values",
 		cost: 5,
 		upgrades: [
 			{
@@ -1434,6 +1492,7 @@ module.exports = [
 	{
 		type: "ship-resource",
 		id: "R042a",
+		gameId: 1,
 		set: [
 			"72321r"
 		],
@@ -1445,7 +1504,7 @@ module.exports = [
 			"dominion",
 			"independent"
 		],
-		text: "Ship must have a hull of Hull 4 or more\n\nWhenever this ships Captain, Admiral, or [crew] would be disabled, you may place 2 [time] Tokens on that card instead.\n-OR-\nWhenever this ships Captain, Admiral, or [crew] would be discarded, you may discard this card instead.",
+		text: "Ship must have a hull of Hull 4 or more\n\nWhenever this ships Captain, Admiral, or [crew_text] would be disabled, you may place 2 [time] Tokens on that card instead.\n-OR-\nWhenever this ships Captain, Admiral, or [crew_text] would be discarded, you may discard this card instead.",
 		cost: 6,
 		showType: true,
 		canEquip: true,

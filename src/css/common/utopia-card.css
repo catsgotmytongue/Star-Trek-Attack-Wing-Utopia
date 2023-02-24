@@ -169,7 +169,7 @@
 	position: relative;
 	left: 0em;
 	top: -0.1em;
-	z-index: 1;
+	z-index: 4;
 	text-align: center;
 }
 
@@ -248,6 +248,81 @@
 	left: 0em;
 	top: -0.1em;
 	z-index: 1;
+	text-align: center;
+}
+
+.card-akiraLimit-icon {
+	background: url("../img/restrictions/fedAkira.png")no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 1;
+	text-align: center;
+	content: "";
+}
+
+.card-defiantLimit-icon {
+	background: url("../img/restrictions/fedDefiant.png")no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 1;
+	text-align: center;
+	content: "";
+}
+
+.card-dkyrLimit-icon {
+	background: url("../img/restrictions/vulDkyr.png")no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 1;
+	text-align: center;
+	content: "";
+}
+
+.card-prometheusLimit-icon {
+	background: url("../img/restrictions/fedPrometheus.png") no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 3;
+	text-align: center;
+}
+
+.card-remanLimit-icon {
+	background: url("../img/restrictions/romReman.png") no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 3;
+	text-align: center;
+}
+
+.card-suurokLimit-icon {
+	background: url("../img/restrictions/vulSuurok.png") no-repeat;
+	background-size: 1em;
+	color: gray;
+	width: 1.2em;
+	position: relative;
+	left: 0em;
+	top: -0.1em;
+	z-index: 3;
 	text-align: center;
 }
 
@@ -958,6 +1033,17 @@
 	border-radius: 0.1em;
 	clear: left;
 	margin-top: 0.1em;
+}
+
+/* placeholder for ship silhouette, icon added by angular style attribute binding*/
+.card-ship-silhouette-icon {
+    width: 1.75em;
+    height: 1.75em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+	  display: inline-block;
 }
 
 .card-ship-upgrade-bar {
