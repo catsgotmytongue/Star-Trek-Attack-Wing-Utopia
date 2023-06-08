@@ -124,6 +124,19 @@ module.factory( "cardRules", [ "$filter", "$factions", function($filter, $factio
 		return null;
 	}
 
+	var hasDaharMaster = function(card){
+		var foundDaharMasterTalent = false;
+		card.upgradeSlots.forEach(element => {
+			if (element.occupant) {
+				if (element.occupant.name === "Dahar Master") {
+					foundDaharMasterTalent = true;
+				}
+			}
+		});
+		return foundDaharMasterTalent
+
+	}
+
 	// the following return object represents a massive lookup table to resolve special card rules by a key of "cardType:cardId"
 	return {
 
@@ -738,7 +751,7 @@ module.factory( "cardRules", [ "$filter", "$factions", function($filter, $factio
 		fleet: {
 			// Add Skill to Kor, Koloth and Kang
 			skill: function(card,ship,fleet,skill) {
-				if( card == ship.captain && ((card.name == "Kor") || (card.name == "Kang") || (card.name == "Koloth")))
+				if( card == ship.captain && ((card.name == "Kor") || (card.name == "Kang") || (card.name == "Koloth")) && hasDaharMaster(card))
 					return resolve(card,ship,fleet,skill) +1;
 				return skill;
 			}
@@ -1982,7 +1995,7 @@ intercept: {
 				ship: {
 					// All Vulcan/Federation tech is -2 SP
 					cost: function(upgrade, ship, fleet, cost) {
-					if( $factions.hasAnyFaction(upgrade,["federation","bajoran", "vulcan"], ship, fleet) && (upgrade.type == "tech" || getOccupiedSlot(upgrade, ship)?.type?.includes("tech") ))
+					if ( $factions.hasAnyFaction(upgrade,["federation","bajoran", "vulcan"], ship, fleet) && (upgrade.type == "tech" || getOccupiedSlot(upgrade, ship)?.type?.includes("tech") ))
 							return resolve(upgrade, ship, fleet, cost) - 2;
 						return cost;
 					},
@@ -4866,6 +4879,18 @@ intercept: {
 	//Robinson :71213
 
 	//Dreadnought(old) :71212
+		"ship:S221": {
+			intercept: {
+				ship: {
+					canEquipCaptain: function (captain, ship, fleet) {
+						return false;
+					},
+					canEquipAdmiral: function (captain, ship, fleet) {
+						return false;
+					}
+				}
+			}
+		},
 		// Counter Measures - one per ship only, +5 SP on any ship except ATR-4107
 		"tech:T112": {
 			canEquip: function(upgrade,ship,fleet) {
@@ -6222,6 +6247,18 @@ intercept: {
 
 
 	//Dreadnought :72013wp
+		"ship:S265": {
+			intercept: {
+				ship: {
+					canEquipCaptain: function (captain, ship, fleet) {
+						return false;
+					},
+					canEquipAdmiral: function (captain, ship, fleet) {
+						return false;
+					}
+				}
+			}
+		},
 		//Captured
 		"question:Q011": {
 			isSlotCompatible: function(slotTypes) {
