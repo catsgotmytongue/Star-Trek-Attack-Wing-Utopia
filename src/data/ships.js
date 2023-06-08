@@ -1,6 +1,155 @@
 module.exports = [
 	{
 		type: "ship",
+		id: "S381",
+		gameId: 2,
+		set: [
+			"80002"
+		],
+		name: "Dominion Starship",
+		class: "Jem'Hadar Battle Cruiser",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 6,
+		shields: 4,
+		cost: 27,
+		text: "",
+		unique: false,
+		alliance: true,
+		factions: [
+			"dominion"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "S380",
+		gameId: 2,
+		set: [
+			"80002"
+		],
+		name: "Dominion Starship",
+		class: "Cardassian Galor Class",
+
+		actions: [
+			"evade",
+			"target-lock",
+			"scan"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 4,
+		shields: 3,
+		cost: 17,
+		text: "",
+		unique: false,
+		alliance: true,
+		factions: [
+			"dominion"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "S379",
+		gameId: 2,
+		set: [
+			"80002"
+		],
+		name: "Klingon Starship",
+		class: "Vor'cha Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 5,
+		shields: 2,
+		cost: 22,
+		text: "",
+		unique: false,
+		alliance: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "S378",
+		gameId: 2,
+		set: [
+			"80002"
+		],
+		name: "Klingon Starship",
+		class: "K'Vort Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 5,
+		shields: 2,
+		cost: 20,
+		text: "",
+		unique: false,
+		alliance: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
 		id: "S377",
 		gameId: 1,
 		set: [
@@ -25,7 +174,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 15,
-		text: "<font size ='-1'><b>COMBAT PHASE:</b> If there is a [scan] Token beside this ship: Target an opposing ship within Range 1-2. \n\n Place 1 [time] Token on the target's ship card. You may spend that [scan] Token beside this ship and disable 1 [weapon_text] Upgrade equipped to the target ship.</font>",
+		text: "<b>COMBAT PHASE:</b> If there is a [scan] Token beside this ship: Target an opposing ship within Range 1-2. \n\n Place 1 [time] Token on the target's ship card. You may spend that [scan] Token beside this ship and disable 1 [weapon_text] Upgrade equipped to the target ship.",
 		unique: true,
 		factions: [
 			"federation"
@@ -62,7 +211,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 16,
-		text: "<font size=\"-1\">This ship and each other friendly ship within Range 1 gain the effect listed based on the number of friendly ships within Range 1 of this ship: <b>WHEN ATTACKING OR DEFENDING:</b> \n</font><font size ='-2'> <b>1</b> - Re-roll 1 [blank] . \n <b>2</b> - Convert 1 [blank] into 1 [battlestations] . \n <b>3+</b> - Convert 1 [blank] into either 1 [hit] or 1 [evade] .</font>",
+		text: "This ship and each other friendly ship within Range 1 gain the effect listed based on the number of friendly ships within Range 1 of this ship: <b>WHEN ATTACKING OR DEFENDING:</b> \n\n <b>1</b> - Re-roll 1 [blank] . \n <b>2</b> - Convert 1 [blank] into 1 [battlestations] . \n <b>3+</b> - Convert 1 [blank] into either 1 [hit] or 1 [evade] .",
 		unique: true,
 		factions: [
 			"federation"
@@ -100,7 +249,7 @@ module.exports = [
 		hull: 5,
 		shields: 5,
 		cost: 29,
-		text: "<b>WHEN A FRIENDLY <img src='../img/faction_fed.png' width='20' height='20'> SHIP WITHIN RANGE 1 IS ATTACKING:</b>\n<font size='-1'>That friendly ship may roll +1 attack die. If that friendly ship is a <img src='../img/Ships/fed-sil-fedsovereign.png' width='10' height='10';> it may also add 1 [hit]. If the defending ship is a <img src='../img/faction-borg.png' width='20' height='20';> ship, that friendly ship may also convert either 1 [blank] or [battlestations] into 1 [crit].</font>",
+		text: "<b>WHEN A FRIENDLY <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> SHIP WITHIN RANGE 1 IS ATTACKING:</b>\n That friendly ship may roll +1 attack die. If that friendly ship is a <img src='img/text/fed-sovereign.png' width='18' height='18' title='Sovereign Class'> it may also add 1 [hit]. If the defending ship is a <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> ship, that friendly ship may also convert either 1 [blank] or [battlestations] into 1 [crit].",
 		unique: true,
 		factions: [
 			"federation"
@@ -138,7 +287,7 @@ module.exports = [
 		hull: 5,
 		shields: 5,
 		cost: 29,
-		text: "<font size ='-2'>If equipped with an Admiral - You may perform the equipped card's Fleet Action as a Free Action this round. If equipped with an [ambassador_text] - Once per game. <b>PLANNING PHASE:</b> You may cancel your active Negotiations. Activate your Negotiation Effect targetting a different opposing ship. If equipped with the 'Federation Prototype' [hook] - <b>WHEN DEFENDING:</b> Roll +1 defense die.",
+		text: "If equipped with an Admiral - You may perform the equipped card's Fleet Action as a Free Action this round. \n<hr> If equipped with an [ambassador_text] - Once per game. <b>PLANNING PHASE:</b> You may cancel your active Negotiations. Activate your Negotiation Effect targetting a different opposing ship. \n<hr> If equipped with the 'Federation Prototype' [hook] - <b>WHEN DEFENDING:</b> Roll +1 defense die.",
 		unique: true,
 		factions: [
 			"federation"
@@ -176,7 +325,7 @@ module.exports = [
 		hull: 5,
 		shields: 3,
 		cost: 23,
-		text: "<font size='-1.5'><b>WHEN DEFENDING:</b>\n You may re-roll 1 [blank]. If the attacking ship is a Capital Ship, you may also add an [evade].\n<b>WHEN ATTACKING A <img src='../img/faction_fed.png' width='20' height='20'> SHIP:</b>\nRoll -2 attack dice.\nPlace 1 [aux] Token beside the defending ship.",
+		text: "<b>WHEN DEFENDING:</b>\n You may re-roll 1 [blank]. If the attacking ship is a Capital Ship, you may also add an [evade]. \n<hr> <b>WHEN ATTACKING A <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> SHIP:</b>\nRoll -2 attack dice.\nPlace 1 [aux] Token beside the defending ship.",
 		unique: true,
 		factions: [
 			"federation"
@@ -214,7 +363,7 @@ module.exports = [
 		hull: 5,
 		shields: 3,
 		cost: 23,
-		text: "<font size='-1'><b>COMBAT PHASE:</b> \n You may move your Red [target-lock] Token to an opposing ship within Range 1-3 even if that ship is cloaked. \n-----------------------------------\n <b>WHEN ATTACKING: DEAL DAMAGE STEP:</b> \n You may acquire a [target-lock] on the defending ship.</font>",
+		text: "<b>COMBAT PHASE:</b> \n You may move your Red [target-lock] Token to an opposing ship within Range 1-3 even if that ship is cloaked. \n<hr> <b>WHEN ATTACKING: DEAL DAMAGE STEP:</b> \n You may acquire a [target-lock] on the defending ship.",
 		unique: true,
 		factions: [
 			"federation"
@@ -253,7 +402,7 @@ module.exports = [
 		hull: 4,
 		shields: 5,
 		cost: 27,
-		text: "<b>WHEN ATTACKING WITH A <img src='img/faction_fed.png' width='20' height='20';'> [weapon_text] UPGRADE:</b> \n\n Convert 1 [battlestations] into 1 [hit]. If the defending ship is a <img src='img/faction-dominion.png' width='20' height='20';'> ship, convert 1 [battlestations] into 1 [crit] instead.",
+		text: "<b>WHEN ATTACKING WITH A <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> [weapon_text] UPGRADE:</b> \n\n Convert 1 [battlestations] into 1 [hit]. If the defending ship is a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ship, convert 1 [battlestations] into 1 [crit] instead.",
 		unique: true,
 		factions: [
 			"federation"
@@ -330,7 +479,7 @@ module.exports = [
 		hull: 4,
 		shields: 5,
 		cost: 28,
-		text: "If this ship is equipped with the 'Federation Prototype' [hook], <img src='https://i.imgur.com/0QLkrIf.png' width='10' height='10'> Restricted Upgrades equipped to this ship cost -2 SP and cannot be affected by opposing Upgrades.",
+		text: "If this ship is equipped with the 'Federation Prototype' [hook], <img src='img/text/fed-prometheus.png' width='18' height='18' title='Prometheus Class'> Restricted Upgrades equipped to this ship cost -2 SP and cannot be affected by opposing Upgrades.",
 		unique: true,
 		factions: [
 			"federation"
@@ -510,7 +659,7 @@ module.exports = [
 		hull: 2,
 		shields: 2,
 		cost: 12,
-		text: "<b>COMBAT PHASE:</b> Target an opposing ship and a friendly ship each within Range 1-2. \n You may discard a [battlestations], [evade], or [scan] Token beside the target opposing ship, then place a Token of the same type beside the target friendly ship.",
+		text: "<b>COMBAT PHASE:</b> Target an opposing ship and a friendly ship each within Range 1-2. \n\n You may discard a [battlestations], [evade], or [scan] Token beside the target opposing ship, then place a Token of the same type beside the target friendly ship.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -548,7 +697,7 @@ module.exports = [
 		hull: 6,
 		shields: 4,
 		cost: 27,
-		text: "<b>WHEN DEFENDING</b> \nYou may re-roll 1 of your defense dice. If this ship is cloaked, you may re-roll any of your defense dice.",
+		text: "<b>WHEN DEFENDING</b> \n\n You may re-roll 1 of your defense dice. If this ship is cloaked, you may re-roll any of your defense dice.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -623,7 +772,7 @@ module.exports = [
 		hull: 6,
 		shields: 4,
 		cost: 28,
-		text: "<font size='-1' style='display: flex; justify-content: center; align-items: center;'><b>AFTER AN OPPOSING SHIP WITHIN RANGE 1-3 PERFORMS AN ACTION:</b>\nIf this ship is cloaked.\n You may perform an additional [sensor-echo] Action as a Free Action this round or place a [battlestations] Token beside this ship. If that ship is a <img src='img/text/faction-dominion.png' width='18' height='18'> ship, you may do both.</font>",
+		text: "<b>AFTER AN OPPOSING SHIP WITHIN RANGE 1-3 PERFORMS AN ACTION:</b>\nIf this ship is cloaked.\n\n You may perform an additional [sensor-echo] Action as a Free Action this round or place a [battlestations] Token beside this ship. If that ship is a <img src='img/text/faction-dominion.png' width='18' height='18'> ship, you may do both.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -730,7 +879,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "<b>ACTIVATION PHASE:</b> Target a friendly ship within Range 1-2 that has an [aux] Token beside it and place 2 [time] Tokens on a [crew_text] Upgrade equipped to this ship.\nThe target ship does not skip its Perform Action Step this game round.",
+		text: "<b>ACTIVATION PHASE:</b> Target a friendly ship within Range 1-2 that has an [aux] Token beside it and place 2 [time] Tokens on a [crew_text] Upgrade equipped to this ship.\n\n The target ship does not skip its Perform Action Step this game round.",
 		attack: 2,
 		agility: 2,
 		hull: 3,
@@ -764,7 +913,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ships with a Hull Value of 3 or less within Range 1-2.\nThe target ships roll +2 defense dice and may convert 1 [blank] into 1 [battlestations] the next time they defend this game round.",
+		text: "<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ships with a Hull Value of 3 or less within Range 1-2.\n\n The target ships roll +2 defense dice and may convert 1 [blank] into 1 [battlestations] the next time they defend this game round.",
 		attack: 4,
 		agility: 1,
 		hull: 5,
@@ -798,7 +947,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "<img src='../img/faction_fed.png' width='20' height='20'> [weapon_text] Upgrades equipped to this ship cost -1 SP.\n<b>WHEN ATTACKING WITH A PHOTON TORPEDOS UPGRADE, DURING THE MODIFY ATTACK DICE STEP:</b>\nDestroy 1 Active Shield on the defending ship.",
+		text: "<img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> [weapon_text] Upgrades equipped to this ship cost -1 SP.\n<hr> <b>WHEN ATTACKING WITH A PHOTON TORPEDOS UPGRADE, DURING THE MODIFY ATTACK DICE STEP:</b>\n\n Destroy 1 Active Shield on the defending ship.",
 		attack: 4,
 		agility: 2,
 		hull: 5,
@@ -864,8 +1013,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 2,
 		hull: 5,
@@ -903,7 +1051,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 21,
-		text: "You may equip a <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [tech_text] Upgrade with a printed cost of 4 SP or less to this ship for free, even if it exceeds this ship's retrictions.",
+		text: "You may equip a <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> [tech_text] Upgrade with a printed cost of 4 SP or less to this ship for free, even if it exceeds this ship's retrictions.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -936,7 +1084,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 16,
-		text: "<b>WHEN ATTACKING A SHIP WITH A HULL OF 4 OR GREATER:</b> Steal a [scan] Token, a [battlestations] Token, or an [evade] Token from beside the defending ship and place it beside this ship.\n<b>WHEN ATTACKING A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> SHIP OR A SHIP WITH A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> CAPTAIN EQUIPPED TO IT:</b> Add 1 [hit]. ",
+		text: "<b>WHEN ATTACKING A SHIP WITH A HULL OF 4 OR GREATER:</b> \n\n Steal a [scan] Token, a [battlestations] Token, or an [evade] Token from beside the defending ship and place it beside this ship.\n<hr> <b>WHEN ATTACKING A <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> SHIP OR A SHIP WITH A <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> CAPTAIN EQUIPPED TO IT: \n\n </b> Add 1 [hit]. ",
 		unique: true,
 		factions: [
 			"klingon",
@@ -1004,7 +1152,7 @@ module.exports = [
 		hull: 6,
 		shields: 3,
 		cost: 28,
-		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked, disable a <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [crew_text] Upgrade equipped to this ship\n\nDo not flip this ship's [cloak] Token to its red side and place a [battlestations] Token beside this ship.",
+		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked, disable a <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> [crew_text] Upgrade equipped to this ship \n\n Do not flip this ship's [cloak] Token to its red side and place a [battlestations] Token beside this ship.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -1104,7 +1252,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 17,
-		text: "<b>COMBAT PHASE:</b> If this ship is cloaked:\nPlace a [battlestations],[scan],OR [evade] Token beside this ship OR increase the Captain Skill of the Captain equipped to this ship by 3 this Combat Phase",
+		text: "<b>COMBAT PHASE:</b> If this ship is cloaked:\n\n Place a [battlestations],[scan],OR [evade] Token beside this ship OR increase the Captain Skill of the Captain equipped to this ship by 3 this Combat Phase",
 		unique: true,
 		factions: [
 			"dominion",
@@ -1141,7 +1289,7 @@ module.exports = [
 		hull: 4,
 		shields: 4,
 		cost: 22,
-		text: "<b>ACTION:</b> \nAll other friendly <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> ships within Range 1-2 may perform an Action on their Action Bar as a Free Action.",
+		text: "<b>ACTION:</b> \n\n All other friendly <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ships within Range 1-2 may perform an Action on their Action Bar as a Free Action.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -1179,7 +1327,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 22,
-		text: "If there are only <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> and/or <img src='https://i.imgur.com/BpbvTHt.png' width='20' height='20'> cards equipped to this ship, add the [cloak] and [sensor-echo] Actions to this ship's Action Bar.\n<b>WHEN A FRIENDLY SHIP WITHIN RANGE 1 PERFORMS THE CLOAK ACTION:</b> This ship may perform the [cloak] Action as a Free Action.",
+		text: "If there are only <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> and/or <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> cards equipped to this ship, add the [cloak] and [sensor-echo] Actions to this ship's Action Bar.\n<hr> <b>WHEN A FRIENDLY SHIP WITHIN RANGE 1 PERFORMS THE CLOAK ACTION:</b> \n\n This ship may perform the [cloak] Action as a Free Action.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -1217,7 +1365,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 24,
-		text: "All friendly <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> ships within Range 1 roll +1 attack die.",
+		text: "All friendly <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ships within Range 1 roll +1 attack die.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -1291,7 +1439,7 @@ module.exports = [
 		hull: 5,
 		shields: 4,
 		cost: 24,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship.\n\nConvert up to 2 [battlestations] into 1 [hit] each.",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship.\n\n Convert up to 2 [battlestations] into 1 [hit] each.",
 		unique: true,
 		factions: [
 			"vulcan"
@@ -1328,7 +1476,7 @@ module.exports = [
 		hull: 5,
 		shields: 4,
 		cost: 25,
-		text: "<b>COMBAT PHASE:</b> Spend a [scan] Token from beside this ship.\nThe next attack this ship makes with its Primary Weapon this game round ignores the defending ship's Shields.",
+		text: "<b>COMBAT PHASE:</b> Spend a [scan] Token from beside this ship.\n\n The next attack this ship makes with its Primary Weapon this game round ignores the defending ship's Shields.",
 		unique: true,
 		factions: [
 			"vulcan"
@@ -1365,7 +1513,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 20,
-		text: "<b>FREE ACTION:</b>\nPlace an [aux] Token beside this ship and target a friendly ship within Range 1-2.\n\nPlace a [scan] Token and an [evade] Token beside this ship and target ship.",
+		text: "<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target a friendly ship within Range 1-2.\n\nPlace a [scan] Token and an [evade] Token beside this ship and target ship.",
 		unique: true,
 		factions: [
 			"federation",
@@ -1404,7 +1552,7 @@ module.exports = [
 		hull: 4,
 		shields: 4,
 		cost: 22,
-		text: "All <img src='https://i.imgur.com/Bz5pgGG.png' width='20' height='20'> Captains, Admirals, and [crew_text] Upgrades equipped to this ship cost -1 SP.\n<b>WHEN THIS SHIP PERFORMS A [scan] ACTION:</b> \nPlace an additional [scan] Token beside this ship.",
+		text: "All <img src='img/text/faction-vulcan.png' width='20' height='20' title='Vulcan'> Captains, Admirals, and [crew_text] Upgrades equipped to this ship cost -1 SP.\n<hr> <b>WHEN THIS SHIP PERFORMS A [scan] ACTION:</b> \n\nPlace an additional [scan] Token beside this ship.",
 		unique: true,
 		factions: [
 			"federation",
@@ -1441,7 +1589,7 @@ module.exports = [
 		hull: 3,
 		shields: 2,
 		cost: 16,
-		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked:  This ship rolls +1 attack die this attack.\n-----------------------------------\n<b>WHEN ATTACKING: </b> If this ship is not within the Primary Firing Arc of the defending ship.  Convert 1 [battlestations] into 1 [crit] and all other [battlestations] into [hit].",
+		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked:  This ship rolls +1 attack die this attack.\n<hr> <b>WHEN ATTACKING: </b> If this ship is not within the Primary Firing Arc of the defending ship.  \n\n Convert 1 [battlestations] into 1 [crit] and all other [battlestations] into [hit].",
 		unique: true,
 		factions: [
 			"klingon"
@@ -1538,7 +1686,7 @@ module.exports = [
 		hull: 5,
 		shields: 4,
 		cost: 30,
-		text: "You do not pay a faction penalty for cards equipped to this ship.\n-----------------------------------\nAll [tech_text] Upgrades equipped to this ship cost -1 SP.",
+		text: "You do not pay a faction penalty for cards equipped to this ship.\n<hr> All [tech_text] Upgrades equipped to this ship cost -1 SP.",
 		unique: true,
 		factions: [
 			"borg"
@@ -1802,7 +1950,7 @@ module.exports = [
 		hull: 4,
 		shields: 5,
 		cost: 23,
-		text: "You may equip a [crew_text] Upgrade as the Captain of this ship. If you do, it counts as a Captain instead of a [crew_text] Upgrade and its Captain Skill is its Printed SP Cost +3.\n----------------------------------\nYou may not equip an Admiral Card to this ship.",
+		text: "You may equip a [crew_text] Upgrade as the Captain of this ship. If you do, it counts as a Captain instead of a [crew_text] Upgrade and its Captain Skill is its Printed SP Cost +3.\n<hr> You may not equip an Admiral Card to this ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -1876,7 +2024,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 21,
-		text: "<b><font size=\"-1\">WHEN A FRIENDLY SHIP WITHIN RANGE 1 IS DEFENDING:</font></b> The friendly ship may roll +1 defense die. If that friendly ship is an <img src='https://i.imgur.com/gYAWL0N.png' width='10' height='10'>, it may also convert one [blank] result into one [evade] result. If the attacking ship is a <img src='https://i.imgur.com/89QK4SA.png' width='20' height='20'> Ship, that friendly ship may also add one [evade].",
+		text: "<b>WHEN A FRIENDLY SHIP WITHIN RANGE 1 IS DEFENDING:</b> \n\n The friendly ship may roll +1 defense die. If that friendly ship is an <img src='img/text/ind-andorian.png' width='18' height='18' title='Andorian Battle Crusier'>, it may also convert one [blank] result into one [evade] result. If the attacking ship is a <img src='img/text/faction-vulcan.png' width='20' height='20' title='Vulcan'> Ship, that friendly ship may also add one [evade].",
 		unique: true,
 		factions: [
 			"independent"
@@ -1909,7 +2057,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 18,
-		text: "You may equip the Inertial Compensators Upgrade to this ship for free and without requiring an Upgrade Slot.\n<b>WHEN ATTACKING:</b> If the defending ship is hit: Place an [aux] token beside the defending ship.",
+		text: "You may equip the Inertial Compensators Upgrade to this ship for free and without requiring an Upgrade Slot.\n<hr> <b>WHEN ATTACKING:</b> If the defending ship is hit: \n\n Place an [aux] token beside the defending ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -2245,7 +2393,7 @@ module.exports = [
 		hull: 3,
 		shields: 4,
 		cost: 22,
-		text: "<b>AFTER THIS SHIP DEALS NO DAMAGE WITH AN ATTACK:</b> Target the defending ship. \nPlace a [battlestations] Token beside this ship and perform a  [target-lock] Action as a free Action on the target ship.",
+		text: "<b>AFTER THIS SHIP DEALS NO DAMAGE WITH AN ATTACK:</b> Target the defending ship. \n\nPlace a [battlestations] Token beside this ship and perform a  [target-lock] Action as a free Action on the target ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -2278,7 +2426,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 16,
-		text: "<b>AFTER THIS SHIP PERFORMS A   [target-lock] ACTION:</b> Target a friendly Jem'Hadar Attack Ship within Range 1.\n\nThe target ship may perform a   [target-lock] Action as a Free Action.",
+		text: "<b>AFTER THIS SHIP PERFORMS A   </b>[target-lock]<b> ACTION:</b> Target a friendly Jem'Hadar Attack Ship within Range 1.\n\nThe target ship may perform a   [target-lock] Action as a Free Action.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -2384,7 +2532,7 @@ module.exports = [
 		hull: 3,
 		shields: 3,
 		cost: 18,
-		text: "<font size=\"-1\"><b>COMBAT PHASE:</b> If there is an opposing ship in the Primary Firing Arc of this ship and the Primary Firing Arc of another <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> ship with a <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Captain equipped to it, target that friendly ship.  This ship attack first this game round and the target ship attacks second this game round.</font>",
+		text: "<b>COMBAT PHASE:</b> If there is an opposing ship in the Primary Firing Arc of this ship and the Primary Firing Arc of another <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> ship with a <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> Captain equipped to it, target that friendly ship.  \n\nThis ship attack first this game round and the target ship attacks second this game round.",
 		unique: true,
 		factions: [
 			"ferengi",
@@ -2457,7 +2605,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 21,
-		text: "<b>ACTION:</b> Target a [tech_text] or [weapon_text] Upgrade equipped to an opposing ship within Range 1-2.\nEach player rolls 5 attack dice. If you roll more [battlestations] than the controller of the target Upgrade, steal the target Upgrade even if it exceeds this ships restrictions.",
+		text: "<b>ACTION:</b> Target a [tech_text] or [weapon_text] Upgrade equipped to an opposing ship within Range 1-2.\n\nEach player rolls 5 attack dice. If you roll more [battlestations] than the controller of the target Upgrade, steal the target Upgrade even if it exceeds this ships restrictions.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -2664,7 +2812,7 @@ module.exports = [
 		hull: 4,
 		shields: 3,
 		cost: 20,
-		text: "<b>ACTIVATION PHASE:</b> After this ship executes a Green Maneuver, place 2 [time] Tokens on this card.\nRemove a Disable Token from 1 Upgrade equipped to this ship or equip a <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Upgrade that was discarded from this ship to this ship.",
+		text: "<b>ACTIVATION PHASE:</b> After this ship executes a Green Maneuver, place 2 [time] Tokens on this card.\n\n Remove a Disable Token from 1 Upgrade equipped to this ship or equip a <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> Upgrade that was discarded from this ship to this ship.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -2683,7 +2831,7 @@ module.exports = [
 			"75002"
 		],
 		name: "2nd Division Battleship",
-		class: "Jem'Hadar Battleship ",
+		class: "Jem'Hadar Battleship",
 		actions: [
 			"target-lock",
 			"scan",
@@ -2721,7 +2869,7 @@ module.exports = [
 			"75002"
 		],
 		name: "Jem'Hadar Battleship",
-		class: "Jem'Hadar Battleship ",
+		class: "Jem'Hadar Battleship",
 		actions: [
 			"target-lock",
 			"scan",
@@ -2814,7 +2962,7 @@ module.exports = [
 		agility: 1,
 		hull: 6,
 		shields: 4,
-		cost: 29,
+		cost: 27,
 		text: "",
 		unique: false,
 		factions: [
@@ -3102,7 +3250,7 @@ module.exports = [
 		hull: 2,
 		shields: 2,
 		cost: 12,
-		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target a friendly Romulan ship within Range 1.\n\nThe target ship may perform an Action as a Free Action.",
+		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target a friendly <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ship within Range 1.\n\nThe target ship may perform an Action as a Free Action.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -3260,8 +3408,7 @@ module.exports = [
 		id: "S273",
 		gameId: 1,
 		set: [
-			"2017core",
-			"80000"
+			"2017core"
 		],
 		name: "Federation Starship",
 		class: "Galaxy Class",
@@ -3277,8 +3424,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 5+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 1,
 		hull: 5,
@@ -3339,8 +3485,7 @@ module.exports = [
 		set: [
 			"2017core",
 			"OP4Prize",
-			"72011",
-			"80000"
+			"72011"
 		],
 		name: "Federation Starship",
 		class: "Nebula Class",
@@ -3356,8 +3501,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 5+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 1,
 		hull: 4,
@@ -3394,8 +3538,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 5+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 1,
 		hull: 4,
@@ -3772,8 +3915,7 @@ module.exports = [
 		gameId: 1,
 		set: [
 			"72011wp",
-			"71801",
-			"80000"
+			"71801"
 		],
 		name: "Federation Starship",
 		class: "Oberth Class",
@@ -3787,8 +3929,7 @@ module.exports = [
 			"tech",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 2,
 		agility: 3,
 		hull: 3,
@@ -5486,7 +5627,6 @@ module.exports = [
 			"71120",
 			"72253",
 			"72284p",
-			"80000",
 			"75011"
 		],
 		name: "Federation Starship",
@@ -5503,8 +5643,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 5+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 1,
 		hull: 5,
@@ -5676,7 +5815,6 @@ module.exports = [
 		set: [
 			"71121",
 			"72235p",
-			"80000",
 			"75011"
 		],
 		name: "Federation Starship",
@@ -5691,8 +5829,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 2,
 		agility: 2,
 		hull: 3,
@@ -6503,7 +6640,6 @@ module.exports = [
 			"71268",
 			"72282",
 			"71221",
-			"80000",
 			"75011"
 		],
 		name: "Federation Starship",
@@ -6520,8 +6656,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 4+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 3,
 		agility: 2,
 		hull: 3,
@@ -6940,14 +7075,13 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).",
+		text: "",
 		attack: 3,
 		agility: 1,
 		hull: 5,
 		shields: 3,
 		cost: 20,
 		unique: false,
-		alliance: true,
 		factions: [
 			"federation"
 		],
@@ -7145,8 +7279,7 @@ module.exports = [
 		id: "S162",
 		gameId: 1,
 		set: [
-			"71276",
-			"80000"
+			"71276"
 		],
 		name: "Federation Starship",
 		class: "Nova Class",
@@ -7161,8 +7294,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 2,
 		agility: 2,
 		hull: 3,
@@ -8425,8 +8557,7 @@ module.exports = [
 		gameId: 1,
 		set: [
 			"u_s_s_yaeger",
-			"72231",
-			"80000"
+			"72231"
 		],
 		name: "Federation Starship",
 		class: "Saber Class",
@@ -8441,8 +8572,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 4+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 3,
 		agility: 2,
 		hull: 3,
@@ -9760,8 +9890,7 @@ module.exports = [
 		gameId: 1,
 		set: [
 			"71531",
-			"72271",
-			"80000"
+			"72271"
 		],
 		name: "Federation Starship",
 		class: "Sovereign Class",
@@ -9777,8 +9906,7 @@ module.exports = [
 			"crew",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 8+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 5,
 		agility: 1,
 		hull: 5,
@@ -11561,8 +11689,7 @@ module.exports = [
 		id: "S041",
 		gameId: 1,
 		set: [
-			"71802",
-			"80000"
+			"71802"
 		],
 		name: "Federation Starship",
 		class: "Prometheus Class",
@@ -11579,8 +11706,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 8+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 5,
 		agility: 1,
 		hull: 4,
@@ -11844,8 +11970,7 @@ module.exports = [
 		id: "S033",
 		gameId: 1,
 		set: [
-			"72001p",
-			"80000"
+			"72001p"
 		],
 		name: "Federation Starship",
 		class: "Intrepid Class",
@@ -11861,8 +11986,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 5+).\n\nCard and model did not come with Star Trek Alliance.",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 2,
 		hull: 4,
@@ -12728,8 +12852,7 @@ module.exports = [
 			"weapon",
 			"crew"
 		],
-		text: "Usable in Star Trek Alliance.\n(Captain Skill 2+).",
-		alliance: true,
+		text: "",
 		attack: 4,
 		agility: 2,
 		hull: 5,
@@ -12875,5 +12998,990 @@ module.exports = [
 			"romulan"
 		],
 		squadron: false
+	},
+
+	// Alliance Builder Tools
+	{
+		type: "ship",
+		id: "STA001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Akira Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 2,
+		hull: 5,
+		shields: 2,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Akira Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"weapon",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 2,
+		hull: 5,
+		shields: 2,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Excelsior Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		text: "",
+		attack: 3,
+		agility: 1,
+		hull: 5,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Miranda Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 2,
+		agility: 2,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Oberth Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan"
+		],
+		upgrades: [
+			"tech",
+			"tech",
+			"crew"
+		],
+		text: "",
+		attack: 2,
+		agility: 3,
+		hull: 3,
+		shields: 1,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA006",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Nova Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 2,
+		agility: 2,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA007",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Defiant Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 3,
+		agility: 2,
+		hull: 3,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA008",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Saber Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 3,
+		agility: 2,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA009",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Intrepid Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		attack: 4,
+		agility: 2,
+		hull: 4,
+		shields: 4,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA010",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Intrepid Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 2,
+		hull: 4,
+		shields: 4,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA011",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Galaxy Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 1,
+		hull: 5,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA012",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Galaxy Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"weapon",
+			"crew",
+			"crew",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 1,
+		hull: 5,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA013",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Nebula Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 1,
+		hull: 4,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA014",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Nebula Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 4,
+		agility: 1,
+		hull: 4,
+		shields: 3,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA015",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Class",
+		class: "Prometheus Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 4,
+		shields: 4,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA016",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Prometheus Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"tech",
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		text: "",
+		attack: 5,
+		agility: 1,
+		hull: 4,
+		shields: 4,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+
+	{
+		type: "ship",
+		id: "STA017",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Federation Starship",
+		class: "Sovereign Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"scan",
+			"battlestations"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		text: "",
+		attack: 5,
+		agility: 1,
+		hull: 5,
+		shields: 4,
+		cost: 0,
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"federation"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA018",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "Vor'cha Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 5,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA019",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "K'Vort Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 5,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA020",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "B'Rel Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"weapon",
+			"crew",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA021",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "B'Rel Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA022",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "B'Rel Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 3,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA023",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "K'T'Inga Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"weapon",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 4,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA024",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "K'T'Inga Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 4,
+		agility: 1,
+		hull: 4,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA025",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "Negh'var Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 6,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
+	},
+	{
+		type: "ship",
+		id: "STA026",
+		gameId: 2,
+		set: [
+			"80000"
+		],
+		name: "Klingon Starship",
+		class: "Negh'var Class",
+		actions: [
+			"evade",
+			"target-lock",
+			"cloak",
+			"sensor-echo"
+		],
+		upgrades: [
+			"tech",
+			"weapon",
+			"crew",
+			"crew"
+		],
+		attack: 5,
+		agility: 1,
+		hull: 6,
+		shields: 2,
+		cost: 0,
+		text: "",
+		unique: false,
+		alliancelogo: true,
+		factions: [
+			"klingon"
+		],
+		intercept: {
+			ship: {},
+			fleet: {}
+		},
+		squadron: false
 	}
+
 ];

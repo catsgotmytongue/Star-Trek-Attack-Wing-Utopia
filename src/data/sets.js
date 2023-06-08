@@ -19,9 +19,16 @@ module.exports = [
 		type: "set",
 		id: "80000",
 		gameId: 1,
-		name: "Alliance Building Tools",
-		releaseDate: "2020-01-31",
-		parentSet: "Tools"
+		name: "Builder",
+		releaseDate: "1800-01-31",
+		parentSet: "Alliance"
+	},
+	{
+		type: "set",
+		id: "80002",
+		name: "Part II",
+		releaseDate: "2023-03-01",
+		parentSet: "Alliance"
 	},
 	{
 		type: "set",
@@ -1452,7 +1459,7 @@ module.exports = [
 		type: "set",
 		id: "71525",
 		gameId: 1,
-		name: "Scout Cube",
+		name: "Scout 608",
 		releaseDate: "2014-09-03",
 		parentSet: "Wave 7"
 	},

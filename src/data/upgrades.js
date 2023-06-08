@@ -1,5 +1,447 @@
 module.exports = [
 	{
+		type: "weapon",
+		id: "W232",
+		set: [
+			"80002"
+		],
+		name: "Converging Fire",
+		cost: 2,
+		text: "<b>COMBAT PHASE:</b> Friendly ships may treat your [target-lock] Tokens as their own. \n\n\n <i>Vor'cha Class and Negh'var Class Only",
+		OnePerShip: true,
+		vorchaLimit: true,
+		neghvarLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "W231",
+		set: [
+			"80002"
+		],
+		name: "Torpedo Fusillade",
+		cost: 0,
+		text: "The cost and Attack Value of this [weapon] are equal to this ship's Primary Weapon Value. \n<hr> <b>ATTACK:</b> Remove this card from the game and target all opposing ships. \n\n Make a separate attack roll against each target ship.",
+		unique: true,
+		FrontArc: true,
+		range: "2 - 3",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "W230",
+		set: [
+			"80002"
+		],
+		name: "Photon Torpedoes",
+		cost: 3,
+		text: "The Attack Value of this [weapon] is this ship's Primary Weapon Value +1. \n<hr> <b>ATTACK:</b> Spend this ship's [target-lock] Token, disable this card, and target an opposing ship. \n\n This ship may convert 1 [blank] into a [crit] result.",
+		FrontArc: true,
+		RearArc: true,
+		range: "2-3",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "W229",
+		set: [
+			"80002"
+		],
+		name: "Disruptor Overcharge",
+		cost: 3,
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON: ROLL ATTACK DICE STEP:</b> If you rolled at least 1 [crit] result. \n\n Add 1 [hit] result to the total.",
+		OnePerShip: true,
+		vorchaLimit: true,
+		range: "1 - 2",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "W228",
+		set: [
+			"80002"
+		],
+		name: "Forward Battery",
+		cost: 5,
+		text: "<b>WHEN DEFENDING: DECLARE TARGET STEP:</b> If the attacking ship is in your Primary Firing Arc. \n\n Roll 1 Attack die. On a [hit] or [crit] result, deal 1 damage to the attacking ship before it attacks.",
+		OnePerShip: true,
+		vorchaLimit: true,
+		neghvarLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E223",
+		set: [
+			"80002"
+		],
+		name: "Eye For An Eye",
+		cost: 2,
+		text: "<b>WHEN DEFENDING: DEAL DAMAGE STEP:</b> If this ship suffers a face-up damage card and the attacking ship is in your Primary Firing Arc. \n\n Discard this card to deal the attacking ship 1 face-up damage card (even if it has active shields).",
+		OnePerShip: true,
+		shipKlingon: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E222",
+		set: [
+			"80002"
+		],
+		name: "Strafing Run",
+		cost: 3,
+		text: "<b>EXECUTE MANEUVER STEP:</b> If your ship's base or maneuver template overlapped an opposing ship: \n\n Roll 1 attack die. On a [hit] or [crit] result, the opposing ship suffers 1 damage.",
+		OnePerShip: true,
+		kvortLimit: true,
+		brelLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E221",
+		set: [
+			"80002"
+		],
+		name: "Fight With Honor",
+		cost: 3,
+		text: "<b>WHEN ATTACKING A SHIP WITH AN EQUAL OR HIGHER CAPTAIN SKILL NUMBER THAN THIS SHIP:</b> \n\n Convert 1 [battlestations] into 1 [crit].",
+		OnePerShip: true,
+		shipKlingon: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E220",
+		set: [
+			"80002"
+		],
+		name: "Glory To The Empire!",
+		cost: 2,
+		text: "<b>WHEN ATTACKING OR DEFENDING:</b> Discard this card. \n\n Reroll all your dice.",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E219",
+		set: [
+			"80002"
+		],
+		name: "Evasive Maneuvers",
+		cost: 4,
+		text: "<b>WHEN THIS SHIP SPENDS A [evade] TOKEN:</b> Place 1 [time] Token on this card. \n\n Place 1 [evade] Token beside this ship.",
+		OnePerShip: true,
+		kvortLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "E218",
+		set: [
+			"80002"
+		],
+		name: "Reckless Assault",
+		cost: 4,
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b> If you are within the target's Primary Firing Arc. \n\n Roll +1 Attack die.",
+		OnePerShip: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T288",
+		set: [
+			"80002"
+		],
+		name: "Enhanced Thrusters",
+		cost: 5,
+		text: "<b>EXECUTE MANEUVER STEP:</b> When this ship performs a [bank-left] or [bank-right] maneuver of speed 2 or 3: \n\n You may treat that maneuver as red to rotate this ship 180°.",
+		OnePerShip: true,
+		kvortLimit: true,
+		brelLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T287",
+		set: [
+			"80002"
+		],
+		name: "Passive Sensors",
+		cost: 2,
+		text: "<b>END PHASE:</b> If you did not attack this round, place 1 [scan] Token on this card (max 1). \n\n <b>FREE ACTION:</b> Place 1 [scan] Token from this card beside this ship.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T286",
+		set: [
+			"80002"
+		],
+		name: "Reinforced Hull",
+		cost: 2,
+		text: "Add +2 to this ship's Hull Value.",
+		OnePerShip: true,
+		hullConstraint: "4+",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T285",
+		set: [
+			"80002"
+		],
+		name: "Secondary Cloaking Coil",
+		cost: 3,
+		text: "<b>ACTION:</b> Discard this card. \n\n Repair 1 Shield Token. If you have the [cloak] action on this ship's action bar, you may [cloak] as a free action.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T284",
+		set: [
+			"80002"
+		],
+		name: "Targeting Array",
+		cost: 4,
+		text: "You can have two Blue [target-lock] Tokens. \n<hr> <b>WHEN YOU PERFORM A [target-lock] ACTION:</b> \n\n You may perform an additional [target-lock] Action against a different opposing ship within Range.",
+		unique: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T283",
+		set: [
+			"80002"
+		],
+		name: "Reactor Vent",
+		cost: 4,
+		text: "<b>COMBAT PHASE:</b> If there is an opposing ship within range, you may spend 1 [aux] Token from beside this ship to roll 1 attack die. \n\n On a [hit] or [crit] result, discard 1 Shield Token from the opposing ship.",
+		range: "1",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T282",
+		set: [
+			"80002"
+		],
+		name: "Secondary Relays",
+		cost: 2,
+		text: "<b>WHEN THIS SHIP WOULD DISABLE A [weapon] UPGRADE:</b> \n If you do not have any [aux] Tokens beside this ship: \n\n You may place an [aux] Token beside this ship instead.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C397",
+		set: [
+			"80002"
+		],
+		name: "First Officer",
+		cost: 4,
+		text: "<b>WHEN ATTACKING OR DEFENDING:</b> \n Place 1 [time] Token on this card. \n\n Convert 1 [battlestations] into 1 [hit] or 1 [evade].",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C396",
+		set: [
+			"80002"
+		],
+		name: "Weapons Officer",
+		cost: 4,
+		text: "<b>WHEN ATTACKING:</b> Disable this card. \n\n Convert 1 of your [battlestations] results into a [crit] result and all of your other [battlestations] results into [hit] results.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C395",
+		set: [
+			"80002"
+		],
+		name: "Operations Officer",
+		cost: 4,
+		text: "If equipped to a <img src='img/text/kli-kvort.png' width='20' height='20' title='K'Vort Class'>, add +1 to this ship's Agility Value. \n<hr> <b>WHEN DEFENDING:</b> You may convert 1 [battlestations] result into 1 [evade] result.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C394",
+		set: [
+			"80002"
+		],
+		name: "Tactical Officer",
+		cost: 2,
+		text: "<b>WHEN ATTACKING:</b> If you have a Red [target-lock] on the target ship: \n\n You may spend it as if it were a [battlestations] Token.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C393",
+		set: [
+			"80002"
+		],
+		name: "Helmsman",
+		cost: 2,
+		text: "<b>EXECUTE MANEUVER STEP:</b> If this ship performed a Non-Red Maneuver that did not overlap any ships or obstacles. Disable this card. \n\n Perform any Maneuver with a Speed of 1 on this ship's Maneuver Dial.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "C392",
+		set: [
+			"80002"
+		],
+		name: "Science Officer",
+		cost: 3,
+		text: "<b>ACTION:</b> Place 1 [scan] Token beside this ship. \n\n You may remove 1 Red  [target-lock] Token from beside this ship (and the corresponding Blue  [target-lock] Token).",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "T281",
+		set: [
+			"80002"
+		],
+		name: "Extend Shields",
+		cost: 3,
+		text: "<b>END PHASE:</b> If you have 1 or more Active Shields, place 3 [time] Tokens on this card and place 1 [aux] Token beside this ship to target a friendly ship within Range. \n\n The target ship Repairs 1 Shield.",
+		range: "1",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "crew",
+		id: "C391",
+		set: [
+			"80002"
+		],
+		name: "Engineering Officer",
+		cost: 3,
+		text: "<b>PERFORM ACTION STEP:</b> Disable this card. \n\n This ship may perform 1 Action while having any [aux] Tokens beside it.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "E217",
+		set: [
+			"80002"
+		],
+		name: "Battle Plan",
+		cost: 4,
+		text: "<b>WHEN ATTACKING:\n </b> If the target is within Range of both this ship and at least 1 other friendly ship. \n\n Add 1 [battlestations] result to this ship's attack roll.",
+		unique: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "E216",
+		set: [
+			"80002"
+		],
+		name: "Coordinated Assault",
+		cost: 5,
+		text: "<b>AFTER ATTACKING OR DEFENDING:\n </b> Target a friendly ship within Range and spend a [battlestations], [evade], or [scan] Token from beside this ship. \n\n Place a copy of that Token beside the target ship.",
+		unique: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
 		type: "question",
 		id: "Q023",
 		gameId: 1,
@@ -8,7 +450,7 @@ module.exports = [
 		],
 		name: "EMH Mark I",
 		cost: 3,
-		text: "This card counts as a [crew_text] Upgrade or a [tech_text] Upgrade. \n----------------------------------------\n <b>ACTION:</b> Disable this card. \n Remove all [time] Tokens from each [crew_text] Upgrade equipped to this ship.",
+		text: "This card counts as a [crew_text] Upgrade or a [tech_text] Upgrade. \n<hr> <b>ACTION:</b> Disable this card. \n\n Remove all [time] Tokens from each [crew_text] Upgrade equipped to this ship.",
 		OnePerShip: true,
 		factions: [
 			"federation"
@@ -23,7 +465,7 @@ module.exports = [
 		],
 		name: "Multi-Spectrum Shielding",
 		cost: 3,
-		text: "Increase this ship's Shield Value by 1. \n----------------------------------------\n As long as this ship has Active Shields, opposing [tech_text] Upgrades cannot target this ship.",
+		text: "Increase this ship's Shield Value by 1. \n<hr> As long as this ship has Active Shields, opposing [tech_text] Upgrades cannot target this ship.",
 		OnePerShip: true,
 		costFederation: "+1",
 		factions: [
@@ -39,7 +481,7 @@ module.exports = [
 		],
 		name: "Multiphasic Shielding",
 		cost: 3,
-		text: "Increase this ship's Shield Value by 1. \n----------------------------------------\n As long as this ship has Active Shields, [crew_text] Upgrades and the Captain equipped to this ship cannot be affected by opposing Upgrades.",
+		text: "Increase this ship's Shield Value by 1. \n<hr> As long as this ship has Active Shields, [crew_text] Upgrades and the Captain equipped to this ship cannot be affected by opposing Upgrades.",
 		unique: true,
 		factions: [
 			"federation"
@@ -54,7 +496,7 @@ module.exports = [
 		],
 		name: "Regenerative Shields",
 		cost: 4,
-		text: "Increase this ship's Shield Value by 1. \n----------------------------------------\n <b>END PHASE</b>: \n Repair 1 Shield on this ship. If there are no [aux] Tokens beside this ship, you may repair 2 Shields on this ship instead.",
+		text: "Increase this ship's Shield Value by 1. \n<hr> <b>END PHASE</b>: \n\n Repair 1 Shield on this ship. If there are no [aux] Tokens beside this ship, you may repair 2 Shields on this ship instead.",
 		OnePerShip: true,
 		prometheusLimit: true,
 		factions: [
@@ -70,7 +512,7 @@ module.exports = [
 		],
 		name: "Ablative Hull Armor",
 		cost: 6,
-		text: "<b>WHEN DEFENDING: MODIFY ATTACK DICE STEP:</b> \n Convert all [crit] to [hit] . \n----------------------------------------\n <b>WHEN DEFENDING: DEAL DAMAGE STEP:</b> \n\n Place damage cards this ship would receive under this card (Max 3) instead of beside this ship.",
+		text: "<b>WHEN DEFENDING: MODIFY ATTACK DICE STEP:</b> \n\n Convert all [crit] to [hit] . \n<hr> <b>WHEN DEFENDING: DEAL DAMAGE STEP:</b> \n\n Place damage cards this ship would receive under this card (Max 3) instead of beside this ship.",
 		OnePerShip: true,
 		prometheusLimit: true,
 		factions: [
@@ -86,7 +528,7 @@ module.exports = [
 		],
 		name: "Multi-Vector Assault Mode",
 		cost: 6,
-		text: "<b>ATTACK (BATTLESTATIONS):</b> Disable this card and target an opposing ship. \n----------------------------------\n <b>AFTER ATTACKING:</b> Place 2 Mission Tokens within range. You may make an additional attack with this weapon from each Mission Token placed by this card in any direction. Remove all Mission Tokens placed by this card from play after attacking.",
+		text: "<b>ATTACK (BATTLESTATIONS):</b> Disable this card and target an opposing ship. \n<hr> <b>AFTER ATTACKING:</b> Place 2 <img src='img/text/mission-token.png' width='18' height='18' title='Mission Token'> Tokens within range. You may make an additional attack with this weapon from each <img src='img/text/mission-token.png' width='18' height='18' title='Mission Token'> Token placed by this card in any direction. Remove all <img src='img/text/mission-token.png' width='18' height='18' title='Mission Token'> Tokens placed by this card from play after attacking.",
 		attack: "4",
 		range: "1",
 		OnePerShip: true,
@@ -106,7 +548,7 @@ module.exports = [
 		],
 		name: "Quantum Torpedoes",
 		cost: 3,
-		text: "<font size ='-1'>The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1. \n <b>ATTACK:</b> Spend this ship's [target-lock] Token, disable this card, and target an opposing ship. \n <b>DECLARE TARGET STEP:</b> Place an [aux] Token beside the defending ship. \n <b>ROLL ATTACK DICE STEP:</b> For each [crit] rolled. Add 1 [hit] . \n This upgrade costs +2 SP if not equipped to a <img src='https://i.imgur.com/fEuOpVX.png' width='10' height='10'>, <img src='https://i.imgur.com/wyGHYPH.png' width='10' height='10'>, <img src='https://i.imgur.com/5f83K8Z.png' width='10' height='10'>, or <img src='https://i.imgur.com/K43kuLG.png' width='10' height='10'> ship.</font>",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1. \n<hr> <b>ATTACK:</b> Spend this ship's [target-lock] Token, disable this card, and target an opposing ship. \n\n <b>DECLARE TARGET STEP:</b> Place an [aux] Token beside the defending ship. \n\n <b>ROLL ATTACK DICE STEP:</b> For each [crit] rolled. Add 1 [hit] . \n<hr> This Upgrade costs +2 SP if not equipped to a <img src='img/text/fed-sovereign.png' width='18' height='18' title='Sovereign Class'>, <img src='img/text/fed-defiant.png' width='18' height='18' title='Defiant Class'>, <img src='img/text/fed-luna.png' width='18' height='18' title='? Class'>, or <img src='img/text/fed-akira.png' width='18' height='18' title='Akira Class'> ship.",
 		attack: "*",
 		range: "2 - 3",
 		OnePerShip: true,
@@ -125,7 +567,7 @@ module.exports = [
 		],
 		name: "Dorsal Torpedo Pod",
 		cost: 3,
-		text: "<b>WHEN ATTACKING WITH A <img src='../img/faction_fed.png' width='20' height='20'> TORPEDOES UPGRADE:</b> \n\n You may target an opposing ship with that Torpedoes Upgrade ignoring any Firing Arcs.",
+		text: "<b>WHEN ATTACKING WITH A <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> TORPEDOES UPGRADE:</b> \n\n You may target an opposing ship with that Torpedoes Upgrade ignoring any Firing Arcs.",
 		OnePerShip: true,
 		akiraLimit: true,
 		factions: [
@@ -141,7 +583,7 @@ module.exports = [
 		],
 		name: "Photon Torpedoes",
 		cost: 2,
-		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1. \n----------------------------------------\n <b>ATTACK:</b> Spend this ship's [target-lock] Token, place 2 [time] Tokens on this card, and target an opposing ship. \n This ship may convert all [blank] into [battlestations] .",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1. \n<hr> <b>ATTACK:</b> Spend this ship's [target-lock] Token, place 2 [time] Tokens on this card, and target an opposing ship. \n This ship may convert all [blank] into [battlestations] .",
 		attack: "*",
 		FrontArc: true,
 		RearArc: true,
@@ -159,7 +601,7 @@ module.exports = [
 		],
 		name: "Dorsal Phaser Array",
 		cost: 0,
-		text: "<font size ='-.5'> The Attack Value of this [weapon_text] is equal to this ship's Primary Weapon Value and the cost of this [weapon_text] is equal to this ship's Primary Weapon Value +1. \n----------------------------------------\n <b>ATTACK:</b> You may fire this weapon in any direction.</font>",
+		text: "The Attack Value of this [weapon_text] is equal to this ship's Primary Weapon Value and the cost of this [weapon_text] is equal to this ship's Primary Weapon Value +1. \n<hr> <b>ATTACK:</b> You may fire this weapon in any direction.",
 		shipFederation: true,
 		OnePerShip: true,
 		range: "1 - 2",
@@ -177,7 +619,7 @@ module.exports = [
 		],
 		name: "Type 10 Phasers",
 		cost: 3,
-		text: "This card fills 2 [weapon_text] Upgrade slots. \n----------------------------------------\n <b>WHEN ATTACKING WITH YOUR PRIMARY WEAPON:</b> \n Roll +1 attack die and re-roll up to 2 [blank] . If the defending ship has no Active Shields, you may convert up to 2 [blank] into [battlestations] instead.",
+		text: "This card fills 2 [weapon_text] Upgrade slots. \n<hr> <b>WHEN ATTACKING WITH YOUR PRIMARY WEAPON:</b> \n\n Roll +1 attack die and re-roll up to 2 [blank] . If the defending ship has no Active Shields, you may convert up to 2 [blank] into [battlestations] instead.",
 		OnePerShip: true,
 		shipFederation: true,
 		factions: [
@@ -225,7 +667,7 @@ module.exports = [
 		],
 		name: "Task Force Commander",
 		cost: 4,
-		text: "<font size ='-.5'><b>SETUP:</b> Choose Faction. \n----------------------------------------\n <b>ACTION:</b> Target up to 2 friendly ships within range: \n This ship and the target ships gain +1 attack and defense die against ships of the chosen faction this game round. If the target ships are <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'>, this ship and the target ships may perform the [target-lock] Action as a Free Action.</font>",
+		text: "<b>SETUP:</b> Choose Faction. \n<hr> <b>ACTION:</b> Target up to 2 friendly ships within range: \n\n This ship and the target ships gain +1 attack and defense die against ships of the chosen faction this game round. If the target ships are <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'>, this ship and the target ships may perform the [target-lock] Action as a Free Action.",
 		unique: true,
 		captainFederation: true,
 		shipFederation: true,
@@ -243,7 +685,7 @@ module.exports = [
 		],
 		name: "Fleet Coordination",
 		cost: 3,
-		text: "Treat friendly <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ships at Range as though they were at Range 2 for the effects of cards equipped to this ship.",
+		text: "Treat friendly <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ships at Range as though they were at Range 2 for the effects of cards equipped to this ship.",
 		unique: true,
 		captainFederation: true,
 		shipFederation: true,
@@ -261,7 +703,7 @@ module.exports = [
 		],
 		name: "Geordi La Forge",
 		cost: 2,
-		text: "<font size ='-1.5'><b>REVEAL DIAL STEP:</b> When this ship reveals a [straight] Maneuver: Place 2 [time] Tokens on this card and choose 1 of the listed effects. \n *Treat the revealed Maneuver as a Green Maneuver. \n *Increase the speed of the revealed Maneuver by 1. The color of the Maneuver remains the same as the revealed Maneuver. \n If this ship has the 'Federation Prototype' [hook] equipped, you may choose both effects.</font>",
+		text: "<b>REVEAL DIAL STEP:</b> When this ship reveals a [straight] Maneuver: Place 2 [time] Tokens on this card and choose 1 of the listed effects. \n\n *Treat the revealed Maneuver as a Green Maneuver. \n\n *Increase the speed of the revealed Maneuver by 1. The color of the Maneuver remains the same as the revealed Maneuver. \n\n If this ship has the 'Federation Prototype' [hook] equipped, you may choose both effects.",
 		unique: true,
 		factions: [
 			"federation"
@@ -276,7 +718,7 @@ module.exports = [
 		],
 		name: "Lasca",
 		cost: 1,
-		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target this ship or a friendly <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship within range. \n\n Flip 1 face-up damage card on the target ship facedown. If the target ship has the 'Federation Prototype' [hook] equipped, repair 1 Hull on the target ship.",
+		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target this ship or a friendly <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship within range. \n\n Flip 1 face-up damage card on the target ship facedown. If the target ship has the 'Federation Prototype' [hook] equipped, repair 1 Hull on the target ship.",
 		unique: true,
 		shipFederation: true,
 		range: "1",
@@ -293,7 +735,7 @@ module.exports = [
 		],
 		name: "Montgomery Scott",
 		cost: 3,
-		text: "<font size ='-1.5'><b>WHENEVER YOU WOULD PLACE AN [aux] TOKEN BESIDE THIS SHIP:</b> \n Place that Token on this card (max 2). \n-----------------------------------\n <b>ACTION:</b> Place 2 [time] Tokens on this card and target a ship with a [hook] equipped within range. \n If that ship is this ship or a friendly ship, it performs a 2 [straight] . If that ship is an opposing ship, Place any [aux] Tokens from on this card beside the target ship.</font>",
+		text: "<b>WHENEVER YOU WOULD PLACE AN [aux] TOKEN BESIDE THIS SHIP:</b> \n\n Place that Token on this card (max 2). \n<hr> <b>ACTION:</b> Place 2 [time] Tokens on this card and target a ship with a [hook] equipped within range. \n\n If that ship is this ship or a friendly ship, it performs a 2 [straight] . If that ship is an opposing ship, Place any [aux] Tokens from on this card beside the target ship.",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -324,7 +766,7 @@ module.exports = [
 		],
 		name: "Benjamin Sisko",
 		cost: 3,
-		text: "<b>COMBAT PHASE:</b> Place an [aux] Token beside this ship. \n\n Remove either 2 [time] Tokens or a Disabled Token from a <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> [weapon_text] Upgrade equipped to this ship. If this ship has the 'Federation Prototype' [hook] equipped place a [battlestations] Token beside this ship.",
+		text: "<b>COMBAT PHASE:</b> Place an [aux] Token beside this ship. \n\n Remove either 2 [time] Tokens or a Disabled Token from a <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> [weapon_text] Upgrade equipped to this ship. If this ship has the 'Federation Prototype' [hook] equipped place a [battlestations] Token beside this ship.",
 		unique: true,
 		factions: [
 			"federation"
@@ -339,7 +781,7 @@ module.exports = [
 		],
 		name: "Romulan Ale",
 		cost: 1,
-		text: "<font size='-1.75'>This upgrade can be equipped to a ship without requiring an Upgrade Slot\n <b>PLANNING PHASE: </b>\n You may exchange all disabled Tokens from the Captain and [crew_text] Upgrades equipped to this ship, with 2 [time] Tokens on those cards instead.\n <b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. \n <b>CONTINUOUS EFFECT:</b> This ship and each opposing ship attacking this ship must convert 1 [hit] into 1 [blank]</font>",
+		text: "This upgrade can be equipped to a ship without requiring an Upgrade Slot\n<hr> <b>PLANNING PHASE: </b>\n\n You may exchange all disabled Tokens from the Captain and [crew_text] Upgrades equipped to this ship, with 2 [time] Tokens on those cards instead.\n<hr> <b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. \n\n <b>CONTINUOUS EFFECT:</b> This ship and each opposing ship attacking this ship must convert 1 [hit] into 1 [blank]",
 		OnePerShip: true,
 		costRomulan: "+3",
 		factions: [
@@ -355,7 +797,7 @@ module.exports = [
 		],
 		name: "Romulan Cloaking Device",
 		cost: 2,
-		text: "Add the [cloak] Action to this ship's Action Bar. \n----------------------------------------\n This ship may use either the 1 [bank-left], 1 [bank-right], 2 [bank-left], or 2 [bank-right] template when performing a [sensor-echo] Action instead. \n----------------------------------------\n If equipped to a <img src='img/text/faction-romulan.png' width='20' height='20'> ship, this ship may perform the [sensor-echo] Action as a Free Action. \n\n <i>+2 SP for Non-Romulan Ships</i>",
+		text: "Add the [cloak] Action to this ship's Action Bar. \n<hr> This ship may use either the 1 [bank-left], 1 [bank-right], 2 [bank-left], or 2 [bank-right] template when performing a [sensor-echo] Action instead. \n<hr> If equipped to a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ship, this ship may perform the [sensor-echo] Action as a Free Action.",
 		OnePerShip: true,
 		costRomulan: "+2",
 		factions: [
@@ -401,7 +843,7 @@ module.exports = [
 		],
 		name: "Flanking Attack",
 		cost: 3,
-		text: "<font size ='-1.65'> The Attack Value of this [weapon_text] is this ship's Primary Attack Value. \n----------------------------------------\n <b>ATTACK:</b> Place 3 [time] Tokens on this card and target an opposing ship. \n If this is equipped to a <img src='img/text/rom-valdore.png' width='15' height='15'>, this ship rolls +2 Attack dice. If this ship is not in the <img src='img/text/forward-arc.png' width='15' height='15'> of the defending ship, the defending ship also rolls -2 defense dice.</font>",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Attack Value. \n<hr> <b>ATTACK:</b> Place 3 [time] Tokens on this card and target an opposing ship. \n\n If this is equipped to a <img src='img/text/rom-valdore.png' width='18' height='18' title='Valdore Class'>, this ship rolls +2 Attack dice. \n<hr> If this ship is not in the <img src='img/text/forward-arc.png' width='18' height='18' title='Front Arc'> of the defending ship, the defending ship also rolls -2 defense dice.",
 		range: "2 - 3",
 		attack: "*",
 		FrontArc: true,
@@ -419,7 +861,7 @@ module.exports = [
 		],
 		name: "Disruptor Pulse",
 		cost: 3,
-		text: "<font size ='-1.5'><b>ATTACK:</b> Place 2 [time] Tokens on this card to perform this attack. \n <b>DECLARE TARGET STEP:</b> Target each opposing ship in your <img src='img/text/forward-arc.png' width='15' height='15'> and in range. \n Perform a separate attack against each target with this attack. \n\n <i>+3 SP for Non-Romulan Ships</i></font>",
+		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card to perform this attack. \n\n <b>DECLARE TARGET STEP:</b> Target each opposing ship in your <img src='img/text/forward-arc.png' width='18' height='18' title='Front Arc'> and in range. \n\n Perform a separate attack against each target with this attack.",
 		range: "1 - 2",
 		costRomulan: "+3",
 		attack: "3",
@@ -436,7 +878,7 @@ module.exports = [
 		],
 		name: "Aft Disruptor Emitters",
 		cost: 2,
-		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship not in your <img src='img/text/forward-arc.png' width='15' height='15'>. \n\n <i> +2 SP for Non-Romulan Ships </i>",
+		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship not in your <img src='img/text/forward-arc.png' width='18' height='18' title='Front Arc'>.",
 		range: "1 - 3",
 		OnePerShip: true,
 		costRomulan: "+2",
@@ -454,7 +896,7 @@ module.exports = [
 		],
 		name: "Thalaron Weapon",
 		cost: 5,
-		text: "<font size ='-1'><b>ATTACK:</b> Discard this card and target an opposing ship</font>. \n\n <font size='-1'>Your opponent must discard either their Captain, Admiral, [ambassador_text], or a [crew_text] Upgrade equipped to the defending ship. If you hit, cancel 1 [crit] to discard either the defending ship's Captain, Admiral, [ambassador_text], or [crew_text] Upgrade equipped to the defending ship.</font>",
+		text: "<b>ATTACK:</b> Discard this card and target an opposing ship. \n\n Your opponent must discard either their Captain, Admiral, [ambassador_text], or a [crew_text] Upgrade equipped to the defending ship. If you hit, cancel 1 [crit] to discard either the defending ship's Captain, Admiral, [ambassador_text], or [crew_text] Upgrade equipped to the defending ship.",
 		range: "1 - 3",
 		unique: true,
 		FrontArc: true,
@@ -473,7 +915,7 @@ module.exports = [
 		],
 		name: "Fire Everything!",
 		cost: 4,
-		text: "<b> WHENEVER ATTACKING:</b> If you dealt no damage or your attack was cancelled: Disable this card. \n\n You may perform an additional attack with a <img src='img/text/faction-romulan.png' width='20' height='20'> [weapon_text] Upgrade equipped to this ship against the same target.",
+		text: "<b> WHEN ATTACKING:</b> If you dealt no damage or your attack was cancelled: Disable this card. \n\n You may perform an additional attack with a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [weapon_text] Upgrade equipped to this ship against the same target.",
 		unique: true,
 		captainRomulan: true,
 		shipRomulan: true,
@@ -505,7 +947,7 @@ module.exports = [
 		],
 		name: "Covert Research",
 		cost: 3,
-		text: "<font size ='-1'>Add the [scan] Action to this ship's Action Bar. \n----------------------------------------\n <b> END PHASE:</b> \n Place 1 [scan] Token from beside this ship onto this card (max 3). \n----------------------------------------\n <b> ACTION:</b> Remove any number of [scan] Tokens on this card. \n Gain +1 attack dice for each [scan] Token removed this game round.</font> ",
+		text: "Add the [scan] Action to this ship's Action Bar. \n<hr> <b> END PHASE:</b> \n\n Place 1 [scan] Token from beside this ship onto this card (max 3). \n<hr> <b> ACTION:</b> Remove any number of [scan] Tokens on this card. \n\n Gain +1 attack dice for each [scan] Token removed this game round.",
 		unique: true,
 		captainRomulan: true,
 		factions: [
@@ -521,7 +963,7 @@ module.exports = [
 		],
 		name: "Nevala",
 		cost: 3,
-		text: "Increase the Captain Skill of the Captain equipped to this ship by 1 (By 3 for a <img src='img/text/faction-romulan.png' width='20' height='20'> Captain instead). \n---------------------------------------\n <b>WHEN DEFENDING:</b> Spend an [evade] Token beside this ship. \n\n Place a [battlestations] Token beside this ship.",
+		text: "Increase the Captain Skill of the Captain equipped to this ship by 1 (By 3 for a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> Captain instead). \n<hr> <b>WHEN DEFENDING:</b> Spend an [evade] Token beside this ship. \n\n Place a [battlestations] Token beside this ship.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -536,7 +978,7 @@ module.exports = [
 		],
 		name: "T'Rul",
 		cost: 2,
-		text: "You may equip the 'Romulan Cloaking Device' Upgrade to this ship for 0 SP even if it exceeds its restrictions. \n---------------------------------------\n <b>WHENEVER YOU WOULD PERFORM THE [cloak] ACTION:</b> \n\n Place an [evade] Token beside this ship. If equipped to a <img src='img/text/fed-defiant.png' width='15' height='15'>, you may place a [battlestations] Token instead.",
+		text: "You may equip the 'Romulan Cloaking Device' Upgrade to this ship for 0 SP even if it exceeds its restrictions. \n<hr> <b>WHENEVER YOU WOULD PERFORM THE [cloak] ACTION:</b> \n\n Place an [evade] Token beside this ship. If equipped to a <img src='img/text/fed-defiant.png' width='18' height='18' title='Defiant Class'>, you may place a [battlestations] Token instead.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -551,7 +993,7 @@ module.exports = [
 		],
 		name: "Reman Helmsman",
 		cost: 2,
-		text: "<b>REVEAL DIAL STEP:</b> Disable this card. \n\n Disregard your revealed Maneuver and perform a 1 red [reverse] Maneuver instead. If equipped to a <img src='img/text/rom-dderidex.png' width='15' height='15'> ship, treat this as a white Maneuver instead.",
+		text: "<b>REVEAL DIAL STEP:</b> Disable this card. \n\n Disregard your revealed Maneuver and perform a 1 red [reverse] Maneuver instead. If equipped to a <img src='img/text/rom-dderidex.png' width='18' height='18' title='DDeridx Class'> ship, treat this as a white Maneuver instead.",
 		OnePerShip: true,
 		costRomulan: "+2",
 		factions: [
@@ -567,7 +1009,7 @@ module.exports = [
 		],
 		name: "Viceroy",
 		cost: 3,
-		text: "<b>PLANNING PHASE:</b> If your ship is Cloaked: Target an opposing ship within Range. \n\n Place 2 [time] Tokens on a [crew_text] Upgrade equipped to the target ship. If equipped to a <img src='img/text/rom-reman.png' width='15' height='15'>, you may perform a [sensor-echo] Action as a Free Action.",
+		text: "<b>PLANNING PHASE:</b> If your ship is Cloaked: Target an opposing ship within Range. \n\n Place 2 [time] Tokens on a [crew_text] Upgrade equipped to the target ship. If equipped to a <img src='img/text/rom-reman.png' width='18' height='18' title='Reman Warbird'>, you may perform a [sensor-echo] Action as a Free Action.",
 		range: "1 - 2",
 		unique: true,
 		factions: [
@@ -583,7 +1025,7 @@ module.exports = [
 		],
 		name: "B-4",
 		cost: 5,
-		text: "<b>ACTION:</b> Disable this card and target an opposing ship within Range. \n\n The target ship either executes a 1 [bank-left], 1 [bank-right], or 1 [straight] Maneuver of the opponent's choice. If the target ship is also a <img src='img/text/faction-federation.png' width='20' height='20'> ship, it rolls -1 attack die this game round. If the target ship also has 'Enterprise' in its name, place 2 [time] Tokens on the Captain equipped to that ship.",
+		text: "<b>ACTION:</b> Disable this card and target an opposing ship within Range. \n\n The target ship either executes a 1 [bank-left], 1 [bank-right], or 1 [straight] Maneuver of the opponent's choice. If the target ship is also a <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship, it rolls -1 attack die this game round. If the target ship also has 'Enterprise' in its name, place 2 [time] Tokens on the Captain equipped to that ship.",
 		range: "2 - 3",
 		unique: true,
 		factions: [
@@ -600,7 +1042,7 @@ module.exports = [
 		],
 		name: "Varak",
 		cost: 3,
-		text: "Add 1 [crew_text] upgrade to this Ship's Upgrade Bar. \n----------------------------------------\n <b>ACTION:</b> Place 2 [time] Tokens on this card and target this ship or a friendly ship within Range. \n\n <b>CONTINUOUS EFFECT:</b> \n The Captain and other [crew_text] Upgrades equipped to the target ship cannot be affected by opposing cards. ",
+		text: "Add 1 [crew_text] upgrade to this Ship's Upgrade Bar. \n<hr> <b>ACTION:</b> Place 2 [time] Tokens on this card and target this ship or a friendly ship within Range. \n\n <b>CONTINUOUS EFFECT:</b> \n\n The Captain and other [crew_text] Upgrades equipped to the target ship cannot be affected by opposing cards. ",
 		range: "1 - 2",
 		unique: true,
 		factions: [
@@ -616,9 +1058,9 @@ module.exports = [
 		],
 		name: "Waylay",
 		cost: 2,
-		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value.\n<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship\nIf this card is equipped to a B'rel Class ship, place an [aux] Token beside the defending ship.\nAfter making this attack, this ship may perform a 1 white [bank-left] or 1 white [bank-right] and place an [evade] Token beside this ship.",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value.\n<hr> <b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship\n\n If this card is equipped to a B'rel Class ship, place an [aux] Token beside the defending ship.\n<hr> After making this attack, this ship may perform a 1 white [bank-left] or 1 white [bank-right] and place an [evade] Token beside this ship.",
 		range: "1 - 2",
-		frontarc: true,
+		FrontArc: true,
 		hullConstraint: "3-",
 		attack: "*",
 		factions: [
@@ -634,12 +1076,12 @@ module.exports = [
 		],
 		name: "Concussive Charges",
 		cost: 2,
-		text: "The Attack Value of this [weapon_text] is the ship's Primary Weapon Value.\n<b>ATTACK:</b> Spend this ship's [cloak] Token, raise its Shields, place 2 [time] Tokens on this card, and target an opposing ship.\nIf this card is equipped to a K't'inga Class Ship, it rolls +1 attack die. For each uncancelled [hit] or [crit], remove up to 1 Token of your choice beside the defending ship.",
+		text: "The Attack Value of this [weapon_text] is the ship's Primary Weapon Value.\n<hr> <b>ATTACK:</b> Spend this ship's [cloak] Token, raise its Shields, place 2 [time] Tokens on this card, and target an opposing ship.\n\n If this card is equipped to a K't'inga Class Ship, it rolls +1 attack die. For each uncancelled [hit] or [crit], remove up to 1 Token of your choice beside the defending ship.",
 		oneperShip: true,
 		range: "1 - 2",
-		shipklingon: true,
-		frontarc: true,
-		reararc: true,
+		shipKlingon: true,
+		FrontArc: true,
+		RearArc: true,
 		attack: "*",
 		factions: [
 			"klingon"
@@ -654,8 +1096,8 @@ module.exports = [
 		],
 		name: "Science Station",
 		cost: 4,
-		text: "Add 1 [tech_text] to this ship's Upgrade Bar.\n<b>FREE ACTION:</b> If this ship is Cloaked, place 2 [time] Tokens on this card.\n\nPlace 1 [scan] Token beside this ship. If an opposing ship is within this ship's Primary Firing Arc, this ship may perform a [target-lock] Action targeting that opposing ship as a Free Action.",
-		oneperShip: true,
+		text: "Add 1 [tech_text] to this ship's Upgrade Bar.\n<hr> <b>FREE ACTION:</b> If this ship is Cloaked, place 2 [time] Tokens on this card.\n\n Place 1 [scan] Token beside this ship. If an opposing ship is within this ship's Primary Firing Arc, this ship may perform a [target-lock] Action targeting that opposing ship as a Free Action.",
+		OnePerShip: true,
 		range: "1 - 3",
 		factions: [
 			"klingon"
@@ -670,8 +1112,8 @@ module.exports = [
 		],
 		name: "Klingon Gunner",
 		cost: 2,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, discard this card.\n\nAdd 1 [hit].",
-		oneperShip: true,
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, discard this card.\n\n Add 1 [hit].",
+		OnePerShip: true,
 		factions: [
 			"klingon"
 		]
@@ -685,7 +1127,7 @@ module.exports = [
 		],
 		name: "Mara",
 		cost: 2,
-		text: "Add the [scan] Action to this ship's Action Bar.\n----------------------------------------\n<b>WHEN THE CAPTAIN OF THIS SHIP WOULD BE DISABLED OR DISCARDED:</b>\n\nDiscard this card instead.",
+		text: "Add the [scan] Action to this ship's Action Bar.\n<hr> <b>WHEN THE CAPTAIN OF THIS SHIP WOULD BE DISABLED OR DISCARDED:</b>\n\n Discard this card instead.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -700,7 +1142,7 @@ module.exports = [
 		],
 		name: "Kolana",
 		cost: 2,
-		text: "<b>WHEN ONE OR MORE [time] TOKENS WOULD BE PLACED ON A [weapon_text] UPGRADE EQUIPPED TO THIS SHIP:</b>\n\nPlace 1 fewer [time] Tokens. If this ship is Cloaked and it is a <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [weapon_text] Upgrade, place 2 fewer [time] Tokens instead.",
+		text: "<b>WHEN ONE OR MORE [time] TOKENS WOULD BE PLACED ON A [weapon_text] UPGRADE EQUIPPED TO THIS SHIP:</b> \n\n Place 1 fewer [time] Tokens. If this ship is Cloaked and it is a <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> [weapon_text] Upgrade, place 2 fewer [time] Tokens instead.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -715,7 +1157,7 @@ module.exports = [
 		],
 		name: "Ch'Targh",
 		cost: 3,
-		text: "<b>END PHASE:</b> Remove an [aux] Token beside this ship.\n\nFlip this ship's [cloak] Token to its Green side.",
+		text: "<b>END PHASE:</b> Remove an [aux] Token beside this ship.\n\n Flip this ship's [cloak] Token to its Green side.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -730,7 +1172,7 @@ module.exports = [
 		],
 		name: "Yeto",
 		cost: 4,
-		text: "<b>ACTION:</b> Discard this card and target an opposing ship that has no Active Shields.\n\nDisable 1 [crew_text] Upgrade on the target ship and/or steal 1 [crew_text] Upgrade from the target ship, ignoring this ship's restrictions.",
+		text: "<b>ACTION:</b> Discard this card and target an opposing ship that has no Active Shields.\n\n Disable 1 [crew_text] Upgrade on the target ship and/or steal 1 [crew_text] Upgrade from the target ship, ignoring this ship's restrictions.",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -747,7 +1189,7 @@ module.exports = [
 		],
 		name: "A Death Worthy of Sto-Vo-Kor",
 		cost: 4,
-		text: "<b>ACTION:</b> Discard this card and a [crew_text] Upgrade equipped to this ship and target an opposing ship.\n\nDiscard an Upgrade equipped to the target ship. If that Upgrade has a printed SP cost higher than the printed SP ost of the [crew_text] Upgrade you discarded, this ship rolls +1 attack die for all attacks this game round.",
+		text: "<b>ACTION:</b> Discard this card and a [crew_text] Upgrade equipped to this ship and target an opposing ship.\n\n Discard an Upgrade equipped to the target ship. If that Upgrade has a printed SP cost higher than the printed SP ost of the [crew_text] Upgrade you discarded, this ship rolls +1 attack die for all attacks this game round.",
 		unique: true,
 		captainKlingon: true,
 		range: "1 - 2",
@@ -764,7 +1206,7 @@ module.exports = [
 		],
 		name: "Dahar Master",
 		cost: 2,
-		text: "Can only be equipped to a Captain name Kang, Koloth, or Kor.\n----------------------------------------\nIncrease the Captain Skill of this Captain by 1 for each copy of Dahar Master in your fleet, including this one.\n----------------------------------------\n<b>ACTIVIATION PHASE:</b> This ship may perform a [cloak] Action or [target-lock] Action as a Free Action. (Utopia Note: Code not working yet)",
+		text: "Can only be equipped to a Captain name Kang, Koloth, or Kor.\n<hr> Increase the Captain Skill of this Captain by 1 for each copy of Dahar Master in your fleet, including this one.\n<hr> <b>ACTIVIATION PHASE:</b> This ship may perform a [cloak] Action or [target-lock] Action as a Free Action.",
 		OnePerShip: true,
 		shipKlingon: true,
 		factions: [
@@ -780,7 +1222,7 @@ module.exports = [
 		],
 		name: "Metaphasic Sweep",
 		cost: 1,
-		text: "<b>FREE ACTION:</b> Discard this card.\n\nPerform a [target-lock] Action as a Free Action, even if the target ship has a [cloak] Token beside it.",
+		text: "<b>FREE ACTION:</b> Discard this card.\n\n Perform a [target-lock] Action as a Free Action, even if the target ship has a [cloak] Token beside it.",
 		unique: true,
 		factions: [
 			"federation"
@@ -795,8 +1237,8 @@ module.exports = [
 		],
 		name: "Ablative Armor",
 		cost: 2,
-		text: "<b>WHEN DEFENDING:</b> During the Roll Defense Dice Step:\n\nRoll +1 defense die.\n----------------------------------------\n<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step:\nConvert all [crit] to [hit].",
-		oneperShip: true,
+		text: "<b>WHEN DEFENDING:</b> During the Roll Defense Dice Step:\n\nRoll +1 defense die.\n<hr> <b>WHEN DEFENDING:</b> During the Modify Attack Dice Step:\n\n Convert all [crit] to [hit].",
+		OnePerShip: true,
 		defiantLimit: true,
 		factions: [
 			"federation"
@@ -811,7 +1253,7 @@ module.exports = [
 		],
 		name: "Advanced Shields",
 		cost: 4,
-		text: "Add 2 to this ship's Shield Value.\n----------------------------------------\n<b>ACTION:</b> Remove this card from play.\n\nRepair up to 3 Shields on this ship.",
+		text: "Add 2 to this ship's Shield Value.\n<hr> <b>ACTION:</b> Remove this card from play.\n\nRepair up to 3 Shields on this ship.",
 		unique: true,
 		shipFederation: true,
 		hullConstraint: "5+",
@@ -827,7 +1269,7 @@ module.exports = [
 			"75011"
 		],
 		name: "Experimental Torpedo Bay",
-		text: "<b>START OF THE GAME:</b> Place a Torpedo [weapon_text] Upgrade with a printed SP cost of 5 or less face down beneath this card.\n----------------------------------------\n<b>COMBAT PHASE:</b> Discard this card.\n\nFlip the card beneath this card face up and equip it to this ship, ignoring restrictions.",
+		text: "<b>START OF THE GAME:</b> Place a Torpedo [weapon_text] Upgrade with a printed SP cost of 5 or less face down beneath this card.\n<hr> <b>COMBAT PHASE:</b> Discard this card.\n\nFlip the card beneath this card face up and equip it to this ship, ignoring restrictions.",
 		cost: 2,
 		unique: true,
 		factions: [
@@ -842,7 +1284,7 @@ module.exports = [
 			"75011"
 		],
 		name: "Phaser Cannons",
-		text: "<b>ATTACK:</b> Place 3 [time] Tokens on this card and target an opposing ship.\n----------------------------------------\n<b>AFTER ATTACKING WITH THIS [weapon_text] UPGRADE:</b> \nYou may make an attack with this ship's Primary Weapon.",
+		text: "<b>ATTACK:</b> Place 3 [time] Tokens on this card and target an opposing ship.\n<hr> <b>AFTER ATTACKING WITH THIS [weapon_text] UPGRADE:</b> \n\nYou may make an attack with this ship's Primary Weapon.",
 		cost: 3,
 		OnePerShip: true,
 		factions: [
@@ -850,7 +1292,7 @@ module.exports = [
 		],
 		attack: 4,
 		range: "1 - 2",
-		Frontarc: true,
+		FrontArc: true,
 		defiantLimit: true
 	},
 	{
@@ -862,7 +1304,7 @@ module.exports = [
 		],
 		name: "Enrique Muniz",
 		unique: true,
-		text: "<b>WHEN ATTACKING OR DEFENDING:</b> Place 2 [time] Tokens on this card and target a friendly ship.\n\nThis ship may use one [battlestations], [evade], or [scan] Token beside the target ship as if it was beside this ship, this game round.",
+		text: "<b>WHEN ATTACKING OR DEFENDING:</b> Place 2 [time] Tokens on this card and target a friendly ship.\n\n This ship may use one [battlestations], [evade], or [scan] Token beside the target ship as if it was beside this ship, this game round.",
 		factions: [
 			"federation"
 		],
@@ -878,7 +1320,7 @@ module.exports = [
 		],
 		name: "Sarita Carson",
 		unique: true,
-		text: "<b>COMBAT PHASE:</b> Place 2 [time] Tokens on this card.\n\nPerform a 1 red [straight] or 2 red [straight].",
+		text: "<b>COMBAT PHASE:</b> Place 2 [time] Tokens on this card. \n\n Perform a 1 red [straight] or 2 red [straight].",
 		factions: [
 			"federation"
 		],
@@ -893,7 +1335,7 @@ module.exports = [
 		],
 		name: "Ezri Dax",
 		unique: true,
-		text: "Add 1 [crew_text] to this ship's Upgrade Bar.\n----------------------------------------\n<b>WHENEVER ONE OR MORE [time] TOKENS WOULD BE PLACED ON THIS SHIP'S CAPTAIN OR A [crew_text] UPGRADE EQUIPPED TO THIS SHIP:</b>\n\nPlace 1 fewer [time] Tokens on that card.",
+		text: "Add 1 [crew_text] to this ship's Upgrade Bar.\n<hr> <b>WHENEVER ONE OR MORE [time] TOKENS WOULD BE PLACED ON THIS SHIP'S CAPTAIN OR A [crew_text] UPGRADE EQUIPPED TO THIS SHIP:</b>\n\nPlace 1 fewer [time] Tokens on that card.",
 		factions: [
 			"federation"
 		],
@@ -924,7 +1366,7 @@ module.exports = [
 		],
 		name: "Kira Nerys",
 		unique: true,
-		text: "<b>FREE ACTION:</b> Place 3 [time] Tokens on this card and target an opposing ship.\n\nDisable a [tech_text] Upgrade equipped to the target ship, then roll 1 attack die. On a [hit] or [crit], discard 1 [crew_text] Upgrade equipped to the target ship.",
+		text: "<b>FREE ACTION:</b> Place 3 [time] Tokens on this card and target an opposing ship.\n\n Disable a [tech_text] Upgrade equipped to the target ship, then roll 1 attack die. On a [hit] or [crit], discard 1 [crew_text] Upgrade equipped to the target ship.",
 		factions: [
 			"federation"
 		],
@@ -1035,7 +1477,7 @@ module.exports = [
 			"75011"
 		],
 		name: "Photon Torpedoes",
-		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1.\n---------------------------------\n<b>ATTACK:</b> Spend this ship's  [target-lock] Token, disable this card and target an opposing ship.\n\nThis ship may convert all [blank]  into [battlestations].",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1.\n<hr> <b>ATTACK:</b> Spend this ship's  [target-lock] Token, disable this card and target an opposing ship.\n\nThis ship may convert all [blank]  into [battlestations].",
 		FrontArc: true,
 		RearArc: true,
 		cost: 2,
@@ -1319,7 +1761,7 @@ module.exports = [
 		],
 		name: "Kanar",
 		cost: 1,
-		text: "This upgrade can be equipped to a ship without requiring an Upgrade Slot\n-----------------------------------\n<b>PLANNING PHASE: </b>Place 2 [time] Tokens on the Captain equipped to this ship.\nPlan this ships Maneuver with the dial face up this game round. This ship does its Perfrom Action Step before its Revial Dial Step this game round.",
+		text: "This upgrade can be equipped to a ship without requiring an Upgrade Slot\n<hr> <b>PLANNING PHASE: </b>Place 2 [time] Tokens on the Captain equipped to this ship.\n\n Plan this ships Maneuver with the dial face up this game round. This ship does its Perfrom Action Step before its Revial Dial Step this game round.",
 		shipDominion: true,
 		OnePerShip: true,
 		factions: [
@@ -1334,7 +1776,7 @@ module.exports = [
 			"75009"
 		],
 		name: "Gul Broca",
-		text: "<b>COMBAT PHASE:</b> Discard this card, target this ship, and target all friendly <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> ships.\n\nAll target ships roll +1 attack die this game round.",
+		text: "<b>COMBAT PHASE:</b> Discard this card, target this ship, and target all friendly <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ships.\n\nAll target ships roll +1 attack die this game round.",
 		cost: 2,
 		shipDominion: true,
 		unique: true,
@@ -1351,7 +1793,7 @@ module.exports = [
 			"75009"
 		],
 		name: "Tora Ziyal",
-		text: "<b>WHEN DEFENDING:</b> During the Compare Results Step, target the attacking ship and remove this card from the game.\nCancel the attack. This ship may make an attack against the attacking ship with its Primary Weapon with -1 attack die, if possible.",
+		text: "<b>WHEN DEFENDING:</b> During the Compare Results Step, target the attacking ship and remove this card from the game.\n\n Cancel the attack. This ship may make an attack against the attacking ship with its Primary Weapon with -1 attack die, if possible.",
 		cost: 5,
 		unique: true,
 		range: "1",
@@ -1384,9 +1826,9 @@ module.exports = [
 			"75009"
 		],
 		name: "Obsidian Order",
-		text: "<b>EACH TIME AN OPPOSING SHIP WITHIN RANGE SPENDS A [battlestations], [evade], OR [scan] TOKEN:</b> Place a token of the same type beside this ship.",
+		text: "<b>EACH TIME AN OPPOSING SHIP WITHIN RANGE SPENDS A [battlestations], [evade], OR [scan] TOKEN:</b> \n\n Place a token of the same type beside this ship.",
 		cost: 5,
-		oneperShip: true,
+		OnePerShip: true,
 		shipDominion: true,
 		range: "1 - 3",
 		factions: [
@@ -1433,12 +1875,12 @@ module.exports = [
 			"75009"
 		],
 		name: "Multiple Dorsal Arrays",
-		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nOnce per game round, if you hit an Attack Squadran with this [weapon_text], you may perform an additional attack against the same target. (<i>Galor Class Only</i>)",
+		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nOnce per game round, if you hit an Attack Squadran with this [weapon_text], you may perform an additional attack against the same target.",
 		cost: 3,
-		oneperShip: true,
+		OnePerShip: true,
 		attack: "3",
 		range: "1 - 3",
-		shipLimit: true,
+		galorLimit: true,
 		arc360: true,
 		factions: [
 			"dominion"
@@ -1454,7 +1896,7 @@ module.exports = [
 		name: "Enhanced Resonance Field Grid",
 		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b> During the Deal Damage Step, discard this card, and select 1 uncancelled [hit].\n\nDeal the selected [hit] to the defending ship's Hull.",
 		cost: 2,
-		oneperShip: true,
+		OnePerShip: true,
 		factions: [
 			"dominion"
 		]
@@ -1467,11 +1909,12 @@ module.exports = [
 			"75009"
 		],
 		name: "Phase Disruptor Array",
-		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b> During the Modify Attack Dice Step, if the defending ship is within Range, place 3 [time] Tokens on this card and spend this ship's [target-lock] Token.\nRe-roll any number of attack dice up to two times. (<i>Galor or Keldon Class Only</i>).",
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b> During the Modify Attack Dice Step, if the defending ship is within Range, place 3 [time] Tokens on this card and spend this ship's [target-lock] Token.\n\n Re-roll any number of attack dice up to two times.",
 		cost: 2,
-		oneperShip: true,
+		OnePerShip: true,
 		range: "1 - 2",
-		shipLimit: true,
+		galorLimit: true,
+		keldonLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -1484,7 +1927,7 @@ module.exports = [
 			"75009"
 		],
 		name: "Gul Damar",
-		text: "Increase the Captain Skill of the Captain equipped to this ship by 2.\n<b>WHEN A FRIENDLY SHIP ATTACKS WITH A [weapon_text] UPGRADE:</b> Target that ship and place 2 [time] Tokens on the [weapon_text] Upgrade being used.\nThe target ship may re-roll up to 3 attack dice this attack.",
+		text: "Increase the Captain Skill of the Captain equipped to this ship by 2.\n<hr> <b>WHEN A FRIENDLY SHIP ATTACKS WITH A [weapon_text] UPGRADE:</b> Target that ship and place 2 [time] Tokens on the [weapon_text] Upgrade being used.\n\n The target ship may re-roll up to 3 attack dice this attack.",
 		cost: 2,
 		unique: true,
 		range: "1 - 2",
@@ -1502,7 +1945,7 @@ module.exports = [
 		name: "Sensor Ghost",
 		text: "<b>WHEN DEFENDING:</b> Discard this card.\n\nThe attacking ship rolls -1 attack die.  If this ship is not destroyed by the attack, it may perform a [sensor-echo] Action as a Free Action using the 1 [straight] Maneuver Template even if it does not have the [sensor-echo] Action on its Action Bar and/or is not Cloaked.",
 		cost: 2,
-		oneperShip: true,
+		OnePerShip: true,
 		factions: [
 			"dominion"
 		]
@@ -1515,10 +1958,11 @@ module.exports = [
 			"75009"
 		],
 		name: "Uridium Alloy",
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, disable this card.\n\nConvert 2 [hit] into 1 [crit].\n(<i>Galor or Keldon Class Only</i>).",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, disable this card.\n\nConvert 2 [hit] into 1 [crit].",
 		cost: 1,
-		oneperShip: true,
-		shipLimit: true,
+		OnePerShip: true,
+		galorLimit: true,
+		keldonLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -1531,10 +1975,10 @@ module.exports = [
 			"75009"
 		],
 		name: "Type-3 Galor Class",
-		text: "Replace the Shield Value of this ship with its printed Shield Value +2.\n\n(</i>Galor Class Only</i>)",
+		text: "Replace the Shield Value of this ship with its printed Shield Value +2.",
 		cost: 4,
-		oneperShip: true,
-		shipLimit: true,
+		OnePerShip: true,
+		galorLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -1563,7 +2007,7 @@ module.exports = [
 			"75008"
 		],
 		name: "T'Paal",
-		text: "Place the Stone of Gol [tech_text] Upgrade facedown under T'Paal for 0 SP.\n---------------------------------\n<b>EXECUTE MANEUVER STEP:</b> After this ship moves, discard this card and target an opposing ship. Discard 1 [tech_text] Upgrade equipped to the target ship.  Flip the Stone of Gol [tech_text] Upgrade under T'Paal face up and equip it to this ship, ignoring restrictions.",
+		text: "Place the Stone of Gol [tech_text] Upgrade facedown under T'Paal for 0 SP.\n<hr> <b>EXECUTE MANEUVER STEP:</b> After this ship moves, discard this card and target an opposing ship. \n\n Discard 1 [tech_text] Upgrade equipped to the target ship.  Flip the Stone of Gol [tech_text] Upgrade under T'Paal face up and equip it to this ship, ignoring restrictions.",
 		cost: 2,
 		unique: true,
 		range: "1 - 2",
@@ -1595,7 +2039,7 @@ module.exports = [
 			"75008"
 		],
 		name: "Chu'Lak",
-		text: "<b>FREE ACTION:</b> Place three [scan] Tokens beside this ship.\n--------------------------------------\n<b>END PHASE:</b> If you used Chu'Lak's Free Action: \nYou must discard 1 [crew_text] Upgrade equipped to this ship.",
+		text: "<b>FREE ACTION:</b> \n\n Place three [scan] Tokens beside this ship.\n<hr> <b>END PHASE:</b> If you used Chu'Lak's Free Action: \n\n You must discard 1 [crew_text] Upgrade equipped to this ship.",
 		cost: 2,
 		unique: true,
 		factions: [
@@ -1698,7 +2142,7 @@ module.exports = [
 		],
 		name: "Katric Ark",
 		cost: 2,
-		text: "<b>WHEN A VULCAN [crew_text] UPGRADE EQUIPPED TO THIS SHIP IS DISCARDED:</b> Place that [crew_text] Upgrade beneath this card.\n------------------------------------------------\n<b>ACTION:</b> Remove this card from play.\n\nEquip one [crew_text] Upgrade beneath this card to this ship. Discard all other [crew_text] Upgrades beneath this card.",
+		text: "<b>WHEN A VULCAN [crew_text] UPGRADE EQUIPPED TO THIS SHIP IS DISCARDED:</b> Place that [crew_text] Upgrade beneath this card.\n<hr> <b>ACTION:</b> Remove this card from play.\n\nEquip one [crew_text] Upgrade beneath this card to this ship. Discard all other [crew_text] Upgrades beneath this card.",
 		shipVulcan: true,
 		unique: true,
 		factions: [
@@ -1714,7 +2158,7 @@ module.exports = [
 		],
 		name: "Stone of Gol",
 		cost: 3,
-		text: "<b>ACTION:</b>Place 3 [time] Tokens on this card and target a [crew_text] Upgrade equipped to an opposing ship.\n\nRoll a number of attack dice equal to the printed SP cost of the target [crew_text] Upgrade. If at least 1 [crit] is rolled, discard the target [crew_text] Upgrade. Otherwise, place 1 [time] Token on that [crew_text] Upgrade for each [hit]. (<i>Non-Vulcan ship costs +5 SP</i>)",
+		text: "<b>ACTION:</b>Place 3 [time] Tokens on this card and target a [crew_text] Upgrade equipped to an opposing ship.\n\nRoll a number of attack dice equal to the printed SP cost of the target [crew_text] Upgrade. If at least 1 [crit] is rolled, discard the target [crew_text] Upgrade. Otherwise, place 1 [time] Token on that [crew_text] Upgrade for each [hit].",
 		unique: true,
 		costVulcan: "+5",
 		range: "1",
@@ -1731,7 +2175,7 @@ module.exports = [
 		],
 		name: "Science Vessel Variant",
 		cost: 4,
-		text: "You may not equip the Combat Vessel Variant [tech_text] Upgrade to this ship.\n-----------------------------------------\nAdd 1 to this ship's Agility Value and Hull Value.",
+		text: "You may not equip the Combat Vessel Variant [tech_text] Upgrade to this ship.\n<hr> Add 1 to this ship's Agility Value and Hull Value.",
 		OnePerShip: true,
 		dkyrLimit: true,
 		suurokLimit: true,
@@ -1748,7 +2192,7 @@ module.exports = [
 		],
 		name: "Combat Vessel Variant",
 		cost: 2,
-		text: "You may not equip the Science Vessel Variant [tech_text] Upgrade to this ship.\n-----------------------------------------\nReplace this ship's Primary Weapon Value with its printed Primary Weapon Value +1.",
+		text: "You may not equip the Science Vessel Variant [tech_text] Upgrade to this ship.\n<hr> Replace this ship's Primary Weapon Value with its printed Primary Weapon Value +1.",
 		OnePerShip: true,
 		dkyrLimit: true,
 		suurokLimit: true,
@@ -1783,7 +2227,7 @@ module.exports = [
 		],
 		name: "Collective Consciousness",
 		cost: 5,
-		text: "<b>PLANNING PHASE: </b>Place 3 [time] Tokens on this card and target all friendly ships with a <img src='https://i.imgur.com/tZbY5gi.png' width='20' height='20'> Captain equipped to them.\n\nThe Captains equipped to the target ships replace their Captain Skill with the Captain Skill of the Captain equipped to this ship this game round.",
+		text: "<b>PLANNING PHASE: </b>Place 3 [time] Tokens on this card and target all friendly ships with a <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> Captain equipped to them.\n\nThe Captains equipped to the target ships replace their Captain Skill with the Captain Skill of the Captain equipped to this ship this game round.",
 		range: "1 - 3",
 		captainBorg: true,
 		factions: [
@@ -1817,6 +2261,7 @@ module.exports = [
 		name: "Ocular Implants",
 		cost: 4,
 		text: "<b>WHEN THIS SHIP PERFORMS A  [target-lock] ACTION:</b>\n\nThis ship may perform a [battlestations] Action as a Free Action.",
+		OnePerShip: true,
 		captainBorg: true,
 		shipBorg: true,
 		factions: [
@@ -1832,7 +2277,7 @@ module.exports = [
 		],
 		name: "Interlink Transceiver",
 		cost: 2,
-		text: "This ship and all friendly <img src='https://i.imgur.com/tZbY5gi.png' width='20' height='20'> ships within Range increase their Agility Value by 1.",
+		text: "This ship and all friendly <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> ships within Range increase their Agility Value by 1.",
 		unique: true,
 		range: "1",
 		factions: [
@@ -1848,7 +2293,7 @@ module.exports = [
 		],
 		name: "Technological Distinctiveness",
 		cost: 3,
-		text: "<b>ACTION:</b>\nPlace one Mission Token on this card.\n-----------------------------------\n<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b>\n\nThis ship rolls +1 attack die for each Mission Token on this card.",
+		text: "<b>ACTION:</b>\nPlace one Mission Token on this card.\n<hr> <b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b>\n\nThis ship rolls +1 attack die for each Mission Token on this card.",
 		unique: true,
 		shipBorg: true,
 		factions: [
@@ -1880,7 +2325,7 @@ module.exports = [
 		],
 		name: "Borg Multi-Adaptive Shields",
 		cost: 5,
-		text: "You must discard this card if this ship has no Active Shields.\n-----------------------------------\n<b>WHEN DEFENDING:</b> During the Compare Results Step:\n\nCancel 1 [hit]",
+		text: "You must discard this card if this ship has no Active Shields.\n<hr> <b>WHEN DEFENDING:</b> During the Compare Results Step:\n\nCancel 1 [hit]",
 		OnePerShip: true,
 		shipBorg: true,
 		factions: [
@@ -1912,7 +2357,7 @@ module.exports = [
 		],
 		name: "Integrated Borg Technology",
 		cost: 1,
-		text: "Add 1 [borg_text] to this ship's Upgrade Bar\n----------------------------------------\nYou do not pay a faction penalty for this card.",
+		text: "Add 1 [borg_text] to this ship's Upgrade Bar\n<hr> You do not pay a faction penalty for this card.",
 		unique: true,
 		factions: [
 			"borg"
@@ -1929,7 +2374,7 @@ module.exports = [
 		cost: 3,
 		range: "1",
 		attack: "*",
-		text: "The Attack Value of this [weapon_text] are this ship's Printed Primary Weapon Value.\n<b>ATTACK:</b> Remove this card from play, spend 2 Drone Tokens on the Captain equipped to this ship, and target an opposing ship.\n\nAll Damage inflicted by this attack ignores the defending ship's Shields",
+		text: "The Attack Value of this [weapon_text] are this ship's Printed Primary Weapon Value.\n<hr> <b>ATTACK:</b> Remove this card from play, spend 2 Drone Tokens on the Captain equipped to this ship, and target an opposing ship.\n\nAll Damage inflicted by this attack ignores the defending ship's Shields",
 		unique: true,
 		shipBorg: true,
 		FrontArc: true,
@@ -1949,7 +2394,7 @@ module.exports = [
 		cost: 0,
 		range: "1 - 2",
 		attack: "*",
-		text: "<font size=\"-1\">The Attack Value and cost of this [weapon_text] are this ship's Printed Primary Weapon Value.  <b>ATTACK:</b> Spend 2 Drone Tokens on the Captain equipped to this ship and target an opposing ship.  If this attack hits, place 2 [time] Tokens on the Captain and each [crew_text] Upgrade equipped to the defending ship. If the defending ship is a <img src='https://i.imgur.com/4FcAujB.png' width='20' height='20'> ship, place 2 [time] Tokens on all the cards equipped to it instead.</font>",
+		text: "The Attack Value and cost of this [weapon_text] are this ship's Printed Primary Weapon Value.\n<hr>  <b>ATTACK:</b> Spend 2 Drone Tokens on the Captain equipped to this ship and target an opposing ship.\n\n  If this attack hits, place 2 [time] Tokens on the Captain and each [crew_text] Upgrade equipped to the defending ship. If the defending ship is a <img src='img/text/faction-8472.png' width='20' height='20' title='Species 8472'> ship, place 2 [time] Tokens on all the cards equipped to it instead.",
 		unique: true,
 		shipBorg: true,
 		FrontArc: true,
@@ -1986,7 +2431,7 @@ module.exports = [
 		cost: 5,
 		unique: true,
 		shipBorg: true,
-		text: "<b>WHEN THIS SHIP PERFORMES A [regenerate] ACTION:</b>\n\nRepair up to 1 Shield and 1 Hull instead. this ship does not lose its attack from performing the [regenerate] Action.",
+		text: "<b>WHEN THIS SHIP PERFORMES A </b>[regenerate]<b> ACTION:</b>\n\nRepair up to 1 Shield and 1 Hull instead. this ship does not lose its attack from performing the [regenerate] Action.",
 		factions: [
 			"borg"
 		]
@@ -2001,7 +2446,7 @@ module.exports = [
 		name: "Tuvok",
 		cost: 5,
 		unique: true,
-		text: "<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step, spend 1 Drone Token on the Captain equiped to this ship.\n\nThe attacking ship cannot re-roll any attack dice this attack. In addition, if the attacking ship has any Federation [weapon_text] Upgrades equipped to it, convert 1 [hit] or [crit] into 1 [blank] .",
+		text: "<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step, spend 1 Drone Token on the Captain equiped to this ship.\n\nThe attacking ship cannot re-roll any attack dice this attack. In addition, if the attacking ship has any <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> [weapon_text] Upgrades equipped to it, convert 1 [hit] or [crit] into 1 [blank] .",
 		factions: [
 			"federation",
 			"borg"
@@ -2017,7 +2462,7 @@ module.exports = [
 		name: "Crosis",
 		cost: 3,
 		unique: true,
-		text: "Increase the Captain Skill of the Captain equiped to this ship by 1. If the Captain is a <img src='https://i.imgur.com/tZbY5gi.png' width='20' height='20'> Captain increase its Captain Skill by 3 instead.\n-----------------------------------\n<b>ONCE PER GAME, WHEN THE CAPTAIN OF THIS SHIP IS DISCARDED:</b>\n\nThis Card becomes this ship's Captain. Place 5 Drone Tokens on this card.",
+		text: "Increase the Captain Skill of the Captain equiped to this ship by 1. If the Captain is a <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> Captain increase its Captain Skill by 3 instead.\n<hr> <b>ONCE PER GAME, WHEN THE CAPTAIN OF THIS SHIP IS DISCARDED:</b>\n\nThis Card becomes this ship's Captain. Place 5 Drone Tokens on this card.",
 		factions: [
 			"borg"
 		]
@@ -2032,7 +2477,7 @@ module.exports = [
 		name: "Seven of Nine",
 		cost: 2,
 		unique: true,
-		text: "Add 1 [borg_text] to this ship's Upgrade Bar.\n-----------------------------------\nAll [borg_text] Upgrades equipped to this ship cost -1 SP.",
+		text: "Add 1 [borg_text] to this ship's Upgrade Bar.\n<hr> All [borg_text] Upgrades equipped to this ship cost -1 SP.",
 		factions: [
 			"borg"
 		]
@@ -2066,7 +2511,7 @@ module.exports = [
 		OnePerShip: true,
 		captainFederation: true,
 		shipFederation: true,
-		text: "Can only be equipped to a <img src='https://i.imgur.com/XIBw3Gb.png' width='10' height='10'> ship.\n-----------------------------------\n<b>FREE ACTION:</b> Place 3 [time] Tokens on this card.\n\nPerform a [battlestations] Action or an [evade] Action as a Free Action. If this card is equipped to a ship with \"Enterprise\" in its name, you may perform any available Action as a Free Action instead.",
+		text: "Can only be equipped to a <img src='img/text/unique.png' width='18' height='18' title='Unique'> ship.\n<hr> <b>FREE ACTION:</b> Place 3 [time] Tokens on this card.\n\nPerform a [battlestations] Action or an [evade] Action as a Free Action. If this card is equipped to a ship with \"Enterprise\" in its name, you may perform any available Action as a Free Action instead.",
 		factions: [
 			"federation"
 		]
@@ -2103,7 +2548,7 @@ module.exports = [
 		attack: "*",
 		unique: true,
 		FrontArc: true,
-		text: "<font size=\"-1\">The Attack Value of this [weapon_text] is this ship's printed Primary Weapon Value.  \n<b>ATTACK:</b> Place 3 [time] Tokens on this card, place an [aux] Token beside this ship, and target an opposing ship.  If this [weapon_text] is equipped to a Constitution Class ship, this ship rolls +2 attack dice. During the Deal Damage Step, if there is at least 2 uncancelled [hit] and/or [crit], roll 3 additional attack dice and add all [hit] and/or [crit] to the attack total.</font>",
+		text: "The Attack Value of this [weapon_text] is this ship's printed Primary Weapon Value.  \n<hr> <b>ATTACK:</b> Place 3 [time] Tokens on this card, place an [aux] Token beside this ship, and target an opposing ship.  If this [weapon_text] is equipped to a Constitution Class ship, this ship rolls +2 attack dice. During the Deal Damage Step, if there is at least 2 uncancelled [hit] and/or [crit], roll 3 additional attack dice and add all [hit] and/or [crit] to the attack total.",
 		factions: [
 			"federation"
 		]
@@ -2121,7 +2566,7 @@ module.exports = [
 		attack: "*",
 		OnePerShip: true,
 		FrontArc: true,
-		text: "The Attack Value of this [weapon_text] is this ship's printed Primary Weapon Value.\n-----------------------------------\n<b>ATTACK:</b> Disable 1 Active Shield on this ship and target an opposing ship.\nIf this [weapon_text] is equipped to a D7 Class ship, this ship rolls +2 attack dice. All [crit] that would damage a Shield on the defending ship inflicts 1 [hit] to the defending ship's Hull instead.",
+		text: "The Attack Value of this [weapon_text] is this ship's printed Primary Weapon Value.\n<hr> <b>ATTACK:</b> Disable 1 Active Shield on this ship and target an opposing ship.\n\n If this [weapon_text] is equipped to a D7 Class ship, this ship rolls +2 attack dice. All [crit] that would damage a Shield on the defending ship inflicts 1 [hit] to the defending ship's Hull instead.",
 		factions: [
 			"klingon"
 		]
@@ -2211,6 +2656,7 @@ module.exports = [
 		name: "Kali",
 		cost: 3,
 		range: "1",
+		unique: true,
 		shipKlingon: true,
 		text: "<b>ACTION:</b> Discard this card and target an opposing ship. \n\nLook at all face down damage cards beside the target ship's Ship Card. Flip 1 of those Damage Cards face up and resolve its effect if applicable.",
 		factions: [
@@ -2227,8 +2673,9 @@ module.exports = [
 		name: "Kaz",
 		cost: 2,
 		range: "1",
+		unique: true,
 		shipKlingon: true,
-		text: "<b>WHEN A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [crew_text] UPGRADE EQUIPPED TO THIS SHIP OR ANOTHER FRIENDLY SHIP WITHIN RANGE WOULD BE DISCARDED BY AN OPPOSING EFFECT:</b> \n\n You may discard this card instead.",
+		text: "<b>WHEN A <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> </b>[crew_text]<b> UPGRADE EQUIPPED TO THIS SHIP OR ANOTHER FRIENDLY SHIP WITHIN RANGE WOULD BE DISCARDED BY AN OPPOSING EFFECT:</b> \n\n You may discard this card instead.",
 		factions: [
 			"klingon"
 		]
@@ -2260,7 +2707,7 @@ module.exports = [
 		cost: 3,
 		unique: true,
 		range: " 1 ",
-		text: "You do not pay a faction penalty for this card. \n-----------------------------------\n<b>PLANNING PHASE:</b> Disable this card and target an opposing ship.\n\nPlace a Love Crystal Token on two [crew_text] Upgrades equipped to the opposing ship.",
+		text: "You do not pay a faction penalty for this card. \n<hr> <b>PLANNING PHASE:</b> Disable this card and target an opposing ship.\n\nPlace a Love Crystal Token on two [crew_text] Upgrades equipped to the opposing ship.",
 		factions: [
 			"independent"
 		]
@@ -2275,9 +2722,9 @@ module.exports = [
 		name: "Maquis Tactics",
 		cost: 5,
 		text: "<b>AFTER ATTACKING:</b>\n\nThis ship may perform a 1 [straight], 1 [bank-left] or  1 [bank-right] maneuver.\n(<i>Maquis Raider Only</i>)",
-		unique: true,
+		unique: false,
 		captainIndependent: true,
-		shipLimit: true,
+		maquisraiderLimit: true,
 		factions: [
 			"independent"
 		]
@@ -2291,7 +2738,7 @@ module.exports = [
 		],
 		name: "Andorian Imperial Guard",
 		cost: 2,
-		text: "May only be equipped to Thy'lek Shran or an Andorian Captain.\n-----------------------------------\n<b>WHEN ATTACKING WITH AN Independent [weapon_text] UPGRADE:</b> Place 2 [time] Tokens on this card.\nThis ship rolls additional attack dice this attack equal to the number of [time] Tokens on the Independent [weapon_text] Upgrade being used.",
+		text: "May only be equipped to Thy'lek Shran or an Andorian Captain.\n<hr> <b>WHEN ATTACKING WITH AN <img src='img/text/faction-indy.png' width='20' height='20' title='Independent'> [weapon_text] UPGRADE:</b> Place 2 [time] Tokens on this card.\n\n This ship rolls additional attack dice this attack equal to the number of [time] Tokens on the <img src='img/text/faction-indy.png' width='20' height='20' title='Independent'> [weapon_text] Upgrade being used.",
 		factions: [
 			"independent"
 		]
@@ -2305,8 +2752,8 @@ module.exports = [
 		],
 		name: "Vidiian Sodality",
 		cost: 1,
-		text: "May only be equipped to a Vidiian Captain.\n<b>WHEN THIS SHIP OR A CARD EQUIPPED TO IT DISABLES OR DISCARDS A [crew_text] UPGRADE EQUIPPED TO AN OPPOSING SHIP:</b>\nPlace 1 Mission Token on this card.\n----------------------------------------\n<b>WHEN AN INDEPENDENT [crew_text] UPGRADE OR CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b>\nYou may discard 1 Mission Token on this card instead.</b>",
-		shipLimit: true,
+		text: "May only be equipped to a Vidiian Captain.\n<hr> <b>WHEN THIS SHIP OR A CARD EQUIPPED TO IT DISABLES OR DISCARDS A </b>[crew_text]<b> UPGRADE EQUIPPED TO AN OPPOSING SHIP:</b>\n\nPlace 1 <img src='img/text/mission-token.png' width='18' height='18' title='Mission Token'> Token on this card.\n<hr> <b>WHEN AN <img src='img/text/faction-indy.png' width='20' height='20' title='Independent'> </b>[crew_text]<b> UPGRADE OR CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b>\n\nYou may discard 1 <img src='img/text/mission-token.png' width='18' height='18' title='Mission Token'> Token on this card instead.",
+		vidiianLimit: true,
 		factions: [
 			"independent"
 		]
@@ -2321,7 +2768,7 @@ module.exports = [
 		name: "Particle Synthesis",
 		cost: 4,
 		text: "<b>WHEN DEFENDING:</b> Before the Roll Attack Dice Step:\n\nYou may roll exactly 1 defense die that cannnot be re-rolled or modified. If you roll a [blank] , the attacking ship must choose a new legal target for the attack. If no other target can be chosen the attack is cancelled and this card must be discarded.\n<i>(Dauntless Class only)</i>",
-		shipLimit: true,
+		dauntlessLimit: true,
 		OnePerShip: true,
 		factions: [
 			"independent"
@@ -2336,8 +2783,8 @@ module.exports = [
 		],
 		name: "Enhanced Shield Emitters",
 		cost: 5,
-		text: "Increase this ship's Shield Value by 2.\n-----------------------------------\n<b>COMBAT PHASE:</b> You may flip up to 2 Disabled Shield Tokens on this ship to their Active sides.\n-----------------------------------\n<b>END PHASE:</b> You may repair 1 Shield on this ship.\n\n<i>(Andorian Battle Cruiser Only)</i>",
-		shipLimit: true,
+		text: "Increase this ship's Shield Value by 2.\n<hr> <b>COMBAT PHASE:</b> \n\n You may flip up to 2 Disabled Shield Tokens on this ship to their Active sides.\n<hr> <b>END PHASE:</b> \n\n You may repair 1 Shield on this ship.",
+		andorianLimit: true,
 		OnePerShip: true,
 		factions: [
 			"independent"
@@ -2353,7 +2800,7 @@ module.exports = [
 		name: "Class 4 Cloaking Device",
 		cost: 4,
 		text: "<b>ACTION:</b> Place 2 [time] Tokens on this card.\n\nPerform a [cloak] Action as a Free Action even if its not on this ship's Action Bar. Then this ship may perform the [sensor-echo] Action as a Free Action even if its not on its Action Bar.\n(<i>Maquis Raider Only</i>)",
-		shipLimit: true,
+		maquisraiderLimit: true,
 		OnePerShip: true,
 		factions: [
 			"independent"
@@ -2368,7 +2815,7 @@ module.exports = [
 		],
 		name: "Inertial Compensators",
 		cost: 2,
-		text: "This ship must have a [come-about] maneuver on its maneuver dial to equip this card.\n----------------------------------------\n<b>AFTER PERFORMING A BANK OR TURN MANEUVER WITH A SPEED OF 2 OR GREATER:</b> Place an [aux] token beside this ship. \nRotate this ship 180 degrees even if this ship’s base overlapped another ship’s base.",
+		text: "This ship must have a [come-about] maneuver on its maneuver dial to equip this card.\n<hr> <b>AFTER PERFORMING A BANK OR TURN MANEUVER WITH A SPEED OF 2 OR GREATER:</b> Place an [aux] token beside this ship. \n\nRotate this ship 180° even if this ship’s base overlapped another ship’s base.",
 		OnePerShip: true,
 		hullConstraint: "3-",
 		factions: [
@@ -2384,7 +2831,7 @@ module.exports = [
 		],
 		name: "Enhanced Phasers",
 		cost: 3,
-		text: "<b>AFTER THIS SHIP ATTACKS WITH ITS PRIMARY WEAPON:</b>\n\nThis ship may make an attack with its Primary Weapon targeting a different opposing ship in its Primary Firing Arc.\n\n(Note: Ship must have Primary Weapon 2 or less)",
+		text: "<b>AFTER THIS SHIP ATTACKS WITH ITS PRIMARY WEAPON:</b>\n\nThis ship may make an attack with its Primary Weapon targeting a different opposing ship in its Primary Firing Arc.",
 		attackConstraint: "2-",
 		factions: [
 			"independent"
@@ -2402,7 +2849,7 @@ module.exports = [
 		attack: 3,
 		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nAll damage inflicted by this attacks ignores the defending ship's Shields. If the defending ship has no Active Shields, you may re-roll any number of your Attack Dice\n(<i>Vidiian Battle Cruiser Only</i>)",
 		unique: false,
-		shipLimit: true,
+		vidiianLimit: true,
 		range: "1 - 2",
 		factions: [
 			"independent"
@@ -2417,7 +2864,7 @@ module.exports = [
 		],
 		name: "Repurposed Cargo Hold",
 		cost: 2,
-		text: "This card counts as a [crew_text] Upgrade, [tech_text] Upgrade, or [weapon_text] Upgrade.\n\nAdd one [tech_text] or [weapon_text] Upgrade to this ship’s Upgrade Bar.",
+		text: "This card counts as a [crew_text] Upgrade, [tech_text] Upgrade, or [weapon_text] Upgrade.\n<hr> Add one [tech_text] or [weapon_text] Upgrade to this ship’s Upgrade Bar.",
 		OnePerShip: true,
 		shipIndependent: true,
 		factions: [
@@ -2434,10 +2881,10 @@ module.exports = [
 		],
 		name: "Tarah",
 		cost: 5,
-		text: "<b>ACTION:</b> Remove this card from play and target an opposing ship. \n\nDiscard a Captain Card or Admiral Card equipped to that ship.\n\n(<i>Andorian Battle Cruiser</i>)",
+		text: "<b>ACTION:</b> Remove this card from play and target an opposing ship. \n\nDiscard a Captain Card or Admiral Card equipped to that ship.",
 		unique: true,
 		range: "1",
-		shipLimit: true,
+		andorianLimit: true,
 		factions: [
 			"independent"
 		]
@@ -2467,7 +2914,7 @@ module.exports = [
 		],
 		name: "Teero Anaydis",
 		cost: 3,
-		text: "<b>PLANNING PHASE:</b> Target a [crew_text] Upgrade equipped to an opposing ship.\nPlace 1 [time] Token on the target [crew_text] Upgrade.\n----------------------------------------\n<b>END PHASE</b> Target a [crew_text] Upgrade with a [time] Token on it equipped to an opposing ship.\nAdd 1 [time] Token to the target [crew_text] Upgrade instead of removing 1 [time] Token.",
+		text: "<b>PLANNING PHASE:</b> Target a [crew_text] Upgrade equipped to an opposing ship.\n\nPlace 1 [time] Token on the target [crew_text] Upgrade.\n<hr> <b>END PHASE</b> Target a [crew_text] Upgrade with a [time] Token on it equipped to an opposing ship.\n\nAdd 1 [time] Token to the target [crew_text] Upgrade instead of removing 1 [time] Token.",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -2499,7 +2946,7 @@ module.exports = [
 		],
 		name: "James T. Kirk",
 		cost: 4,
-		text: "<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. Increase the Captain Skill of the Captain equipped to this ship by 2 this game round and perform a [battlestations] Action as a free Action.",
+		text: "<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. \n\n Increase the Captain Skill of the Captain equipped to this ship by 2 this game round and perform a [battlestations] Action as a free Action.",
 		unique: true,
 		talents: 1,
 		specialization: true,
@@ -2517,7 +2964,7 @@ module.exports = [
 		],
 		name: "Mr. Spock",
 		cost: 4,
-		text: "<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. Increase the Captain Skill of the Captain equipped to this ship by 2 this game round and perform a [scan] Action as a free Action.",
+		text: "<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card. \n\n Increase the Captain Skill of the Captain equipped to this ship by 2 this game round and perform a [scan] Action as a free Action.",
 		unique: true,
 		talents: 1,
 		specialization: true,
@@ -2586,7 +3033,7 @@ module.exports = [
 		],
 		name: "Leonard Mccoy",
 		cost: 3,
-		text: "<b>WHEN A CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b>\nPlace 3 [time] Tokens on this card instead.\n----------------------------------------\n<b>WHEN A CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b>\nPlace 2 [time] Tokens on this card and the Captain that would be discarded instead.",
+		text: "<b>WHEN A CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b>\n\n Place 3 [time] Tokens on this card instead.\n<hr> <b>WHEN A CAPTAIN EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b>\n\nPlace 2 [time] Tokens on this card and the Captain that would be discarded instead.",
 		unique: true,
 		specialization: true,
 		factions: [
@@ -2603,7 +3050,7 @@ module.exports = [
 		],
 		name: "Leonard Mccoy",
 		cost: 3,
-		text: "<b>SETUP:</b>\nPlace 1 [crew_text] Upgrade with a printed cost of 4 SP or less face down beneath this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b>\nFlip the [crew_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Place 3 [time] Tokens on that [crew_text] Upgrade.",
+		text: "<b>SETUP:</b>\n\n Place 1 [crew_text] Upgrade with a printed cost of 4 SP or less face down beneath this card.\n<hr> <b>ACTIVATION PHASE:</b>\n\nFlip the [crew_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Place 3 [time] Tokens on that [crew_text] Upgrade.",
 		unique: true,
 		specialization: true,
 		factions: [
@@ -2690,7 +3137,7 @@ module.exports = [
 		],
 		name: "Overwhelm",
 		cost: 4,
-		text: "<b>WHEN ATTACKING:</b> Place 2 [time] Tokens on this card. \nThis game round, for each other friendly ship that attacked the defending ship this game round, this ship rolls +1 attack die and may convert 1 [blank] into 1 [battlestations].",
+		text: "<b>WHEN ATTACKING:</b> Place 2 [time] Tokens on this card. \n\nThis game round, for each other friendly ship that attacked the defending ship this game round, this ship rolls +1 attack die and may convert 1 [blank] into 1 [battlestations].",
 		unique: true,
 		shipKlingon: true,
 		captainKlingon: true,
@@ -2707,7 +3154,7 @@ module.exports = [
 		],
 		name: "Portable Transwarp Beaming Device",
 		cost: 2,
-		text: "<b>WHEN A [crew_text] UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b> Discard this card and target a friendly ship.\n\nInstead, place 1 [time] Token on the [crew_text] Upgrade that would be discarded and equip it to the target ship, even if it exceeds that ship's restrictions.",
+		text: "<b>WHEN A </b>[crew_text]<b> UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISCARDED:</b> Discard this card and target a friendly ship.\n\nInstead, place 1 [time] Token on the [crew_text] Upgrade that would be discarded and equip it to the target ship, even if it exceeds that ship's restrictions.",
 		unique: true,
 		range: "1 - 3",
 		factions: [
@@ -2723,7 +3170,7 @@ module.exports = [
 		],
 		name: "Integrated Future Technology",
 		cost: 3,
-		text: "You do not pay Faction Penalty when equipping Romulan or Borg [tech_text] and/or [weapon_text] Upgrades to this ship.\n<b>SETUP:</b>Place 1 [tech_text] Upgrade with a printed cost of 4 SP or less face down beneath this card.\n\n<b>PLANNING PHASE:</b> Discard this card.\nFlip the [tech_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ships restrictions.",
+		text: "You do not pay Faction Penalty when equipping <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [weapon_text], <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [tech_text], <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> [weapon_text] and/or <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> [tech_text] Upgrades to this ship.\n<hr> <b>SETUP:\n\n </b>Place 1 [tech_text] Upgrade with a printed cost of 4 SP or less face down beneath this card.\n<hr> <b>PLANNING PHASE:</b> Discard this card.\n\nFlip the [tech_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ships restrictions.",
 		OnePerShip: true,
 		factions: [
 			"mirror-universe"
@@ -2738,12 +3185,12 @@ module.exports = [
 		],
 		name: "Klingon Cloaking Device",
 		cost: 2,
-		text: "<b>WHEN DEFENDING:</b> If this ship is Cloaked:\n\nConvert 1 [blank] into 1 [evade].\n-----------------------------------\n<b>END PHASE:</b> Place 3 [time] Tokens on this card.\n\nFlip this ship's [cloak] Token to its green side.",
+		text: "<b>WHEN DEFENDING:</b> If this ship is Cloaked:\n\nConvert 1 [blank] into 1 [evade].\n<hr> <b>END PHASE:</b> Place 3 [time] Tokens on this card.\n\nFlip this ship's [cloak] Token to its green side.",
 		OnePerShip: true,
 		shipKlingon: true,
 		factions: [
-			"mirror-universe",
-			"klingon"
+			"klingon",
+			"mirror-universe"
 		]
 	},
 	{
@@ -2822,9 +3269,10 @@ module.exports = [
 		],
 		name: "Advanced Long Range Torpedo",
 		cost: 3,
-		text: "The Attack Value of this [weapon_text] is this ship’s Primary Weapon Value +1.\n-----------------------------------\n<b>ATTACK:</b> Spend this ship’s  [target-lock] Token, place 2 [time] Tokens on this card, and target an opposing ship.\n\nIf the attack hits, every other ship within Range 1 of the opposing ship suffers 1 [hit].\n(<i>Constitution Class (Kelvin) Only</i>)",
+		text: "The Attack Value of this [weapon_text] is this ship’s Primary Weapon Value +1.\n<hr> <b>ATTACK:</b> Spend this ship’s  [target-lock] Token, place 2 [time] Tokens on this card, and target an opposing ship.\n\nIf the attack hits, every other ship within Range 1 of the opposing ship suffers 1 [hit].",
 		attack: 0,
 		unique: false,
+		constitutionkLimit: true,
 		range: "2 - 3",
 		shipLimit: true,
 		factions: [
@@ -2841,7 +3289,7 @@ module.exports = [
 		],
 		name: "Photon Torpedoes",
 		cost: 3,
-		text: "The Attack Value of this [weapon_text] is this ship’s Primary Weapon Value +1.\n-----------------------------------\n<b>ATTACK:</b> Spend this ship’s   [target-lock] Token, place 3 [time] Tokens on this card, and target an opposing ship.\n\nIf the defending ship has no Active Shields and is not Cloaked, convert all [battlestations] into [crit].",
+		text: "The Attack Value of this [weapon_text] is this ship’s Primary Weapon Value +1.\n<hr> <b>ATTACK:</b> Spend this ship’s   [target-lock] Token, place 3 [time] Tokens on this card, and target an opposing ship.\n\nIf the defending ship has no Active Shields and is not Cloaked, convert all [battlestations] into [crit].",
 		attack: 0,
 		RearArc: true,
 		range: "1 - 3",
@@ -2860,7 +3308,7 @@ module.exports = [
 		name: "Disruptor Volley",
 		cost: 3,
 		text: "<b>ATTACK</b>:Disable this card and Target an opposing ship.\n\nThis attack deals no damage. If this attack his place an [aux] Token beside the defending ship. If the defending ship is an Attack Squadron, discard 1 Attack Squadron Token (AST) for each uncancelled [hit] or [crit].</b>\n(<i>Warbird Class Only</i>)",
-		shipLimit: true,
+		warbirdLimit: true,
 		attack: 5,
 		range: "1 - 3",
 		factions: [
@@ -2877,9 +3325,9 @@ module.exports = [
 		],
 		name: "Full Spread Phasers",
 		cost: 4,
-		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b>\n\nThis ship rolls +1 attack die, or this ship may perform an additional attack with its Primary Weapon from its Secondary Firing Arc with -1 attack die.\n(<i>Constitution Class (Kelvin) Only</i>)",
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b>\n\nThis ship rolls +1 attack die, or this ship may perform an additional attack with its Primary Weapon from its Secondary Firing Arc with -1 attack die.",
 		OnePerShip: true,
-		shipLimit: true,
+		constitutionkLimit: true,
 		factions: [
 			"mirror-universe",
 			"federation"
@@ -2894,7 +3342,7 @@ module.exports = [
 		],
 		name: "Lead Squadron",
 		cost: 5,
-		text: "Add 1 [squadron_text] Upgrade to this Attack Squadron’s Upgrade Bar.\n-----------------------------------\nAdd the [battlestations] Action to this Attack Squadron’s Action Bar.\n-----------------------------------\nIncrease the Captain Skill of this Attack Squadron by 2.",
+		text: "Add 1 [squadron_text] Upgrade to this Attack Squadron’s Upgrade Bar.\n<hr> Add the [battlestations] Action to this Attack Squadron’s Action Bar.\n<hr> Increase the Captain Skill of this Attack Squadron by 2.",
 		unique: true,
 		factions: [
 			"federation"
@@ -3017,7 +3465,7 @@ module.exports = [
 		],
 		name: "Optronic Data Core",
 		cost: 4,
-		text: "This card counts as a [tech_text] or [weapon_text] Upgrade.\n<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card.\nPerform the Action on a [question_text] Upgrade equipped to this ship as a Free Action.\n-----------------------------------\n<b>ACTIVATION PHASE:</b> Disable this card.\nRemove a Disable Token from a [question_text] Upgrade equipped this ship.",
+		text: "This card counts as a [tech_text] or [weapon_text] Upgrade.\n<hr> <b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card.\n\nPerform the Action on a [question_text] Upgrade equipped to this ship as a Free Action.\n<hr> <b>ACTIVATION PHASE:</b> Disable this card.\n\nRemove a Disable Token from a [question_text] Upgrade equipped this ship.",
 		OnePerShip: true,
 		factions: [
 			"federation",
@@ -3049,7 +3497,7 @@ module.exports = [
 		],
 		name: "Relics",
 		cost: 4,
-		text: "Can only be equipped to Karr or a Hirogen Captain.\n\n<b>WHEN ATTACKING:</b> Once per game round, when this ship hits an opposing ship with an attack:\nPlace 1 Mission Token on this card (max 3).\n\n<b>ACTIVATION PHASE:</b> Spend 1 Mission Token on this card.\nPerform an Action on this ship's Action Bar as a Free Action.",
+		text: "Can only be equipped to Karr or a Hirogen Captain.\n<hr> <b>WHEN ATTACKING:</b> Once per game round, when this ship hits an opposing ship with an attack:\n\n Place 1 Mission Token on this card (max 3).\n<hr> <b>ACTIVATION PHASE:</b> Spend 1 Mission Token on this card.\n\nPerform an Action on this ship's Action Bar as a Free Action.",
 		factions: [
 			"independent"
 		]
@@ -3079,9 +3527,9 @@ module.exports = [
 		],
 		name: "Stealth Mode",
 		cost: 3,
-		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card. \nPerform a [sensor-echo] Action as a Free Action even if this ship is not Cloaked\n\n(<i>Hirogen Warship Only</i>)",
+		text: "<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card. \n\nPerform a [sensor-echo] Action as a Free Action even if this ship is not Cloaked.",
 		OnePerShip: true,
-		shipLimit: true,
+		hirogenLimit: true,
 		factions: [
 			"independent"
 		]
@@ -3097,8 +3545,8 @@ module.exports = [
 		cost: 3,
 		attack: 4,
 		range: "1 - 2",
-		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nFor each uncancelled [hit] or [crit], you may disable 1 [crew_text] Upgrade equipped to the target ship (max 3).\n\n(<i>Non-Hirogen Warship Costs +5 SP</i>)",
-		shipLimit: "+5",
+		text: "<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nFor each uncancelled [hit] or [crit], you may disable 1 [crew_text] Upgrade equipped to the target ship (max 3).",
+		costHirogen: "+5",
 		factions: [
 			"independent"
 		]
@@ -3112,9 +3560,9 @@ module.exports = [
 		],
 		name: "Donik",
 		cost: 2,
-		text: "This ship cannot be targeted by [weapon_text] Upgrades fried though a Secondary Firing Arc.\n\n(<i>Hirogen Warship Only</i>)",
+		text: "This ship cannot be targeted by [weapon_text] Upgrades fried though a Secondary Firing Arc.",
 		unique: true,
-		shipLimit: true,
+		hirogenLimit: true,
 		factions: [
 			"independent"
 		]
@@ -3128,7 +3576,7 @@ module.exports = [
 		],
 		name: "Beta Hirogen",
 		cost: 3,
-		text: "Increase the Captain Skill of the Captain equipped to this ship by 1.\n----------------------------------------\n<b>WHEN THIS SHIP PERFROMS A [scan] ACTION:</b>\n\nPlace an additional [scan] Token beside this ship.",
+		text: "Increase the Captain Skill of the Captain equipped to this ship by 1.\n<hr> <b>WHEN THIS SHIP PERFROMS A </b>[scan]<b> ACTION:</b>\n\nPlace an additional [scan] Token beside this ship.",
 		OnePerShip: true,
 		factions: [
 			"independent"
@@ -3159,7 +3607,7 @@ module.exports = [
 		],
 		name: "Victory Is Life",
 		cost: 6,
-		text: "<b>COMBAT PHASE:</b> Discard this card, target this ship, and target all friendly <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> ships.\n\nPlace a [battlestations] Token beside all target ships. All target ships roll +1 attack die this game round.",
+		text: "<b>COMBAT PHASE:</b> Discard this card, target this ship, and target all friendly <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ships.\n\nPlace a [battlestations] Token beside all target ships. All target ships roll +1 attack die this game round.",
 		unique: true,
 		range: "1",
 		factions: [
@@ -3175,7 +3623,7 @@ module.exports = [
 		],
 		name: "Cloning Facility",
 		cost: 4,
-		text: "<b>ACTIVATION PHASE:</b> Target a Dominion [crew_text] Upgrade equipped to this ship or a friendly ship.\n\nThis card becomes a copy of the target Dominion [crew_text] Upgrade this game round.",
+		text: "<b>ACTIVATION PHASE:</b> Target a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] Upgrade equipped to this ship or a friendly ship.\n\nThis card becomes a copy of the target <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] Upgrade this game round.",
 		OnePerShip: true,
 		range: "1",
 		factions: [
@@ -3253,7 +3701,7 @@ module.exports = [
 		],
 		name: "Tactical Command Reticle",
 		cost: 2,
-		text: "Add 1 [weapon_text] to this ships Upgrade Bar\n-----------------------------------\n<b>COMBAT PHASE:</b> Place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this game round.",
+		text: "Add 1 [weapon_text] to this ships Upgrade Bar\n<hr> <b>COMBAT PHASE:</b> Place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this game round.",
 		OnePerShip: true,
 		shipDominion: true,
 		factions: [
@@ -3269,8 +3717,8 @@ module.exports = [
 		],
 		name: "Gorn Hegemony",
 		cost: 4,
-		text: "This card may only be equipped to S'Sesslak or a Gorn Captain.\n-----------------------------------\n<b>ACTION:</b> Discard this card and treat the Captain Skill of the Captain equipped to this ship as 0 this game round.\nThis ship may make 2 attacks instead of 1 this game round.\n(<i>Gorn Raider Only</i>)",
-		shipLimit: true,
+		text: "This card may only be equipped to S'Sesslak or a Gorn Captain.\n<hr> <b>ACTION:</b> Discard this card and treat the Captain Skill of the Captain equipped to this ship as 0 this game round.\n\nThis ship may make 2 attacks instead of 1 this game round.",
+		gornLimit: true,
 		factions: [
 			"independent"
 		]
@@ -3284,7 +3732,7 @@ module.exports = [
 		],
 		name: "Meridor - Gorn Ale",
 		cost: 2,
-		text: "This Upgrade may be equipped to a ship without requiring an Upgrade slot.\n-----------------------------------\n<b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card.\n\nDecrease the Captain Skill of the Captain equipped to this ship by up to 2 this game round, and increase this ship's Primary Weapon Value by the same amount this game round.",
+		text: "This Upgrade may be equipped to a ship without requiring an Upgrade slot.\n<hr> <b>ACTIVATION PHASE:</b> Place 3 [time] Tokens on this card.\n\nDecrease the Captain Skill of the Captain equipped to this ship by up to 2 this game round, and increase this ship's Primary Weapon Value by the same amount this game round.",
 		OnePerShip: true,
 		shipIndependent: true,
 		factions: [
@@ -3317,7 +3765,7 @@ module.exports = [
 		],
 		name: "Gorn Pilot",
 		cost: 3,
-		text: "<b>ACTION:</b> If this ship performed a [straight] Maneuver this game round disable this card.\n\nPerform a 1 [straight] Maneuver",
+		text: "<b>ACTION:</b> If this ship performed a [straight] Maneuver this game round disable this card.\n\nPerform a 1 white [straight] Maneuver",
 		unique: true,
 		factions: [
 			"independent"
@@ -3332,7 +3780,7 @@ module.exports = [
 		],
 		name: "Gorn Trooper",
 		cost: 2,
-		text: "For each Gorn Trooper Equipped to this ship, Increase the Captain Skill of the Captain equipped to this ship by 1.\n-----------------------------------\n<b>WHEN ATTACKING:</b> Disable this card.\n\nRe-Roll 1 attack die.",
+		text: "For each Gorn Trooper Equipped to this ship, Increase the Captain Skill of the Captain equipped to this ship by 1.\n<hr> <b>WHEN ATTACKING:</b> Disable this card.\n\nRe-Roll 1 attack die.",
 		unique: false,
 		factions: [
 			"independent"
@@ -3347,7 +3795,7 @@ module.exports = [
 		],
 		name: "Hidden Explosives",
 		cost: 3,
-		text: "<b>SETUP:</b> Target an opposing ship. Place a Hidden Explosives Token on the target ship and place 4 [time] Tokens on this card.\n-----------------------------------\n<b>WHEN THERE ARE NO MORE [time] TOKENS ON THIS CARD:</b> you must discard this card. Roll 3 attack dice that cannot be re-rolled or modified. All [hit] and [crit] deal damage to the ships Hull. Discard the Hidden Explosives Token after the attack is made.",
+		text: "<b>SETUP:</b> Target an opposing ship. \n\n Place a Hidden Explosives Token on the target ship and place 4 [time] Tokens on this card.\n<hr> <b>WHEN THERE ARE NO MORE </b>[time]<b> TOKENS ON THIS CARD:</b> you must discard this card. \n\n Roll 3 attack dice that cannot be re-rolled or modified. All [hit] and [crit] deal damage to the ships Hull. Discard the Hidden Explosives Token after the attack is made.",
 		unique: true,
 		factions: [
 			"independent"
@@ -3362,9 +3810,9 @@ module.exports = [
 		],
 		name: "Enhanced Durability",
 		cost: 4,
-		text: "Add 1 [tech_text] to this ships Upgrade Bar.\n-----------------------------------\nIncrease this ship's Shield and Agility Values by 1.\n\n<i>(Gorn Raider Only)</i>",
+		text: "Add 1 [tech_text] to this ships Upgrade Bar.\n<hr> Increase this ship's Shield and Agility Values by 1.",
 		OnePerShip: true,
-		shipLimit: true,
+		gornLimit: true,
 		factions: [
 			"independent"
 		]
@@ -3378,9 +3826,9 @@ module.exports = [
 		],
 		name: "Gorn Sensors",
 		cost: 3,
-		text: "<b>WHEN THIS SHIP ATTACKS WITH ITS PRIMARY WEAPON AT RANGE 1:</b>\nRange combat bonuses are doubled\n-----------------------------------\n<b>WHEN THIS SHIP ATTACKS WITH A [weapon_text] UPGRADE AT RANGE 1:</B>\nApply Range combat bonuses.\n<i>(Gorn Raider)</i>",
+		text: "<b>WHEN THIS SHIP ATTACKS WITH ITS PRIMARY WEAPON AT RANGE 1:</b>\n\nRange combat bonuses are doubled\n<hr> <b>WHEN THIS SHIP ATTACKS WITH A </b>[weapon_text]<b> UPGRADE AT RANGE 1:</b>\n\nApply Range combat bonuses.",
 		OnePerShip: true,
-		shipLimit: true,
+		gornLimit: true,
 		factions: [
 			"independent"
 		]
@@ -3394,9 +3842,9 @@ module.exports = [
 		],
 		name: "Disruptor Bombardment",
 		cost: 2,
-		text: "<b>ATTACK:</b> Place 3 [time] Tokens on this card, place a Mission Token within Range 1-2 and target all opposing ships within Range 1 of the Mission Token.\n\nMake a separate attack roll against each target ship. This attack cannot be obstructed by Obstacles or Planets. Discard the Mission Token after the attack is made.\n<i>(Gorn Raider Only)</i>",
+		text: "<b>ATTACK:</b> Place 3 [time] Tokens on this card, place a Mission Token within Range 1-2 and target all opposing ships within Range 1 of the Mission Token.\n\nMake a separate attack roll against each target ship. This attack cannot be obstructed by Obstacles or Planets. Discard the Mission Token after the attack is made.",
 		OnePerShip: true,
-		shipLimit: true,
+		gornLimit: true,
 		FrontArc: true,
 		attack: 4,
 		factions: [
@@ -3412,7 +3860,7 @@ module.exports = [
 		],
 		name: "Grand Nagus",
 		cost: 2,
-		text: "<b>ACTION:</b> Discard this card and target all friendly <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> ships.\n\nAll target ships may perform a Green Maneuver.",
+		text: "<b>ACTION:</b> Discard this card and target all friendly <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> ships.\n\nAll target ships may perform a Green Maneuver.",
 		unique: true,
 		captainFerengi: true,
 		range: "1 - 3",
@@ -3429,7 +3877,7 @@ module.exports = [
 		],
 		name: "Kemocite",
 		cost: 2,
-		text: "<b>ACTIVATION PHASE:</b> When you reveal this ship's Maneuver.\nYou may increase the speed of the Maneuver by 2. The color of the Maneuver remains the same as the revealed Maneuver.\n-----------------------------------\n<b>WHEN ATTACKING:</b> Discard this card.\nAdd 1 [hit].",
+		text: "<b>ACTIVATION PHASE:</b> When you reveal this ship's Maneuver.\n\nYou may increase the speed of the Maneuver by 2. The color of the Maneuver remains the same as the revealed Maneuver.\n<hr> <b>WHEN ATTACKING:</b> Discard this card.\n\nAdd 1 [hit].",
 		OnePerShip: true,
 		factions: [
 			"ferengi"
@@ -3459,7 +3907,7 @@ module.exports = [
 		],
 		name: "Weapon Ports",
 		cost: 2,
-		text: "<b>IF THIS CARD IS DISABLED:</b>\nThis ship rolls -1 defense dice\n-----------------------------------\n<b>ATTACK:</b> Disable this card and target an opposing ship.\nThis attack deals no damage. If this attack hits an Attack Squadron discard 1 Attack Squadron Token for each uncanceled [hit] or [crit].",
+		text: "<b>IF THIS CARD IS DISABLED:</b>\n \nThis ship rolls -1 defense dice\n<hr> <b>ATTACK:</b> Disable this card and target an opposing ship.\n\nThis attack deals no damage. If this attack hits an Attack Squadron discard 1 Attack Squadron Token for each uncanceled [hit] or [crit].",
 		range: "1 - 3",
 		FrontArc: true,
 		attack: 3,
@@ -3476,7 +3924,7 @@ module.exports = [
 		],
 		name: "Photon Torpedoes",
 		cost: 2,
-		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value\n-----------------------------------\n<b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nPlace an [aux] Token beside the target ship.",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value\n<hr> <b>ATTACK:</b> Place 2 [time] Tokens on this card and target an opposing ship.\n\nPlace an [aux] Token beside the target ship.",
 		range: "1 - 3",
 		FrontArc: true,
 		RearArc: true,
@@ -3493,7 +3941,7 @@ module.exports = [
 		],
 		name: "Verteron Pulse Trap",
 		cost: 2,
-		text: "<b>SETUP:</b>\nPlace a Minefield Token anywhere that is not within Range 1 - 2 of any edge of the play area.\n-----------------------------------\n<b>WHEN A SHIP MOVES WITHIN RANGE 1 OF THE MINEFIELD TOKEN:</b> Target that ship.\nPlace an [aux] Token beside the target ship.",
+		text: "<b>SETUP:</b>\n\nPlace a Minefield Token anywhere that is not within Range 1 - 2 of any edge of the play area.\n<hr> <b>WHEN A SHIP MOVES WITHIN RANGE 1 OF THE MINEFIELD TOKEN:</b> Target that ship.\n\nPlace an [aux] Token beside the target ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -3524,7 +3972,7 @@ module.exports = [
 		],
 		name: "Par Lenor",
 		cost: 3,
-		text: "<b>WHEN THIS SHIP WOULD BE DESTROYED BY AN ATTACK:</b> Equip this card to the attacking ship, even if it exceeds that ships restrictions with a number of GPLT on this card equal the the number of GPLT on the captain on this ship.\n-----------------------------------\n<b>ACTIVATION PHASE:</b> The opposing player may spend 1 GPLT on this card. Place 1 Disabled Token on an Upgrade equipped to this ship.",
+		text: "<b>WHEN THIS SHIP WOULD BE DESTROYED BY AN ATTACK:</b> \n\n Equip this card to the attacking ship, even if it exceeds that ships restrictions with a number of GPLT on this card equal the the number of GPLT on the captain on this ship.\n<hr> <b>ACTIVATION PHASE:</b> The opposing player may spend 1 GPLT on this card. \n\n Place 1 Disabled Token on an Upgrade equipped to this ship.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -3570,7 +4018,7 @@ module.exports = [
 		],
 		name: "Nava",
 		cost: 1,
-		text: "<b>WHEN A FERENGI [crew_text] UPGRADE WOULD BE DISCARDED FROM THIS SHIP:</b>\n\nPlace 1 GPLT on the Captain equipped to this ship.",
+		text: "<b>WHEN A FERENGI </b>[crew_text]<b> UPGRADE WOULD BE DISCARDED FROM THIS SHIP:</b>\n\nPlace 1 GPLT on the Captain equipped to this ship.",
 		unique: true,
 		captainFerengi: true,
 		factions: [
@@ -3586,7 +4034,7 @@ module.exports = [
 		],
 		name: "Grilka",
 		cost: 1,
-		text: "You do not pay a Faction Penalty when equipping this card to a <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Ship.\n-----------------------------------\nOpposing effects that cost one or more GPLT cost +1 GPLT.",
+		text: "You do not pay a Faction Penalty when equipping this card to a <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> Ship.\n<hr>Opposing effects that cost one or more GPLT cost +1 GPLT.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -3601,7 +4049,7 @@ module.exports = [
 		],
 		name: "Bio-Mimetic Gel",
 		cost: 3,
-		text: "This card counts as a [tech_text] or [weapon_text] Upgrade.\n-----------------------------------\n<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target a [crew_text], [weapon_text], or [tech_text] Upgrade equipped to an another ship. Place 1 Bio-Mimetic Gel Token on the target Upgrade",
+		text: "This card counts as a [tech_text] or [weapon_text] Upgrade.\n<hr> <b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card and target a [crew_text], [weapon_text], or [tech_text] Upgrade equipped to an another ship. \n\n Place 1 Bio-Mimetic Gel Token (BMGT) on the target Upgrade",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -3618,7 +4066,7 @@ module.exports = [
 		],
 		name: "Neural Transponder",
 		cost: 2,
-		text: "<b>WHENEVER A [battlestations], [evade], [scan] OR [aux] TOKEN IS PLACED BESIDE THIS SHIP:</b> You must discard this card.\n\nEach other friendly ship within range that has a Neural Transponder Upgrade equipped to it must also place a token of the same type beside it if it does not already have one.",
+		text: "<b>WHENEVER A </b>[battlestations], [evade], [scan]<b> OR </b>[aux]<b> TOKEN IS PLACED BESIDE THIS SHIP:</b> You must discard this card.\n\nEach other friendly ship within range that has a Neural Transponder Upgrade equipped to it must also place a token of the same type beside it if it does not already have one.",
 		OnePerShip: true,
 		shipBorg: true,
 		captainBorg: true,
@@ -3652,7 +4100,7 @@ module.exports = [
 		],
 		name: "Tractor Beam",
 		cost: 5,
-		text: "The Attack Value of this [weapon_text] is equal to this ship's Primary Weapon Value.\n-----------------------------------\n<b>ATTACK:</b> Discard this card and target an opposing ship.\n\nFor each [crit] that would damage the defending ship's Hull, you may instead steal 1 [tech_text] or [crew_text] Upgrade from the defending ship ignoring this ship's restrictions.",
+		text: "The Attack Value of this [weapon_text] is equal to this ship's Primary Weapon Value.\n<hr><b>ATTACK:</b> Discard this card and target an opposing ship.\n\nFor each [crit] that would damage the defending ship's Hull, you may instead steal 1 [tech_text] or [crew_text] Upgrade from the defending ship ignoring this ship's restrictions.",
 		range: "1 - 2",
 		arc360: true,
 		attack: "?",
@@ -3713,7 +4161,7 @@ module.exports = [
 		],
 		name: "Neonatal Borg",
 		cost: 2,
-		text: "Add 1 [crew_text] to this ships Upgrade Bar.\n-----------------------------------\nIf this card is equipped to a Borg ship, you may have Borg [crew_text] Upgrades fill this ships [tech_text] or [borg_text] Upgrade Slots.",
+		text: "Add 1 [crew_text] to this ships Upgrade Bar.\n<hr> If this card is equipped to a <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> ship, you may have <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> [crew_text] Upgrades fill this ships [tech_text] or [borg_text] Upgrade Slots.",
 		OnePerShip: true,
 		factions: [
 			"borg"
@@ -3728,7 +4176,7 @@ module.exports = [
 		],
 		name: "Mezoti",
 		cost: 2,
-		text: "<b>WHENEVER THE EFFECT OF A [crew_text] UPGRADE WOULD TARGET THIS SHIP:</b> Discard this card and target that [crew_text] Upgrade.\n\nDisable the target [crew_text] Upgrade and cancel its effect.",
+		text: "<b>WHENEVER THE EFFECT OF A </b>[crew_text]<b> UPGRADE WOULD TARGET THIS SHIP:</b> Discard this card and target that [crew_text] Upgrade.\n\nDisable the target [crew_text] Upgrade and cancel its effect.",
 		unique: true,
 		factions: [
 			"borg"
@@ -3827,7 +4275,7 @@ module.exports = [
 		name: "Metaphasic Shields",
 		cost: 4,
 		OnePerShip: true,
-		text: "Increase this ships Shield Value by 1.\n-----------------------------------\nDiscard this card when this ship has no Active Shields.\n-----------------------------------\n<b>WHEN THIS SHIP OVERLAPS AN OBSTACLE:</b>\nThis ship does not lose its Action, but it may only perform a Non-Free Action listed on its Action Bar.",
+		text: "Increase this ships Shield Value by 1.\n<hr> Discard this card when this ship has no Active Shields.\n<hr> <b>WHEN THIS SHIP OVERLAPS AN OBSTACLE:</b>\n\nThis ship does not lose its Action, but it may only perform a Non-Free Action listed on its Action Bar.",
 		unique: false,
 		factions: [
 			"ferengi"
@@ -3892,9 +4340,9 @@ module.exports = [
 		],
 		name: "Suicide Attack",
 		cost: 5,
-		text: "<b>ACTIVATION PHASE:</b> If this ship overlaps an opposing ship, target that ship and destroy this ship.\n\nDeal 2 [crit] to that target ships Hull.\n\n(<i>Jem'Hadar Attack Ship</i>)",
+		text: "<b>ACTIVATION PHASE:</b> If this ship overlaps an opposing ship, target that ship and destroy this ship.\n\nDeal 2 [crit] to that target ships Hull.",
 		OnePerShip: true,
-		shipLimit: true,
+		attackshipLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -3925,9 +4373,9 @@ module.exports = [
 		cost: 3,
 		range: "1 - 2",
 		attack: 6,
-		text: "<b>ATTACK:</b> Spend this ships  [target-lock] Token, discard this card, and target an opposing ship.\n\nPerfrom this attack twice against the target ship.\n\n(<i>Jem'Hadar Battleship Only</i>)",
+		text: "<b>ATTACK:</b> Spend this ships  [target-lock] Token, discard this card, and target an opposing ship.\n\nPerfrom this attack twice against the target ship.",
 		unique: true,
-		shipLimit: true,
+		battleshipLimit: true,
 		RearArc: true,
 		factions: [
 			"dominion"
@@ -3963,10 +4411,10 @@ module.exports = [
 		cost: 3,
 		range: "1 - 2",
 		attack: 3,
-		text: "<b>ATTACK:</b> Disable this card and target an opposing ship.\n\nThis attack ignores the target ship's Shields. This ship may convert 1 [battlestations] into 1 [hit].\n\n(<i>Jem'Hadar Attack Ship</i>)",
+		text: "<b>ATTACK:</b> Disable this card and target an opposing ship.\n\nThis attack ignores the target ship's Shields. This ship may convert 1 [battlestations] into 1 [hit].",
 		OnePerShip: true,
 		FrontArc: true,
-		shipLimit: true,
+		attackshipLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -3998,10 +4446,10 @@ module.exports = [
 		cost: 2,
 		range: "1 - 2",
 		attack: 3,
-		text: "<b>Attack:</b> Discard this card and target an opposing ship.\n\nFor each uncancelled [hit] or [crit], discard 1 [tech_text] Upgrade equipped to the target ship.\n\n(<i>Jem'Hadar Attack Ship</i>)",
+		text: "<b>Attack:</b> Discard this card and target an opposing ship.\n\nFor each uncancelled [hit] or [crit], discard 1 [tech_text] Upgrade equipped to the target ship.",
 		unique: true,
 		FrontArc: true,
-		shipLimit: true,
+		attackshipLimit: true,
 		factions: [
 			"dominion"
 		]
@@ -4043,7 +4491,7 @@ module.exports = [
 		],
 		name: "Duran'Adar",
 		cost: 3,
-		text: "Add 1 [tech_text] to this ships Upgrade Bar.\n-----------------------------\n<b>ACTIVATION PHASE:</b> After this ship reveals a Red Maneuver, place 3 [time] Tokens on this card.\n\nThis ship does not receive [aux] Tokens this game round.",
+		text: "Add 1 [tech_text] to this ships Upgrade Bar.\n<hr> <b>ACTIVATION PHASE:</b> After this ship reveals a Red Maneuver, place 3 [time] Tokens on this card.\n\nThis ship does not receive [aux] Tokens this game round.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -4106,7 +4554,7 @@ module.exports = [
 		],
 		name: "Auxiliary Power Core",
 		cost: 3,
-		text: "When this card has 2 or more [aux] Tokens on it, discard it.\n-----------------------------\n<b>WHEN AN [aux] TOKEN WOULD BE PLACED BESIDE THIS SHIP:</b>\nPlace that [aux] Token on this card instead.\n\n(<i>Non-Romulan cost +2 SP more</i>)",
+		text: "When this card has 2 or more [aux] Tokens on it, discard it.\n<hr> <b>WHEN AN </b>[aux]<b> TOKEN WOULD BE PLACED BESIDE THIS SHIP:</b>\n\nPlace that [aux] Token on this card instead.",
 		OnePerShip: true,
 		hullConstraint: "4+",
 		costRomulan: "+2",
@@ -4154,7 +4602,7 @@ module.exports = [
 		],
 		name: "Tal Shiar",
 		cost: 2,
-		text: "<b>PLANNING PHASE:</b> After all ships have chosen their Maneuvers, discard this card and target an opposing ship. \nLook at the target ship's Maneuver Dial and place a [battlestations] Token beside this ship. This ship cannot perform a [battlestations] Action this game round.",
+		text: "<b>PLANNING PHASE:</b> After all ships have chosen their Maneuvers, discard this card and target an opposing ship. \n\n Look at the target ship's Maneuver Dial and place a [battlestations] Token beside this ship. This ship cannot perform a [battlestations] Action this game round.",
 		unique: true,
 		captainRomulan: true,
 		range: "1 - 3",
@@ -4202,8 +4650,8 @@ module.exports = [
 		name: "Additional Weapons Array",
 		cost: 3,
 		OnePerShip: true,
-		shipLimit: true,
-		text: "<b>WHEN ATTACKING:</b>\n\nThis ship rolls +1 attack die.\n\n(<i>D'Deridex Class</i>)",
+		dderidexLimit: true,
+		text: "<b>WHEN ATTACKING:</b>\n\nThis ship rolls +1 attack die.",
 		factions: [
 			"romulan"
 		]
@@ -4232,7 +4680,7 @@ module.exports = [
 		],
 		name: "Romulan Spy",
 		cost: 2,
-		text: "<b>START OF THE GAME:</b> Target all friendly Romulan ships.\n\nPlace a [cloak] Token on the base of all the target ships.",
+		text: "<b>START OF THE GAME:</b> Target all friendly <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ships.\n\nPlace a [cloak] Token on the base of all the target ships.",
 		range: "1",
 		factions: [
 			"romulan"
@@ -4351,7 +4799,7 @@ module.exports = [
 		],
 		name: "Tactical Station",
 		cost: 4,
-		text: "Add 1 [weapon_text] to this ships Upgrade Bar.\n-----------------------------\n<b>WHEN ATTACKING:</b> Disable this card.\nThis ship rolls +1 attack die this game round.\n-----------------------------\n<b>WHEN ATTACKING:</b> Discard this card.\nThis ship rolls +2 attack dice this game round.\n<b>( ERRATA )</b>",
+		text: "Add 1 [weapon_text] to this ships Upgrade Bar.\n<hr> <b>WHEN ATTACKING:</b> Disable this card.\nThis ship rolls +1 attack die this game round.\n<hr> <b>WHEN ATTACKING:</b> Discard this card.\nThis ship rolls +2 attack dice this game round.\n\n<b>( ERRATA )</b>",
 		OnePerShip: true,
 		factions: [
 			"federation"
@@ -4383,7 +4831,7 @@ module.exports = [
 		],
 		name: "Torpedo Fusillade",
 		cost: 0,
-		text: "The cost and Attack Value of this [weapon_text] are equal to this ship's Primary Weapon Value.\n-----------------------------------\n<b>ATTACK:</b> Remove this card from the game and target all opposing ships.\n\nMake a separate attack roll against each target ship.",
+		text: "The cost and Attack Value of this [weapon_text] are equal to this ship's Primary Weapon Value.\n<hr><b>ATTACK:</b> Remove this card from the game and target all opposing ships.\n\nMake a separate attack roll against each target ship.",
 		unique: true,
 		FrontArc: true,
 		range: "2 - 3",
@@ -4521,7 +4969,7 @@ module.exports = [
 		name: "Beverly Crusher",
 		cost: 3,
 		unique: true,
-		text: "<b>ACTIVATION PHASE:</b> Disable this card.\nRemove a Disabled Token from a [crew_text] Upgrade equipped to this ship.\n-----------------------------\n<b>ACTION:</b> Discard this card.\nEquip a [crew_text] Upgrade with a cost of 4 SP or less that was discarded from this ship to this ship.",
+		text: "<b>ACTIVATION PHASE:</b> Disable this card.\nRemove a Disabled Token from a [crew_text] Upgrade equipped to this ship.\n<hr> <b>ACTION:</b> Discard this card.\nEquip a [crew_text] Upgrade with a cost of 4 SP or less that was discarded from this ship to this ship.",
 		factions: [
 			"federation"
 		]
@@ -4550,7 +4998,7 @@ module.exports = [
 		],
 		name: "Blood Oath",
 		cost: 3,
-		text: "<b>ACTION:</b> Discard this card, target a Captain equipped to an opposing ship, and target the Captain equipped to this ship.\nThe controllers of the target Captains both roll 5 attack dice. Whoever rolls the most [battlestations], re-rolling ties, adds +2 to their target Captain's Captain Skill for the rest of the game. The other player must discard their target Captain.",
+		text: "<b>ACTION:</b> Discard this card, target a Captain equipped to an opposing ship, and target the Captain equipped to this ship.\n\nThe controllers of the target Captains both roll 5 attack dice. Whoever rolls the most [battlestations], re-rolling ties, adds +2 to their target Captain's Captain Skill for the rest of the game. The other player must discard their target Captain.",
 		unique: true,
 		captainKlingon: true,
 		range: "1 - 3",
@@ -12229,7 +12677,7 @@ module.exports = [
 		],
 		name: "Focused Particle Beam",
 		unique: false,
-		text: "<font size=\"-1\"><b>ATTACK: </b>Disable this card to perform this attack. During the Roll Attack Dice step of the Combat Phase, if you roll a [hit] or [crit] result on each one of your dice with this attack, continue rolling 1 additional attack die, one-at-a-time, until you do not roll a [hit] or [crit] result (max 3 additional dice). Add all [hit] or [crit] results from the additional dice to your total for this attack. Any Blank or [battlestations] results from the additional dice are not added.</font>",
+		text: "<b>ATTACK: </b>Disable this card to perform this attack. During the Roll Attack Dice step of the Combat Phase, if you roll a [hit] or [crit] result on each one of your dice with this attack, continue rolling 1 additional attack die, one-at-a-time, until you do not roll a [hit] or [crit] result (max 3 additional dice). Add all [hit] or [crit] results from the additional dice to your total for this attack. Any Blank or [battlestations] results from the additional dice are not added.",
 		factions: [
 			"independent"
 		],
@@ -13633,7 +14081,7 @@ module.exports = [
 		],
 		name: "Biogenic Charge",
 		unique: false,
-		text: "<font size=\"-1\">You must use 1 [borg_text] and 1 [weapon_text] Upgrade slot to deploy this Upgrade to your ship. <b>ATTACK: (Target Lock)</b> Spend your target lock and discard this card to perform this attack.  In addition to normal damage, the opposing ship must discard 1 of its [crew_text] Upgrades of its choice for each damage you inflict to that ship's Hull with this attack (max 2).  Add 1 Drone Token to your Captain Card for each [crew_text] Upgrade that was discarded with this attack.  You cannot exceed your starting number of Drone Tokens.</font>",
+		text: "You must use 1 [borg_text] and 1 [weapon_text] Upgrade slot to deploy this Upgrade to your ship. <b>ATTACK: (Target Lock)</b> Spend your target lock and discard this card to perform this attack.  In addition to normal damage, the opposing ship must discard 1 of its [crew_text] Upgrades of its choice for each damage you inflict to that ship's Hull with this attack (max 2).  Add 1 Drone Token to your Captain Card for each [crew_text] Upgrade that was discarded with this attack.  You cannot exceed your starting number of Drone Tokens.",
 		factions: [
 			"mirror-universe",
 			"borg"
@@ -13653,7 +14101,7 @@ module.exports = [
 		],
 		name: "Biogenic Charge",
 		unique: false,
-		text: "<font size=\"-1\">You must use 1 [borg_text] and 1 [weapon_text] Upgrade slot to deploy this Upgrade to your ship. <b>ATTACK: (Target Lock)</b> Spend your target lock and discard this card to perform this attack.  In addition to normal damage, the opposing ship must discard 1 of its [crew_text] Upgrades of its choice for each damage you inflict to that ship's Hull with this attack (max 2).  Add 1 Drone Token to your Captain Card for each [crew_text] Upgrade that was discarded with this attack.  You cannot exceed your starting number of Drone Tokens.</font>",
+		text: "You must use 1 [borg_text] and 1 [weapon_text] Upgrade slot to deploy this Upgrade to your ship. <b>ATTACK: (Target Lock)</b> Spend your target lock and discard this card to perform this attack.  In addition to normal damage, the opposing ship must discard 1 of its [crew_text] Upgrades of its choice for each damage you inflict to that ship's Hull with this attack (max 2).  Add 1 Drone Token to your Captain Card for each [crew_text] Upgrade that was discarded with this attack.  You cannot exceed your starting number of Drone Tokens.",
 		factions: [
 			"mirror-universe",
 			"borg"
@@ -17425,7 +17873,7 @@ module.exports = [
 		],
 		name: "EMH Mark II",
 		unique: true,
-		text: "This Upgrade counts as either a [crew_text] Upgrade or a [tech_text] Upgrade (your choice).\n\n<b>ACTION:</b> Discard this card to target a ship at Range 1. Disable all [crew_text] Upgrades on the target ship.",
+		text: "This Upgrade counts as either a [crew_text] Upgrade or a [tech_text] Upgrade (your choice).\n<hr> <b>ACTION:</b> Discard this card to target a ship at Range 1. Disable all [crew_text] Upgrades on the target ship.",
 		factions: [
 			"federation"
 		],
@@ -17729,7 +18177,7 @@ module.exports = [
 		cost: 5,
 		attack: 5,
 		range: "1",
-		text: "<font size=\"-1\"><b>ATTACK: </b>Discard this card and your Captain Card to perform this attack. Place a Mission Token in the play area, in your forward firing arc, within Range 1 of your ship that is not on top of another ship's base. Using a 360 arc from the Mission Token, target all ships in a line up to Range 2 and make a separate attack against each ship in the line (at -1 attack die for each ship past the first). Remove the Mission Token from the play area after the attack. This Upgrade may only be purchased for a Xindi ship.</font>",
+		text: "<b>ATTACK: </b>Discard this card and your Captain Card to perform this attack. Place a Mission Token in the play area, in your forward firing arc, within Range 1 of your ship that is not on top of another ship's base. Using a 360 arc from the Mission Token, target all ships in a line up to Range 2 and make a separate attack against each ship in the line (at -1 attack die for each ship past the first). Remove the Mission Token from the play area after the attack. This Upgrade may only be purchased for a Xindi ship.",
 		unique: false,
 		factions: [
 			"xindi"
@@ -20055,6 +20503,861 @@ module.exports = [
 		unique: false,
 		factions: [
 			"romulan"
+		]
+	},
+
+	// Alliance Builder
+	{
+		type: "question",
+		id: "STAQ002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Upgrade Slots",
+		cost: 0,
+		OnePerShip: true,
+		text: "\n Adds +2 [crew], [weapon] or [tech] Upgrade slots \n\n Adds replacement Upgrade slot that this card occupies \n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation",
+			"klingon"
+		]
+	},
+	{
+		type: "question",
+		id: "STAQ001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Upgrade Slot",
+		cost: 0,
+		OnePerShip: true,
+		text: "\n Adds +1 [crew], [weapon] or [tech] Upgrade slot \n\n Adds replacement Upgrade slot that this card occupies \n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation",
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Subspace Field",
+		cost: 4,
+		text: "<b>ACTION:</b> Discard this card.\n\nRemove all [aux] Tokens beside all ships.",
+		range: " 1 ",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Improved Hull Plating",
+		cost: 2,
+		text: "<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step:\n\nConvert 1 [crit] into 1 [hit].",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "EMH",
+		cost: 4,
+		text: "<b>PLANNING PHASE:</b> Place 2 [time] Tokens on this card.\n\nRemove 1 Disabled Token on a [crew_text] Upgrade equipped to this ship.",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Impulse Efficiency",
+		cost: 2,
+		text: "<b>EXECUTE MANEUVER STEP:</b> If this ship performs a white maneuver, place 2 [time] Tokens on this card.\n\nRemove 1 [aux] Token beside this ship.",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Enhanced Targeting",
+		text: "<b>WHEN ATTACKING:</b>\n\nThis ship may re-roll 1 attack die.",
+		cost: 4,
+		OnePerShip: true,
+		factions: [
+			"federation"
+		],
+		alliance: true
+	},
+	{
+		type: "weapon",
+		id: "STAW002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Overcharged Phasers",
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b>\n\nRoll +1 Attack die.",
+		cost: 3,
+		range: " 2 ",
+		OnePerShip: true,
+		factions: [
+			"federation"
+		],
+		alliance: true
+	},
+	{
+		type: "weapon",
+		id: "STAW003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Photon Torpedoes",
+		text: "The Attack Value of this [weapon_text] is this ship's Primary Weapon Value +1.\n<hr> <b>ATTACK:</b> Spend this ship's  [target-lock] Token, disable this card and target an opposing ship.\n\nThis ship may convert all [blank]  into [battlestations].",
+		FrontArc: true,
+		RearArc: true,
+		cost: 2,
+		range: "2 - 3",
+		factions: [
+			"federation"
+		],
+		alliance: true
+	},
+	{
+		type: "crew",
+		id: "STAC001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Commander",
+		OnePerShip: true,
+		text: "<b>ACTION:</b>\n\nPlace 1 [battlestations] Token and 1 [evade] Token beside this ship.",
+		factions: [
+			"federation"
+		],
+		cost: 5,
+		alliance: true
+	},
+	{
+		type: "crew",
+		id: "STAC002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Helmsman",
+		OnePerShip: true,
+		text: "<b>ACTIVATION PHASE:</b> When this ship's maneuver is revealed, disable this card.\n\nIncrease or decrease the maneuver's speed by 1, even if this results in a maneuver that does not appear on this ship's Maneuver Dial.",
+		factions: [
+			"federation"
+		],
+		cost: 3,
+		alliance: true
+	},
+	{
+		type: "crew",
+		id: "STAC003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Tactical Officer",
+		OnePerShip: true,
+		text: "<b>WHEN ATTACKING:</b> Disable this card.\n\nRe-roll any number of attack dice.",
+		factions: [
+			"federation"
+		],
+		cost: 4,
+		alliance: true
+	},
+	{
+		type: "crew",
+		id: "STAC004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Operations Officer",
+		OnePerShip: true,
+		text: "<b>END PHASE:</b> Spend an [evade] Token beside this ship.\n\nRepair 1 Shield on this ship.",
+		factions: [
+			"federation"
+		],
+		cost: 2,
+		alliance: true
+	},
+	{
+		type: "talent",
+		id: "STAE001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Wing Leader",
+		cost: 3,
+		text: "<b>WHEN A FRIENDLY SHIP WITHIN RANGE IS ATTACKING OR DEFENDING:</b>\n\nThat ship may re-roll 1 [battlestations].",
+		alliance: true,
+		range: " 1 ",
+		unique: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Battle-Hardened",
+		cost: 4,
+		text: "<b>WHEN THIS SHIP SPENDS A [battlestations] TOKEN:</b> Place 1 [time] Token on this card.\n\nPlace a [battlestations] Token beside this ship.",
+		alliance: true,
+		OnePerShip: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Evasive Pattern Delta",
+		cost: 3,
+		text: "<b>COMBAT PHASE:</b> Spend an [evade] Token beside this ship and discard this card.\n\nPerform a maneuver with a speed of 2 on this ship's maneuver dial.",
+		alliance: true,
+		unique: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Calculating",
+		cost: 1,
+		text: "<b>ACTIVATION PHASE:</b> Discard this card.\n\nThis game round, the Captain Skill of the Captain equipped to this ship is 10.",
+		alliance: true,
+		OnePerShip: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Dorsal Phaser Array",
+		OnePerShip: true,
+		text: "<b>ATTACK:</b> Target an opposing ship.\n\nThis ship may fire this [weapon_text] in any direction.",
+		factions: [
+			"federation"
+		],
+		cost: 3,
+		attack: 3,
+		range: "1 - 2",
+		alliance: true
+	},
+	{
+		type: "weapon",
+		id: "STAW005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Quantum Torpedoes",
+		unique: false,
+		text: "<b>ATTACK:</b> Spend this ship's     [target-lock] Token, disable this card, and target an opposing ship.  \n\nIf the defending ship is hit, add 1 [hit].",
+		factions: [
+			"federation"
+		],
+		cost: 6,
+		skill: 0,
+		RearArc: true,
+		FrontArc: true,
+		attack: 5,
+		range: "2 - 3",
+		alliance: true
+	},
+	{
+		type: "crew",
+		id: "STAC005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Science Officer",
+		OnePerShip: true,
+		text: "<b>ACTION:</b>\n\nPlace 2 [scan] Tokens beside this ship.",
+		factions: [
+			"federation"
+		],
+		cost: 3,
+		alliance: true
+	},
+	{
+		type: "tech",
+		id: "STAT005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Detection Grid",
+		cost: 3,
+		text: "<b>COMBAT PHASE:</b> If there is a [scan] Token beside this ship:\n\nOpposing ships that are both in range and in this ship's primary firing arc roll 1 fewer defense dice when defending against another friendly ship.",
+		alliance: true,
+		range: "1 - 3",
+		OnePerShip: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Inspiring",
+		cost: 2,
+		text: "<b>PLANNING PHASE:</b> Target a friendly ship.\n\nRemove 1 [aux] token beside the target ship.",
+		alliance: true,
+		range: "1",
+		unique: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT006",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Impulse Upgrade",
+		cost: 1,
+		text: "Treat this ship's 2 [bank-left], 2 [straight], and 2 [bank-right] maneuvers as green.",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT007",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Reinforced Shielding",
+		cost: 3,
+		text: "Add +2 to this ship's Shield Value.",
+		alliance: true,
+		OnePerShip: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW006",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Full Spread",
+		cost: 5,
+		text: "<b>AFTER ATTACKING WITH A TORPEDO UPGRADE:</b> Discard this card and the Torpedo Upgrade used.\n\nMake another attack with the same Torpedo Upgrade against a different target (even if the Torpedo is disabled, has a time token, or you no longer have a   [target-lock] Token to spend).",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+
+	// Klingon Alliance Upgrades
+	{
+		type: "weapon",
+		id: "STAW010",
+		set: [
+			"80000"
+		],
+		name: "Converging Fire",
+		cost: 2,
+		text: "<b>COMBAT PHASE:</b> Friendly ships may treat your [target-lock] Tokens as their own. \n\n\n <i>Vor'cha Class and Negh'var Class Only",
+		OnePerShip: true,
+		vorchaLimit: true,
+		neghvarLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW011",
+		set: [
+			"80000"
+		],
+		name: "Torpedo Fusillade",
+		cost: 0,
+		text: "The cost and Attack Value of this [weapon] are equal to this ship's Primary Weapon Value. \n<hr> <b>ATTACK:</b> Remove this card from the game and target all opposing ships. \n\n Make a separate attack roll against each target ship.",
+		unique: true,
+		FrontArc: true,
+		range: "2 - 3",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW008",
+		set: [
+			"80000"
+		],
+		name: "Photon Torpedoes",
+		cost: 3,
+		text: "The Attack Value of this [weapon] is this ship's Primary Weapon Value +1. \n<hr> <b>ATTACK:</b> Spend this ship's [target-lock] Token, disable this card, and target an opposing ship. \n\n This ship may convert 1 [blank] into a [crit] result.",
+		FrontArc: true,
+		RearArc: true,
+		range: "2 - 3",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW009",
+		set: [
+			"80000"
+		],
+		name: "Disruptor Overcharge",
+		cost: 3,
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON: ROLL ATTACK DICE STEP:</b> If you rolled at least 1 [crit] result. \n\n Add 1 [hit] result to the total.",
+		OnePerShip: true,
+		vorchaLimit: true,
+		range: "1 - 2",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "weapon",
+		id: "STAW007",
+		set: [
+			"80000"
+		],
+		name: "Forward Battery",
+		cost: 5,
+		text: "<b>WHEN DEFENDING: DECLARE TARGET STEP:</b> If the attacking ship is in your Primary Firing Arc. \n\n Roll 1 Attack die. On a [hit] or [crit] result, deal 1 damage to the attacking ship before it attacks.",
+		OnePerShip: true,
+		vorchaLimit: true,
+		neghvarLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE015",
+		set: [
+			"80000"
+		],
+		name: "Eye For An Eye",
+		cost: 2,
+		text: "<b>WHEN DEFENDING: DEAL DAMAGE STEP:</b> If this ship suffers a face-up damage card and the attacking ship is in your Primary Firing Arc. \n\n Discard this card to deal the attacking ship 1 face-up damage card (even if it has active shields).",
+		OnePerShip: true,
+		shipKlingon: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE013",
+		set: [
+			"80000"
+		],
+		name: "Strafing Run",
+		cost: 3,
+		text: "<b>EXECUTE MANEUVER STEP:</b> If your ship's base or maneuver template overlapped an opposing ship: \n\n Roll 1 attack die. On a [hit] or [crit] result, the opposing ship suffers 1 damage.",
+		OnePerShip: true,
+		kvortLimit: true,
+		brelLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE014",
+		set: [
+			"80000"
+		],
+		name: "Fight With Honor",
+		cost: 3,
+		text: "<b>WHEN ATTACKING A SHIP WITH AN EQUAL OR HIGHER CAPTAIN SKILL NUMBER THAN THIS SHIP:</b> \n\n Convert 1 [battlestations] into 1 [crit].",
+		OnePerShip: true,
+		shipKlingon: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE016",
+		set: [
+			"80000"
+		],
+		name: "Glory To The Empire!",
+		cost: 2,
+		text: "<b>WHEN ATTACKING OR DEFENDING:</b> Discard this card. \n\n Reroll all your dice.",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE011",
+		set: [
+			"80000"
+		],
+		name: "Evasive Maneuvers",
+		cost: 4,
+		text: "<b>WHEN THIS SHIP SPENDS A [evade] TOKEN:</b> Place 1 [time] Token on this card. \n\n Place 1 [evade] Token beside this ship.",
+		OnePerShip: true,
+		kvortLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE012",
+		set: [
+			"80000"
+		],
+		name: "Reckless Assault",
+		cost: 4,
+		text: "<b>WHEN ATTACKING WITH THIS SHIP'S PRIMARY WEAPON:</b> If you are within the target's Primary Firing Arc. \n\n Roll +1 Attack die.",
+		OnePerShip: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT009",
+		set: [
+			"80000"
+		],
+		name: "Enhanced Thrusters",
+		cost: 5,
+		text: "<b>EXECUTE MANEUVER STEP:</b> When this ship performs a [bank-left] or [bank-right] maneuver of speed 2 or 3: \n\n You may treat that maneuver as red to rotate this ship 180°.",
+		OnePerShip: true,
+		kvortLimit: true,
+		brelLimit: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT013",
+		set: [
+			"80000"
+		],
+		name: "Passive Sensors",
+		cost: 2,
+		text: "<b>END PHASE:</b> If you did not attack this round, place 1 [scan] Token on this card (max 1). \n\n <b>FREE ACTION:</b> Place 1 [scan] Token from this card beside this ship.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT014",
+		set: [
+			"80000"
+		],
+		name: "Reinforced Hull",
+		cost: 2,
+		text: "Add +2 to this ship's Hull Value.",
+		OnePerShip: true,
+		hullConstraint: "4+",
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT012",
+		set: [
+			"80000"
+		],
+		name: "Secondary Cloaking Coil",
+		cost: 3,
+		text: "<b>ACTION:</b> Discard this card. \n\n Repair 1 Shield Token. If you have the [cloak] action on this ship's action bar, you may [cloak] as a free action.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT010",
+		set: [
+			"80000"
+		],
+		name: "Targeting Array",
+		cost: 4,
+		text: "You can have two Blue [target-lock] Tokens. \n<hr> <b>WHEN YOU PERFORM A [target-lock] ACTION:</b> \n\n You may perform an additional [target-lock] Action against a different opposing ship within Range.",
+		unique: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT011",
+		set: [
+			"80000"
+		],
+		name: "Reactor Vent",
+		cost: 4,
+		text: "<b>COMBAT PHASE:</b> If there is an opposing ship within range, you may spend 1 [aux] Token from beside this ship to roll 1 attack die. \n\n On a [hit] or [crit] result, discard 1 Shield Token from the opposing ship.",
+		range: "1",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT015",
+		set: [
+			"80000"
+		],
+		name: "Secondary Relays",
+		cost: 2,
+		text: "<b>WHEN THIS SHIP WOULD DISABLE A [weapon] UPGRADE:</b> \n If you do not have any [aux] Tokens beside this ship: \n\n You may place an [aux] Token beside this ship instead.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC018",
+		set: [
+			"80000"
+		],
+		name: "First Officer",
+		cost: 4,
+		text: "<b>WHEN ATTACKING OR DEFENDING:</b> \n Place 1 [time] Token on this card. \n\n Convert 1 [battlestations] into 1 [hit] or 1 [evade].",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC019",
+		set: [
+			"80000"
+		],
+		name: "Weapons Officer",
+		cost: 4,
+		text: "<b>WHEN ATTACKING:</b> Disable this card. \n\n Convert 1 of your [battlestations] results into a [crit] result and all of your other [battlestations] results into [hit] results.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC020",
+		set: [
+			"80000"
+		],
+		name: "Operations Officer",
+		cost: 4,
+		text: "If equipped to a <img src='img/text/kli-kvort.png' width='20' height='20' title='K'Vort Class'>, add +1 to this ship's Agility Value. \n<hr> <b>WHEN DEFENDING:</b> You may convert 1 [battlestations] result into 1 [evade] result.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC022",
+		set: [
+			"80000"
+		],
+		name: "Tactical Officer",
+		cost: 2,
+		text: "<b>WHEN ATTACKING:</b> If you have a Red [target-lock] on the target ship: \n\n You may spend it as if it were a [battlestations] Token.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC023",
+		set: [
+			"80000"
+		],
+		name: "Helmsman",
+		cost: 2,
+		text: "<b>EXECUTE MANEUVER STEP:</b> If this ship performed a Non-Red Maneuver that did not overlap any ships or obstacles. Disable this card. \n\n Perform any Maneuver with a Speed of 1 on this ship's Maneuver Dial.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC021",
+		set: [
+			"80000"
+		],
+		name: "Science Officer",
+		cost: 3,
+		text: "<b>ACTION:</b> Place 1 [scan] Token beside this ship. \n\n You may remove 1 Red  [target-lock] Token from beside this ship (and the corresponding Blue  [target-lock] Token).",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "tech",
+		id: "STAT008",
+		set: [
+			"80000"
+		],
+		name: "Extend Shields",
+		cost: 3,
+		text: "<b>END PHASE:</b> If you have 1 or more Active Shields, place 3 [time] Tokens on this card and place 1 [aux] Token beside this ship to target a friendly ship within Range. \n\n The target ship Repairs 1 Shield.",
+		range: "1",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "crew",
+		id: "STAC017",
+		set: [
+			"80000"
+		],
+		name: "Engineering Officer",
+		cost: 3,
+		text: "<b>PERFORM ACTION STEP:</b> Disable this card. \n\n This ship may perform 1 Action while having any [aux] Tokens beside it.",
+		OnePerShip: true,
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE010",
+		set: [
+			"80000"
+		],
+		name: "Battle Plan",
+		cost: 4,
+		text: "<b>WHEN ATTACKING:\n </b> If the target is within Range of both this ship and at least 1 other friendly ship. \n\n Add 1 [battlestations] result to this ship's attack roll.",
+		unique: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "talent",
+		id: "STAE009",
+		set: [
+			"80000"
+		],
+		name: "Coordinated Assault",
+		cost: 5,
+		text: "<b>AFTER ATTACKING OR DEFENDING:\n </b> Target a friendly ship within Range and spend a [battlestations], [evade], or [scan] Token from beside this ship. \n\n Place a copy of that Token beside the target ship.",
+		unique: true,
+		range: "1",
+		alliance: true,
+		factions: [
+			"federation"
 		]
 	}
 ];

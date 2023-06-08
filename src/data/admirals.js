@@ -62,7 +62,7 @@ module.exports = [
 		],
 		name: "Shinzon",
 		unique: true,
-		text: "Add the [battlestations] Action to this ship's Action Bar. \n----------------------------------------\n <b>FLEET ACTION:</b>\n Remove all [time] Tokens and/or Disable Tokens from a [weapon_text] Upgrade equipped to this ship, then you may perform an Action on your Action Bar as a Free Action.",
+		text: "Add the [battlestations] Action to this ship's Action Bar. \n<hr> <b>FLEET ACTION:</b>\n\n Remove all [time] Tokens and/or Disable Tokens from a [weapon_text] Upgrade equipped to this ship, then you may perform an Action on your Action Bar as a Free Action.",
 		factions: [
 			"romulan"
 		],
@@ -116,7 +116,7 @@ module.exports = [
 		cost: 5,
 		skill: 2,
 		talents: 1,
-		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/BpbvTHt.png' width='20' height='20'> ship.\n<b>FREE FLEET ACTION:</b> Discard 1 <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ship.\n<hr> <b>FREE ACTION:</b> Discard 1 <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\n\n Perform an attack with this ship's Primary Weapon with -1 attack die.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -133,7 +133,7 @@ module.exports = [
 		cost: 5,
 		skill: 2,
 		talents: 1,
-		text: "Add 1 [crew_text] to this ship's Upgrade Bar.\n----------------------------------------\n<b>FLEET ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
+		text: "Add 1 [crew_text] to this ship's Upgrade Bar.\n<hr> <b>FLEET ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -151,7 +151,7 @@ module.exports = [
 		cost: 3,
 		skill: 0,
 		talents: 0,
-		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Admiral.\n<b>SETUP:</b> Place 2 GPLT on the Captain equipped to this ship.\n----------------------------------------\n<b>WHEN A FRIENDLY CAPTAIN WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defense dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
+		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Captain.\n<hr> <b>SETUP:</b> \n\n Place 2 GPLT on this card.\n<hr> <b>WHEN YOU WOULD SPEND ONE OR MORE GPLT:</b> \n\n You may roll a number of defence dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -168,7 +168,7 @@ module.exports = [
 		cost: 6,
 		skill: 2,
 		talents: 1,
-		text: "<b>FLEET ACTION:</b> Decrease the Captain Skill of the Captain equipped to this ship by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> [crew_text] equipped to this ship as Free Actions.",
+		text: "<b>FLEET ACTION:</b> Decrease the Captain Skill of the Captain equipped to this ship by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] equipped to this ship as Free Actions.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -711,5 +711,108 @@ module.exports = [
 		factions: [
 			"romulan"
 		]
+	},
+
+	// Alliance Builder
+
+	// Federation
+	{
+		type: "admiral",
+		id: "STAA003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slots",
+		cost: 0,
+		skill: 0,
+		talents: 3,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 3 Elite Talent slots to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "admiral",
+		id: "STAA002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slots",
+		cost: 0,
+		skill: 0,
+		talents: 2,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 2 Elite Talent slots to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		]
+	},
+	{
+		type: "admiral",
+		id: "STAA001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slot",
+		cost: 0,
+		skill: 0,
+		talents: 1,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 1 Elite Talent slot to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		]
+	},
+
+	// Klingons
+	{
+		type: "admiral",
+		id: "STAA006",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slots",
+		cost: 0,
+		skill: 0,
+		talents: 3,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 3 Elite Talent slots to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "admiral",
+		id: "STAA005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slots",
+		cost: 0,
+		skill: 0,
+		talents: 2,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 2 Elite Talent slots to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		]
+	},
+	{
+		type: "admiral",
+		id: "STAA004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Talent Slot",
+		cost: 0,
+		skill: 0,
+		talents: 1,
+		text: "<i>(Not An Admiral Card)</i> <hr> <b> Card adds 1 Elite Talent slot to ship </b> \n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		]
 	}
+
 ];

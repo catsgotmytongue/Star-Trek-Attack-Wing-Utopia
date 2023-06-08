@@ -1,6 +1,23 @@
 module.exports = [
 	{
 		type: "captain",
+		id: "Cap020",
+		gameId: 1,
+		set: [
+			"80002"
+		],
+		name: "Vorta",
+		unique: false,
+		text: "",
+		factions: [
+			"dominion"
+		],
+		cost: 0,
+		skill: 1,
+		talents: 0
+	},
+	{
+		type: "captain",
 		id: "Cap019",
 		gameId: 1,
 		set: [
@@ -8,7 +25,7 @@ module.exports = [
 		],
 		name: "Alynna Nechayev",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> \n\n You may re-roll all [blank]. If the defending ship is either a <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> ship or a <img src='https://i.imgur.com/tZbY5gi.png' width='20' height='20'> ship, roll +1 attack die.",
+		text: "<b>WHEN ATTACKING:</b> \n\n You may re-roll all [blank]. If the defending ship is either a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ship or a <img src='img/text/faction-borg.png' width='20' height='20' title='Borg'> ship, roll +1 attack die.",
 		factions: [
 			"federation"
 		],
@@ -42,7 +59,7 @@ module.exports = [
 		],
 		name: "Strickler",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> If the defending ship has a Hull Value of 3 or less. \n\n Add 1 [hit]. If the defending ship is an <img class='centered' src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> ship or has an <img class='centered' src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> Captain equipped to it, add 1 [crit] instead.",
+		text: "<b>WHEN ATTACKING:</b> If the defending ship has a Hull Value of 3 or less. \n\n Add 1 [hit]. If the defending ship is an <img class='centered' src='img/text/faction-indy.png' width='20' height='20' title='Independent'> ship or has an <img class='centered' src='img/text/faction-indy.png' width='20' height='20' title='Independent'> Captain equipped to it, add 1 [crit] instead.",
 		factions: [
 			"federation"
 		],
@@ -59,7 +76,7 @@ module.exports = [
 		],
 		name: "George Sanders",
 		unique: true,
-		text: "<b>AFTER A FRIENDLY <img src='../img/faction_fed.png' width='20' height='20'> SHIP WITHIN RANGE IS HIT:</b> \n\n You may perform a 1 [bank-left], 1 [straight], or a 1 [bank-right] Maneuver. If this ship has the 'Federation Prototype' [hook] equipped, you may perform a 1 [turn-left] or 1 [turn-right] Maneuver instead.",
+		text: "<b>AFTER A FRIENDLY <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> SHIP WITHIN RANGE IS HIT:</b> \n\n\n You may perform a 1 [bank-left], 1 [straight], or a 1 [bank-right] Maneuver. If this ship has the 'Federation Prototype' [hook] equipped, you may perform a 1 [turn-left] or 1 [turn-right] Maneuver instead.",
 		factions: [
 			"federation"
 		],
@@ -77,7 +94,7 @@ module.exports = [
 		],
 		name: "Lovok",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> Place an [aux] Token beside this ship. \n\n Re-roll each of your [blank] . If equipped to a <img src='img/text/rom-dderidex.png' width='15' height='15'>, you may also add 1 [hit].",
+		text: "<b>WHEN ATTACKING:</b> Place an [aux] Token beside this ship. \n\n Re-roll each of your [blank] . If equipped to a <img src='img/text/rom-dderidex.png' width='18' height='18' title='DDeridex Class'>, you may also add 1 [hit].",
 		factions: [
 			"romulan"
 		],
@@ -94,7 +111,7 @@ module.exports = [
 		],
 		name: "Rekar",
 		unique: true,
-		text: "You do not pay faction penalty when equipping this card or any <img src='img/text/faction-romulan.png' width='20' height='20'> [crew_text] Upgrades to this <img src='img/text/faction-federation.png' width='20' height='20'> ship. \n----------------------------------------\n <b>WHEN ATTACKING WITH A [weapon_text] UPGRADE:</b> \n\n You may re-roll up to 2 [blank] . If that Upgrade is a non-<img src='img/text/faction-romulan.png' width='20' height='20'> [weapon_text], roll +1 Attack die.",
+		text: "You do not pay faction penalty when equipping this card or any <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [crew_text] Upgrades to this <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship. \n<hr> <b>WHEN ATTACKING WITH A [weapon_text] UPGRADE:</b> \n\n You may re-roll up to 2 [blank] . If that Upgrade is a non-<img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [weapon_text], roll +1 Attack die.",
 		factions: [
 			"romulan"
 		],
@@ -128,7 +145,7 @@ module.exports = [
 		],
 		name: "Donatra",
 		unique: true,
-		text: "<font size='+.5'><b>WHEN A FRIENDLY SHIP WITHIN RANGE IS ATTACKING:</b>\n\n That friendly ship may roll +1 attack die. If that friendly ship is either a <img src='img/text/rom-valdore.png' width='15' height='15'> or a <img src='img/Text/fed-sovereign.png' width='15' height='15'> it may also convert 1 [blank] into 1 [hit].</font>",
+		text: "<b>WHEN A FRIENDLY SHIP WITHIN RANGE IS ATTACKING:</b>\n\n That friendly ship may roll +1 attack die. If that friendly ship is either a <img src='img/text/rom-valdore.png' width='18' height='18' title='Valdore Class'> or a <img src='img/text/fed-sovereign.png' width='18' height='18' title='Sovereign Class'> it may also convert 1 [blank] into 1 [hit].",
 		factions: [
 			"romulan"
 		],
@@ -146,7 +163,7 @@ module.exports = [
 		],
 		name: "Shinzon",
 		unique: true,
-		text: "Add the [battlestations] Action to this ship's Action Bar. \n----------------------------------------\n <b>FREE ACTION:</b> If this ship is cloaked. \n\n Perform an Action on this ship's Action Bar as a Free Action.",
+		text: "Add the [battlestations] Action to this ship's Action Bar. \n<hr> <b>FREE ACTION:</b> If this ship is cloaked. \n\n Perform an Action on this ship's Action Bar as a Free Action.",
 		factions: [
 			"romulan"
 		],
@@ -163,7 +180,7 @@ module.exports = [
 		],
 		name: "Leyton",
 		unique: true,
-		text: "ACTION:</b> Target a ship and place 2 [time] Tokens on this card.\n\nThe target ship attacks last this turn.",
+		text: "ACTION:</b> Target a ship and place 2 [time] Tokens on this card.\n\n The target ship attacks last this turn.",
 		factions: [
 			"federation"
 		],
@@ -181,7 +198,7 @@ module.exports = [
 		],
 		name: "Worf",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, spend a [battlestations] Token beside this ship.\n\nConvert all [blank] to [hit].",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, spend a [battlestations] Token beside this ship.\n\n Convert all [blank] to [hit].",
 		factions: [
 			"federation",
 			"klingon"
@@ -199,7 +216,7 @@ module.exports = [
 		],
 		name: "Jadzia Dax",
 		unique: true,
-		text: "You do not pay a faction penalty when equipping <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> [talent_text] Upgrade to this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> \n\nThis ship may perform a white 1 [bank-left] or white 1 [bank-right].",
+		text: "You do not pay a faction penalty when equipping <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> [talent_text] Upgrade to this card.\n<hr> <b>ACTIVATION PHASE:</b> \n\nThis ship may perform a white 1 [bank-left] or white 1 [bank-right].",
 		factions: [
 			"federation"
 		],
@@ -216,7 +233,7 @@ module.exports = [
 		],
 		name: "Keogh",
 		unique: true,
-		text: "<b>MODIFY ATTACK DICE STEP:</b> When a friendly <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship in range is defending and the attacking ship is in this ship's <img src='https://i.imgur.com/5JGmN4o.png' width='10' height='10'> and in range:\n\nConvert 1 [hit] into [blank].",
+		text: "<b>MODIFY ATTACK DICE STEP:</b> When a friendly <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship in range is defending and the attacking ship is in this ship's <img src='img/text/forward-arc.png' width='18' height='18' title='Front Arc'> and in range:\n\n Convert 1 [hit] into [blank].",
 		factions: [
 			"federation"
 		],
@@ -234,7 +251,7 @@ module.exports = [
 		],
 		name: "Benjamin Sisko",
 		unique: true,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the defending ship is a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> ship or has a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> Captain equipped to it:\nAdd 1 [crit]\n----------------------------------------\n<b>END PHASE:</b>\nRemove one [aux] Token beside this ship.",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the defending ship is a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> ship or has a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> Captain equipped to it:\n\n Add 1 [crit] \n<hr> <b>END PHASE:</b> \n\nRemove one [aux] Token beside this ship.",
 		factions: [
 			"federation"
 		],
@@ -251,7 +268,7 @@ module.exports = [
 		],
 		name: "The Albino",
 		unique: true,
-		text: "<b>WHEN ATTACKING A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> SHIP OR A SHIP WITH A <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> CAPTAIN EQUIPPED TO IT:</b>\nRoll +1 attack die.\n----------------------------------------\n<b>WHEN ATTACKING:</b> Once per game, if this attack hits:\nDiscard 1 [crew_text] Upgrade equipped to the defending ship.\n----------------------------------------\n<b>ACTIVIATION PHASE:</b> Once per game:\nThis ship may activate last.",
+		text: "<b>WHEN ATTACKING A <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> SHIP OR A SHIP WITH A <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> CAPTAIN EQUIPPED TO IT:</b> \n\n Roll +1 attack die.\n<hr> <b>WHEN ATTACKING:</b> Once per game, if this attack hits:\n\n Discard 1 [crew_text] Upgrade equipped to the defending ship.\n<hr> <b>ACTIVIATION PHASE:</b> Once per game: \n\n This ship may activate last.",
 		factions: [
 			"klingon",
 			"independent"
@@ -269,7 +286,7 @@ module.exports = [
 		],
 		name: "Kor",
 		unique: true,
-		text: "You may equip the Dahar Master [talent_text] Upgrade to this card for 0 SP.\n----------------------------------------\n<b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> ships.\n\nRemove all Red    [target-lock] Tokens beside the target ships and place them beside this ship.",
+		text: "You may equip the Dahar Master [talent_text] Upgrade to this card for 0 SP. \n<hr> <b>FREE ACTION:</b> Place an [aux] Token beside this ship and target all friendly <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> ships.\n\n Remove all Red    [target-lock] Tokens beside the target ships and place them beside this ship.",
 		factions: [
 			"klingon"
 		],
@@ -287,7 +304,7 @@ module.exports = [
 		],
 		name: "Koloth",
 		unique: true,
-		text: "<b>WHEN AN OPPOSING SHIP WITHIN RANGE PERFORMS A MANEUVER:</b> Place 2 [time] Tokens on this card.\n\nPerform a maneuver on this ship's dial with a speed of 2.",
+		text: "<b>WHEN AN OPPOSING SHIP WITHIN RANGE PERFORMS A MANEUVER:</b> Place 2 [time] Tokens on this card.\n\n Perform a maneuver on this ship's dial with a speed of 2.",
 		factions: [
 			"klingon"
 		],
@@ -305,7 +322,7 @@ module.exports = [
 		],
 		name: "Kang",
 		unique: true,
-		text: "<b>START OF THE GAME:</b> Target a Captain equipped to an opposing ship.\n----------------------------------------\n<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the target captain is equipped to the defending ship, discard this card.\nAdd two [crit] results.",
+		text: "<b>START OF THE GAME:</b> Target a Captain equipped to an opposing ship.\n<hr> <b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if the target captain is equipped to the defending ship, discard this card.\n\n Add two [crit] results.",
 		factions: [
 			"klingon"
 		],
@@ -322,211 +339,13 @@ module.exports = [
 		],
 		name: "Kang",
 		unique: true,
-		text: "<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step, spend this ship's [target-lock] Token.\n\nThe attacking ship must re-roll all of its attack dice.",
+		text: "<b>WHEN DEFENDING:</b> During the Modify Attack Dice Step, spend this ship's [target-lock] Token.\n\n The attacking ship must re-roll all of its attack dice.",
 		factions: [
 			"klingon"
 		],
 		cost: 5,
 		skill: 8,
 		talents: 1
-	},
-	{
-		type: "captain",
-		id: "Cap128",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (14 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n14 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 9,
-		alliance: true,
-		talents: 3
-	},
-	{
-		type: "captain",
-		id: "Cap127",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (13 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n13 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 8,
-		alliance: true,
-		talents: 3
-	},
-	{
-		type: "captain",
-		id: "Cap126",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (12 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n12 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 8,
-		alliance: true,
-		talents: 2
-	},
-	{
-		type: "captain",
-		id: "Cap125",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (10 or 11 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n10 or 11 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 7,
-		alliance: true,
-		talents: 2
-	},
-	{
-		type: "captain",
-		id: "Cap124",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (8 or 9 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n8 or 9 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 6,
-		alliance: true,
-		talents: 2
-	},
-	{
-		type: "captain",
-		id: "Cap123",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (6 or 7 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n6 or 7 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 5,
-		alliance: true,
-		talents: 2
-	},
-	{
-		type: "captain",
-		id: "Cap122",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (4 or 5 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n4 or 5 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 4,
-		alliance: true,
-		talents: 1
-	},
-	{
-		type: "captain",
-		id: "Cap121",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (3 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n3 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 3,
-		alliance: true,
-		talents: 1
-	},
-	{
-		type: "captain",
-		id: "Cap120",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (2 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n2 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 3,
-		alliance: true,
-		talents: 1
-	},
-	{
-		type: "captain",
-		id: "Cap119",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (1 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n1 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 2,
-		alliance: true,
-		talents: 1
-	},
-	{
-		type: "captain",
-		id: "Cap118",
-		gameId: 1,
-		set: [
-			"80000"
-		],
-		name: "STA Fed (0 XP)",
-		unique: false,
-		text: "For Star Trek Alliance Building ONLY.  \n\nAdd as 'Captain' to remove ship cost.  \n\n0 XP spent on Captain Skill.\n\nNot a physical card, used internally on Utopia.",
-		factions: [
-			"federation"
-		],
-		cost: 0,
-		skill: 2,
-		alliance: true,
-		talents: 0
 	},
 	{
 		type: "captain",
@@ -948,7 +767,7 @@ module.exports = [
 		cost: 3,
 		skill: 2,
 		talents: 0,
-		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Captain.\n<b>SETUP:</b> Place 2 GPLT on this card.\n----------------------------------------\n<b>WHEN YOU WOULD SPEND ONE OR MORE GPLT:</b> You may roll a number of defence dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
+		text: "You may only equip the \"Grand Nagus\" and \"Rules of Acquisition\" [talent_text] Upgrades to this Captain.\n<hr> <b>SETUP:</b> \n\n Place 2 GPLT on this card.\n<hr> <b>WHEN YOU WOULD SPEND ONE OR MORE GPLT:</b> \n\n You may roll a number of defence dice equal to the number of GPLT that would be spent. For each [evade], spend 1 fewer GPLT.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -1345,7 +1164,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 1,
-		text: "Idrin counts as a Hirogen Captain.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card.\n\nRemove 1 Disable Token or up to 2 [time] Tokens from a [tech_text] or [weapon_text]  Upgrade equipped to this ship.",
+		text: "Idrin counts as a Hirogen Captain.\n<hr> <b>ACTIVATION PHASE:</b> Place 2 [time] Tokens on this card.\n\nRemove 1 Disable Token or up to 2 [time] Tokens from a [tech_text] or [weapon_text]  Upgrade equipped to this ship.",
 		unique: true,
 		factions: [
 			"independent"
@@ -1379,7 +1198,7 @@ module.exports = [
 		cost: 2,
 		skill: 3,
 		talents: 0,
-		text: "<b>ACTION:</b>\n\nPlace a [scan] Token beside this ship. If this ship is a Romulan ship, it may perfrom an Action on its Action Bar as a Free Action.",
+		text: "<b>ACTION:</b>\n\nPlace a [scan] Token beside this ship. If this ship is a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ship, it may perfrom an Action on its Action Bar as a Free Action.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -2061,7 +1880,7 @@ module.exports = [
 		cost: 2,
 		skill: 4,
 		talents: 1,
-		text: "<b>SETUP:</b> Place 2 GPLT on this card and place 2 [crew_text] Upgrades each with a printed cost of 3 SP or less face down beneath this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 GPLT.\nFlip a [crew_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Remove the other face down [crew_text] Upgrade beneath this card from the game.",
+		text: "<b>SETUP:</b> Place 2 GPLT on this card and place 2 [crew_text] Upgrades each with a printed cost of 3 SP or less face down beneath this card.\n<hr> <b>ACTIVATION PHASE:</b> Spend 1 GPLT.\n\nFlip a [crew_text] Upgrade beneath this card face up and equip it to this ship even if it exceeds this ship's restrictions. Remove the other face down [crew_text] Upgrade beneath this card from the game.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -2078,7 +1897,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 0,
-		text: "At the beginning of the game round, you may flip this card.\n----------------------------------------\n<b>WHEN ATTACKING:</b> If this ship is Cloaked:\n\nThis ship rolls +1 attack die.",
+		text: "At the beginning of the game round, you may flip this card.\n<br> <b>WHEN ATTACKING:</b> If this ship is Cloaked:\n\nThis ship rolls +1 attack die.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -2095,7 +1914,7 @@ module.exports = [
 		cost: 3,
 		skill: 4,
 		talents: 0,
-		text: "At the beginning of the game round, you may flip this card.\n----------------------------------------\n<b>WHEN DEFENDING:</b> If this ship is Cloaked:\n\nThis ship rolls +2 defense die.",
+		text: "At the beginning of the game round, you may flip this card.\n<hr> <b>WHEN DEFENDING:</b> If this ship is Cloaked:\n\nThis ship rolls +2 defense die.",
 		unique: true,
 		factions: [
 			"klingon"
@@ -2130,7 +1949,7 @@ module.exports = [
 		cost: 2,
 		skill: 4,
 		talents: 1,
-		text: "\n<b>WHEN A [tech_text] UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b> \n\nYou may place 2 [time] Tokens on it instead.",
+		text: "\n<b>WHEN A </b>[tech_text]<b> UPGRADE EQUIPPED TO THIS SHIP WOULD BE DISABLED:</b> \n\nYou may place 2 [time] Tokens on it instead.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -2858,7 +2677,7 @@ module.exports = [
 		cost: 4,
 		skill: 5,
 		talents: 1,
-		text: "Hirogen Hunter counts as a Hirogen Captain.\n----------------------------------------\n<b>FREE ACTION:</b>\n\nThis ship may use the Action on a Tractor Beam Upgrade equipped to it.",
+		text: "Hirogen Hunter counts as a Hirogen Captain.\n<hr> <b>FREE ACTION:</b>\n\nThis ship may use the Action on a Tractor Beam Upgrade equipped to it.",
 		unique: false,
 		factions: [
 			"independent"
@@ -3077,7 +2896,7 @@ module.exports = [
 		],
 		name: "Daimon Goss",
 		unique: true,
-		text: "<b>SETUP:</b>\nPlace 3 Gold-Pressed Latinum Tokens on this card.\n----------------------------------------\n<b>PLANNING PHASE:</b> Target an Obstacle, spend 3 GPLT and place 2 [time] Tokens on this card.\n\n<b>Continuous Effect:</b> While this ship is within Range of the target Obstacle, this ship rolls +3 defense dice.",
+		text: "<b>SETUP:</b>\n\n Place 3 Gold-Pressed Latinum Tokens on this card.\n<hr> <b>PLANNING PHASE:</b> Target an Obstacle, spend 3 GPLT and place 2 [time] Tokens on this card.\n\n<b>Continuous Effect:</b> While this ship is within Range of the target Obstacle, this ship rolls +3 defense dice.",
 		factions: [
 			"ferengi"
 		],
@@ -3619,7 +3438,7 @@ module.exports = [
 		cost: 3,
 		skill: 5,
 		talents: 1,
-		text: "This card counts as an Andorian Captain.\n----------------------------------------\n<b>WHEN THIS SHIP SPENDS AN [evade] OR [battlestations] TOKEN:</b> Target a friendly ship.\n\nPlace a token of the same type beside the target ship.",
+		text: "This card counts as an Andorian Captain.\n<hr> <b>WHEN THIS SHIP SPENDS AN [evade] OR [battlestations] TOKEN:</b> Target a friendly ship.\n\nPlace a token of the same type beside the target ship.",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -3635,7 +3454,7 @@ module.exports = [
 		],
 		name: "T'Pol",
 		unique: true,
-		text: "<b>COMBAT PHASE:</b> Choose [evade] or [battlestations] Tokens\n\nYou may spend [scan] Tokens as though they were the chosen type of Token this Combat Phase.",
+		text: "<b>COMBAT PHASE:</b> Choose [evade] or [battlestations] Tokens\n\n You may spend [scan] Tokens as though they were the chosen type of Token this Combat Phase.",
 		cost: 4,
 		skill: 6,
 		talents: 1,
@@ -3652,7 +3471,7 @@ module.exports = [
 		],
 		name: "Operations Drone",
 		unique: false,
-		text: "<b>Setup:</b>\n\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>PLANNING PHASE:</b> Spend 1 Drone Token on this card and target an opposing ship.\n\nPlace an [aux] Token beside the target ship.",
+		text: "<b>Setup:</b>\n\nPlace 6 Drone Tokens on this card.\n<hr> <b>PLANNING PHASE:</b> Spend 1 Drone Token on this card and target an opposing ship.\n\nPlace an [aux] Token beside the target ship.",
 		factions: [
 			"borg"
 		],
@@ -3669,7 +3488,7 @@ module.exports = [
 		],
 		name: "'First'",
 		unique: true,
-		text: "<b>SETUP:</b>\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>ACTIVATION PHASE:</b> Spend 1 Drone Token.\n\nRemove 2 [time] Tokens or 1 Disabled Token from an Upgrade equipped to this ship.",
+		text: "<b>SETUP:</b>\n\nPlace 6 Drone Tokens on this card.\n<hr> <b>ACTIVATION PHASE:</b> Spend 1 Drone Token.\n\nRemove 2 [time] Tokens or 1 Disabled Token from an Upgrade equipped to this ship.",
 		factions: [
 			"borg"
 		],
@@ -3685,7 +3504,7 @@ module.exports = [
 		],
 		name: "Tactical Drone",
 		unique: false,
-		text: "<b>Setup:</b>\nPlace 6 Drone Tokens on this card.\n----------------------------------------\n<b>COMBAT PHASE:</b> If an opposing ship is within range, spend 1 Drone Token.\n\nPlace a [battlestations] Token beside this ship.",
+		text: "<b>Setup:</b>\nPlace 6 Drone Tokens on this card.\n<hr> <b>COMBAT PHASE:</b> If an opposing ship is within range, spend 1 Drone Token.\n\nPlace a [battlestations] Token beside this ship.",
 		factions: [
 			"borg"
 		],
@@ -3702,7 +3521,7 @@ module.exports = [
 		],
 		name: "Thomas Riker",
 		unique: true,
-		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship.\n----------------------------------------\n<b>END PHASE:\n\n</b> This ship may perform a maneuver on its dial with a speed of 2 or less.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship.\n<hr> <b>END PHASE:\n\n</b> This ship may perform a maneuver on its dial with a speed of 2 or less.",
 		factions: [
 			"independent"
 		],
@@ -3719,7 +3538,7 @@ module.exports = [
 		],
 		name: "Prak",
 		unique: true,
-		text: "<b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.\n<b>ACTIVATION PHASE:</b> Spend 1 GPLT and target an opposing ship. The controller of the target ship chooses 1 of the following:\n\n* Repair 1 damage to this ships Hull or Shields.\n* The target ship cannot perform Actions this game round.",
+		text: "<b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.\n<hr> <b>ACTIVATION PHASE:</b> Spend 1 GPLT and target an opposing ship. \n\n The controller of the target ship chooses 1 of the following:\n* Repair 1 damage to this ships Hull or Shields.\n* The target ship cannot perform Actions this game round.",
 		range: "1 - 2",
 		factions: [
 			"ferengi"
@@ -3737,7 +3556,7 @@ module.exports = [
 		],
 		name: "Duras",
 		unique: true,
-		text: "Romulan [talent_text] and Klingon [talent_text] Upgrades equipped to this Captain cost 3 SP.\n----------------------------------------\n[talent_text] Upgrades equipped to this Captain start the game face down. Flip a face down [talent_text] Upgrade equipped to this Captain face up the first time it is used.",
+		text: "<img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> [talent_text] and <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> [talent_text] Upgrades equipped to this Captain cost 3 SP.\n<hr> [talent_text] Upgrades equipped to this Captain start the game face down. Flip a face down [talent_text] Upgrade equipped to this Captain face up the first time it is used.",
 		factions: [
 			"klingon"
 		],
@@ -4548,9 +4367,9 @@ module.exports = [
 		cost: 4,
 		skill: 6,
 		talents: 1,
-		text: "You may not equip an Admiral to this ship.\n-----------------------------\n<b>SETUP:</b> Select a Captain Card with a printed cost of 4 SP or less.\n\nArturis has the ability of that Captain Card this game.\n(<i>Dauntless Class Only</i>)",
+		text: "You may not equip an Admiral to this ship.\n<hr> <b>SETUP:</b> Select a Captain Card with a printed cost of 4 SP or less.\n\nArturis has the ability of that Captain Card this game.\n(<i>Dauntless Class Only</i>)",
 		unique: true,
-		shipLimit: true,
+		dauntlessLimit: true,
 		factions: [
 			"independent"
 		]
@@ -4659,7 +4478,7 @@ module.exports = [
 		cost: 4,
 		skill: 6,
 		talents: 1,
-		text: "<b>PLANNING PHASE:</b> If an opposing <img src='https://i.imgur.com/OwcsZi0.png' width='20' height='20'> ship is in this ship's Primary Firing Arc:\n\nIncrease the Captain Skill of this Captain by 2 this game round.",
+		text: "<b>PLANNING PHASE:</b> If an opposing <img src='img/text/faction-federation.png' width='20' height='20' title='Federation'> ship is in this ship's Primary Firing Arc:\n\nIncrease the Captain Skill of this Captain by 2 this game round.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -4747,7 +4566,7 @@ module.exports = [
 		cost: 4,
 		skill: 7,
 		talents: 1,
-		text: "<b>SETUP:</b> Choose an opposing ship.\n<b>WHEN ATTACKING THE CHOSEN SHIP:</b>\nThis ship may roll +1 attack dice and convert up to 2 [battlestations] into [hit].\n----------------------------------------\n<b>WHEN DEFENDING AGAINST THE CHOSEN SHIP:</b>\nThis ship may roll +1 defense die and convert up to [battlestations] into [evade].",
+		text: "<b>SETUP:</b> Choose an opposing ship.\n<hr> <b>WHEN ATTACKING THE CHOSEN SHIP:</b>\n\n This ship may roll +1 attack dice and convert up to 2 [battlestations] into [hit].\n<hr> <b>WHEN DEFENDING AGAINST THE CHOSEN SHIP:</b>\n\n This ship may roll +1 defense die and convert up to [battlestations] into [evade].",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -4784,7 +4603,7 @@ module.exports = [
 		cost: 5,
 		skill: 7,
 		talents: 1,
-		text: "This card counts as a Gorn Captain.\n----------------------------------------\n<b>AT THE END OF THE DEAL DAMAGE STEP:</b> Spend this ship's  [target-lock] Token.\n\nChoose 1 facedown damage card on the defending ship. Flip it face up and resolve its effect.",
+		text: "This card counts as a Gorn Captain.\n<hr> <b>AT THE END OF THE DEAL DAMAGE STEP:</b> Spend this ship's  [target-lock] Token.\n\nChoose 1 facedown damage card on the defending ship. Flip it face up and resolve its effect.",
 		unique: true,
 		factions: [
 			"independent"
@@ -4819,7 +4638,7 @@ module.exports = [
 		cost: 5,
 		skill: 7,
 		talents: 1,
-		text: "You do not pay a Faction Penalty when you equip this card or <img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Upgrades to this ship.\n-----------------------------\n<img src='https://i.imgur.com/nmga8GG.png' width='20' height='20'> Upgrades equipped to this ship cost -1SP.\n-----------------------------\n<b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.",
+		text: "You do not pay a Faction Penalty when you equip this card or <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> Upgrades to this ship.\n<hr> <img src='img/text/faction-ferengi.png' width='20' height='20' title='Ferengi'> Upgrades equipped to this ship cost -1SP.\n<hr> <b>SETUP:</b> Place 2 Gold-Pressed Latinum Tokens (GPLT) on this card.",
 		unique: true,
 		factions: [
 			"ferengi"
@@ -5338,7 +5157,7 @@ module.exports = [
 		skill: "*",
 		talents: 1,
 		range: "1 - 2",
-		text: "<b>SETUP:</b> Place 8 Drone Tokens on this card.\n-----------------------------------\n<b>EACH TIME AN OPPOSING SHIP WITHIN RANGE PERFORMS AN [evade] , [scan] , OR [battlestations] ACTION:</b> Spend 1 Drone Token on this card and target that opposing ship.\nPerform the same Action as a Free Action and Place an [aux] Token beside the target ship.",
+		text: "<b>SETUP:</b> Place 8 Drone Tokens on this card.\n<hr> <b>EACH TIME AN OPPOSING SHIP WITHIN RANGE PERFORMS AN [evade] , [scan] , OR [battlestations] ACTION:</b> Spend 1 Drone Token on this card and target that opposing ship.\n\n Perform the same Action as a Free Action and Place an [aux] Token beside the target ship.",
 		unique: true,
 		factions: [
 			"federation",
@@ -5356,7 +5175,7 @@ module.exports = [
 		cost: 3,
 		skill: 7,
 		talents: 1,
-		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship:\n\nConvert 1 [blank] into 1 [hit].  If the defending ship has an <img src='https://i.imgur.com/QhlAiYf.png' width='20' height='20'> Captain equipped to it, convert 1 [blank] into 1 [crit] instead.",
+		text: "<b>WHEN ATTACKING:</b> During the Modify Attack Dice Step, if there is a [scan] Token beside this ship:\n\nConvert 1 [blank] into 1 [hit].  If the defending ship has an <img src='img/text/faction-indy.png' width='20' height='20' title='Independent'> Captain equipped to it, convert 1 [blank] into 1 [crit] instead.",
 		unique: true,
 		factions: [
 			"vulcan"
@@ -5390,7 +5209,7 @@ module.exports = [
 		cost: 4,
 		skill: 7,
 		talents: 1,
-		text: "<b>PERFORM ACTION STEP:</b> When this ship performs a [scan] Action, target an opposing ship with a face down Maneuver Dial.\nLook at the target ship's Maneuver Dial and perform a [sensor-echo] Action as a Free Action using a 1 [straight] Maneuver Template, even if this ship is not Cloaked.",
+		text: "<b>PERFORM ACTION STEP:</b> When this ship performs a [scan] Action, target an opposing ship with a face down Maneuver Dial.\n\n Look at the target ship's Maneuver Dial and perform a [sensor-echo] Action as a Free Action using a 1 [straight] Maneuver Template, even if this ship is not Cloaked.",
 		unique: true,
 		range: "1 - 2",
 		factions: [
@@ -5444,7 +5263,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "You do not pay a faction penalty when equipping this card to a <img src='https://i.imgur.com/BpbvTHt.png' width='20' height='20'> ship.\n<b>FREE ACTION:</b> Discard 1 <img src='https://i.imgur.com/QKqthve.png' width='20' height='20'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\nPerform an attack with this ship's Primary Weapon with -1 attack die.",
+		text: "You do not pay a faction penalty when equipping this card to a <img src='img/text/faction-romulan.png' width='20' height='20' title='Romulan'> ship.\n<hr> <b>FREE ACTION:</b> Discard 1 <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] Upgrade equipped to this ship and place 2 [time] Tokens on this card.\n\n Perform an attack with this ship's Primary Weapon with -1 attack die.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -5479,7 +5298,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "If this card is equipped ot a Constitution Class ship, add 1 to this Captain's Captain Skill.\n----------------------------------------\n<b>ACTION:</b> Target a [crew_text] Upgrade equipped to this ship.\nMove all [time] Tokens from this target [crew_text] Upgrade to this card.  If that [crew_text] Upgrade has an Action, you may perform that Action as a Free Action.",
+		text: "If this card is equipped ot a Constitution Class ship, add 1 to this Captain's Captain Skill.\n<hr> <b>ACTION:</b> Target a [crew_text] Upgrade equipped to this ship.\n\n Move all [time] Tokens from this target [crew_text] Upgrade to this card.  If that [crew_text] Upgrade has an Action, you may perform that Action as a Free Action.",
 		unique: true,
 		factions: [
 			"federation"
@@ -5496,7 +5315,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this attack, and this ship's [cloak] Token dose not flip this attack. If this card is equipped to a <img src='https://i.imgur.com/2lM4cv0.png' width='20' height='20'> ship, also add 1 [hit].",
+		text: "<b>WHEN ATTACKING:</b> If this ship is Cloaked place 2 [time] Tokens on this card.\n\nThis ship rolls +1 attack die this attack, and this ship's [cloak] Token dose not flip this attack. If this card is equipped to a <img src='img/text/faction-klingon.png' width='20' height='20' title='Klingon'> ship, also add 1 [hit].",
 		unique: true,
 		factions: [
 			"klingon"
@@ -5547,7 +5366,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "Add 1 [crew_text] to this ships Upgrade Bar.\n----------------------------------------\n<b>ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
+		text: "Add 1 [crew_text] to this ships Upgrade Bar.\n<hr> <b>ACTION:</b>\n\nFlip up to 2 Specialization Cards equipped to this ship.",
 		unique: true,
 		factions: [
 			"mirror-universe",
@@ -5565,7 +5384,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "<b>SETUP:</b>\nPlace 3 Gold-Pressed Latinum Tokens (GPLT) on this card.\n-----------------------------\n<b>PLANNING PHASE:</b> Spend 1 GPLT and target a Captain equipped to another ship. Increase or decrease the target Captain's Captain Skill by 2 this game round.",
+		text: "<b>SETUP:</b>\nPlace 3 Gold-Pressed Latinum Tokens (GPLT) on this card.\n<hr> <b>PLANNING PHASE:</b> Spend 1 GPLT and target a Captain equipped to another ship. \n\n Increase or decrease the target Captain's Captain Skill by 2 this game round.",
 		unique: true,
 		range: "1 - 3",
 		factions: [
@@ -5601,7 +5420,7 @@ module.exports = [
 		cost: 5,
 		skill: 8,
 		talents: 1,
-		text: "Add 1 [tech_text] to this ship's Upgrade Bar.\n\n<b>WHEN ATTACKING:</b>\nThis may re-roll 1 attack die for each [tech_text] Upgrade equipped to it.",
+		text: "Add 1 [tech_text] to this ship's Upgrade Bar.\n<hr> <b>WHEN ATTACKING:</b>\n\nThis may re-roll 1 attack die for each [tech_text] Upgrade equipped to it.",
 		unique: true,
 		factions: [
 			"romulan"
@@ -5916,7 +5735,7 @@ module.exports = [
 		cost: 5,
 		skill: 9,
 		talents: 1,
-		text: "<b>SETUP:</b> \nPlace 9 Drone Tokens on this card.\n----------------------------------------\nThis card has the ability text of all Captains in your fleet whose abilitys require one or more Drone Token to be spent.",
+		text: "<b>SETUP:</b> \nPlace 9 Drone Tokens on this card.\n<hr> This card has the ability text of all Captains in your fleet whose abilitys require one or more Drone Token to be spent.",
 		unique: true,
 		shipBorg: true,
 		factions: [
@@ -5934,7 +5753,7 @@ module.exports = [
 		cost: 4,
 		skill: 9,
 		talents: 1,
-		text: "Cannot be equipped to a ship in the same fleet as that has Jean-Luc Picard equipped to a ship.\n----------------------------------------\n<b>SETUP:</b> Place 9 Drone Tokens on this card.\n----------------------------------------\nAdd two [crew_text] to this ship's Upgrade Bar.\n----------------------------------------\nYou do not pay a faction penalty when equipping a [crew_text] Upgrades to this ship.",
+		text: "Cannot be equipped to a ship in the same fleet as that has Jean-Luc Picard equipped to a ship.\n<hr> <b>SETUP:</b> Place 9 Drone Tokens on this card.\n<hr> Add two [crew_text] to this ship's Upgrade Bar.\n<hr> You do not pay a faction penalty when equipping a [crew_text] Upgrades to this ship.",
 		unique: true,
 		shipBorg: true,
 		factions: [
@@ -5952,7 +5771,7 @@ module.exports = [
 		cost: 6,
 		skill: 9,
 		talents: 1,
-		text: "<b>ACTION:</b> Decrease the Captain Skill of this Captain by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='https://i.imgur.com/l7seIMt.png' width='20' height='20'> [crew_text] equipped to this ship as Free Actions.",
+		text: "<b>ACTION:</b> Decrease the Captain Skill of this Captain by 1 this game round.\n\nPerform an Action on this ship's Action Bar and an Action on a <img src='img/text/faction-dominion.png' width='20' height='20' title='Dominion'> [crew_text] equipped to this ship as Free Actions.",
 		unique: true,
 		factions: [
 			"dominion"
@@ -5984,7 +5803,7 @@ module.exports = [
 		],
 		name: "Jean-Luc Picard",
 		unique: true,
-		text: "Each round, you may perform one of the following actions as a free action: \n\n<font size=\"+2\">[evade] [target-lock] [scan] [battlestations] </font>\n\nYou may use this action even if your ship does not have it in the Action bar. ",
+		text: "Each round, you may perform one of the following actions as a free action: \n\n[evade] [target-lock] [scan] [battlestations] \n\nYou may use this action even if your ship does not have it in the Action bar. ",
 		factions: [
 			"federation"
 		],
@@ -6078,5 +5897,298 @@ module.exports = [
 		cost: 7,
 		skill: "*",
 		talents: 1
+	},
+
+	// Alliance Builder
+	{
+		type: "captain",
+		id: "STAC008",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 9,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC007",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 8,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC006",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 7,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC005",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 6,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC004",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 5,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC003",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 4,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC002",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 3,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC001",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"federation"
+		],
+		cost: 0,
+		skill: 2,
+		alliance: true,
+		talents: 0
+	},
+
+	// Klingons
+	{
+		type: "captain",
+		id: "STAC016",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 9,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC015",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 8,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC014",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 7,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC013",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 6,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC012",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 5,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC011",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 4,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC010",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 3,
+		alliance: true,
+		talents: 0
+	},
+	{
+		type: "captain",
+		id: "STAC009",
+		gameId: 1,
+		set: [
+			"80000"
+		],
+		name: "Player Captain",
+		unique: false,
+		text: "\n\n\n\n\n\n <i>(For use with Alliance Builder only)</i>",
+		factions: [
+			"klingon"
+		],
+		cost: 0,
+		skill: 2,
+		alliance: true,
+		talents: 0
 	}
+
 ];
